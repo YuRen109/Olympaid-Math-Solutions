@@ -22,5 +22,5 @@ If $a_n = \left| a_{n+1} - 1 \right|$, then $a_n = a_{n+1} - 1$ or $a_n = 1 - a_
 
 Since $a_{n+1} \geq 1$ and $a_{n} \geq 1$, we have $a_{n+1} = a_n +1 $ for all $n \in \mathbb{N}$.
 
-## Consider for some $1 < s^\star \in S $
+## Case where $s^\star > 1 $
 
