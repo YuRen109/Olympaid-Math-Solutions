@@ -13,7 +13,7 @@ We say that an infinite sequence $a_1, a_2, ...$ is *periodic* if there exists a
 
 Suppose that such sequences $a_1, a_2, ...$ in the problem statement exist. 
 Then there there is some $s \in S$ such that $a_n \leq \left| a_{n+s} - s \right|$, 
-and there is some $s^\star \in S$ such that $a_n = \left| a_{n+s^\star| - {s^\star} \right|$.
+and there is some $s^\star \in S$ such that $a_n = \left| a_{n+s^\star} - s^\star \right|$.
 
 ## Trivial case ($s^\star = 1$)
 
