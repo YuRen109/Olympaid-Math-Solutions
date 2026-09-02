@@ -1,1 +1,1 @@
-test
+-[IMO-2025-shortlist-A6](\Problems\)
