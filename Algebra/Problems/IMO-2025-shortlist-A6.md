@@ -13,9 +13,14 @@ We say that an infinite sequence $a_1, a_2, ...$ is *periodic* if there exists a
 
 Suppose that such sequences $a_1, a_2, ...$ in the problem statement exist. 
 Then there there is some $s \in S$ such that $a_n \leq \left| a_{n+s} - s \right|$, 
-and there is some $s^* \in S$ such that $a_n = \left| a_{n+{s^*}| - {s^*} \right|$.
+and there is some $s^\star \in S$ such that $a_n = \left| a_{n+s^\star| - {s^\star} \right|$.
 
-## Trivial case (${s^*} = 1$)
+## Trivial case ($s^\star = 1$)
 
 It is apparent that 1 may be an element of $S$.  
-If $a_n =$
+If $a_n = \left| a_{n+1} - 1 \right|$, then $a_n = a_{n+1} - 1$ or $a_n = 1 - a_{n+1}$.
+
+Since $a_{n+1} \geq 1$ and $a_{n} \geq 1$, we have $a_{n+1} = a_n +1 $ for all $n \in \mathbb{N}$.
+
+## Consider for some $1 < s^\star \in S $
+
