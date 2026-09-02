@@ -15,7 +15,7 @@ Suppose that such sequences $a_1, a_2, ...$ in the problem statement exist.
 Then there there is some $s \in S$ such that $a_n \leq \left| a_{n+s} - s \right|$, 
 and there is some $s^* \in S$ such that $a_n = \left| a_{n+s^*} - s^* \right|$.
 
-## Trivial case ($s^* = 1$)
+## Trivial case (${s^*} = 1$)
 
 It is apparent that 1 may be an element of $S$.  
 If $a_n =$
