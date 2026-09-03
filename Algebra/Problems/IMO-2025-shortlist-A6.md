@@ -16,15 +16,23 @@ Suppose that there is some $S \in \text{𝕊}$ such that such a sequence $a_1, a
 In this case, let $S^\star \subseteq S$ denote the subset such that for all $s^\star \in S^\star$ we have $a_n = \left| a_{n+s^\star} - s^\star \right|$. 
 the condition 2 in the problem statement implies that $S^\star$ is non-empty, and therefore, $S$ is non-empty.  
 
-For any finite subset $T$ of $\text{ℕ}$, let $\gcd(T)$ denote the greatest common divisor of all elements in $T$.
+For any finite subset $T$ of $\text{ℕ}$, let $\text{gcd}(T)$ denote the greatest common divisor of all elements in $T$.
 
 ### <span id="claim1"></span>Claim 1 (property of $S$)
-For any $S \in \text{𝕊}$ there exists a finite subset $S^\prime$ of $S$ such that $\gcd(S^\prime) = 1$.
+For any $S \in \text{𝕊}$ there exists a finite subset $S^\prime$ of $S$ such that $\text{gcd}(S^\prime) = 1$.
 
 
 *Proof.*  
-Suppose there is no $s \in S$ such that $\text{gcd}(s^\star,s) = 1$. 
-Then all the elements in $S$ have a common divisor $d > 1$, a contradiction to the property of $S$.  
+For the case where $S$ is finite, we have that $\text{gcd}(S) = 1$ because, otherwise, 
+$\text{gcd}(S)$ would be a positive integer that divides all elements of $S$ and is also greater than 1.
+
+For the case where $S$ is infinite, suppose that every finite subset $S^\prime$ of $S$ satisfies that $\text{gcd}(S^\prime) > 1$. 
+Construct an infinite sequence $s_1, s_2, ...$ of $S$ with $s_i \neq s_j$ for every pair of integers $i$ and $j$ with $i \neq j$. 
+For any $n \in \text{ℕ}$ we denote $S_n = \lbrace s_1, s_2, ..., s_n \rbrace$. 
+Then we have that 
+$\text{gcd}(S_1) \neq $
+
+
 $\square$
 
 
