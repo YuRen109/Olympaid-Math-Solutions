@@ -128,6 +128,16 @@ $$ a_n + s s^\star = a_{n + s s^\star} = a_{n + s^\star s} > a_n + s^\star s, $$
 
 a contradiction. Hence, we have that $a_{n + s} = a_n + s$ for all $n \geq N$.
 
+Again, by [Bézout's identity](https://en.wikipedia.org/wiki/B%C3%A9zout%27s_identity) there are some $x \in \text{ℤ}$ and $y \in \text{ℤ}$ such that 
+$x s^\star + y s = 1$. Note that it is either $x s^\star > 0 > y s$ or $y s > 0 > x s^\star$.  
+
+For the case where $x s^\star > 0 > y s$ we have
+
+$$ a_{n+1} = a_{n + x s^\star + y s} = a_{n + x s^\star} + y s = a_n + y s + x s^\star = a_n + 1 $$
+
+for all $n \geq N$.  
+Similarly, for the case where $x s^\star > 0 > y s$ we can also conclude that $a_{n+1} = a_n + 1$ for all $n \geq N$.
+
 $\square$
 
 
