@@ -39,4 +39,13 @@ Suppose there is no $s \in S$ such that $\text{gcd}(s^\star,s) = 1$.
 Then all the elements in $S$ have a common divisor $d > 1$, a contradiction to the property of $S$.  
 
 
+Pick $s \in S$ such that $\text{gcd}(s^\star,s) = 1$. 
+Note that $s$ may be 1.  
+Let  
+$$
+A = \left\{ n \in \text{ℕ} |
+
+$$
+
+
 
