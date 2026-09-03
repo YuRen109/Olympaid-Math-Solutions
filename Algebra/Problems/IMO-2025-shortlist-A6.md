@@ -20,7 +20,10 @@ the condition 2 in the problem statement implies that $S^\star$ is non-empty, an
 For any finite subset $T$ of $\text{ℕ}$, let $\text{gcd}(T)$ denote the greatest common divisor of all elements of $T$.
 
 ### <span id="claim1"></span>Claim 1 (property of $S$)
-For any $S \in \text{𝕊}$ there exists a finite subset $S^\prime$ of $S$ such that $\text{gcd}(S^\prime) = 1$.  
+1.1    For any $S \in \text{𝕊}$ there exists a finite subset $S^\prime$ of $S$ such that $\text{gcd}(S^\prime) = 1$.  
+1.2    For any $S \in \text{𝕊}$ there exists a finite subset $S^\prime$ of $S$ such that $\text{gcd}(S^\prime) = 1$ 
+and $S^\prime \cap S^\star \neq \emptyset$. 
+
 
 *Proof.*  
 For the case where $S$ is finite, we have that $\text{gcd}(S) = 1$ because, otherwise, 
