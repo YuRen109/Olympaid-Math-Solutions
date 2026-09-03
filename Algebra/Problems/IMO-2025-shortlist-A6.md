@@ -117,10 +117,16 @@ after a similar argument, we can complete this part.
 
 $\square$
 
-### Claim 4
+### <span id="claim4"></span>Claim 4
 For all sufficiently large $n \in \text{ℕ}$ we have $a_{n+1} = a_n + 1$.
 
 *Proof.*  
+By [Claim 3](#claim3) there exists some $N \in \text{ℕ}$ such that $a_{n + s} \geq a_n + s$ and $a_{n + s^\star} = a_n + s^\star$ for all $n \geq N$.  
+Suppose there is some $n \geq $ such that $a_{n + s} > a_n + s$. Then 
+
+$$ a_n + s s^\star = a_{n + s s^\star} = a_{n + s^\star s} > a_n + s^\star s, $$
+
+a contradiction. Hence, we have that $a_{n + s} = a_n + s$ for all $n \geq N$.
 
 $\square$
 
