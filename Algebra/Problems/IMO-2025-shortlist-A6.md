@@ -49,22 +49,7 @@ We may always find a finite subset $S^\prime$ of $S$ such that $\text{gcd}\left(
 
 
 
-Then for all  $n \in \text{ℕ}$, there is some $s \in S$ such that $a_n \leq \left| a_{n+s} - s \right|$, 
-and there is some $s^\star \in S$ such that $a_n = \left| a_{n+s^\star} - s^\star \right|$.  
-In the following discussion we use the notion $s^\star$ to represent an element in $S$ such that 
-$a_n = \left| a_{n+s^\star} - s^\star \right|$ for all $n \in \text{ℕ}$.
 
-## <span id="trivial">Trivial case ($s^\star = 1$)
-
-It is apparent that $S$ may be $\lbrace 1 \rbrace$. 
-Suppose $S = \lbrace 1 \rbrace$ and $s^\star = 1$. 
-Then for all $n \in \text{ℕ}$ we have $a_n = \left| a_{n+1} - 1 \right|$, or
-
-$$a_n = a_{n+1} - 1 \text{  or  } a_n = 1 - a_{n+1}.$$
-
-Since $a_{n+1} \geq 1$ and $a_{n} \geq 1$, we have $a_{n+1} = a_n + 1$ for all $n \in \text{ℕ}$.
-
-## Case where $s^\star > 1$
 
 Suppose $S \neq \emptyset$ and $S \neq \lbrace 1 \rbrace$ and $s^\star > 1$.
 
