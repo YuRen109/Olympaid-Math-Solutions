@@ -15,7 +15,7 @@ Suppose that such a sequence $a_1, a_2, ...$ in the problem statement exist.
 Then for all  $n \in \text{ℕ}$, there is some $s \in S$ such that $a_n \leq \left| a_{n+s} - s \right|$, 
 and there is some $s^\star \in S$ such that $a_n = \left| a_{n+s^\star} - s^\star \right|$.  
 In the following discussion we use the notion $s^\star$ to represent an element in $S$ such that 
-$a_n = \left| a_{n+s^\star} - s^\star \right|$.
+$a_n = \left| a_{n+s^\star} - s^\star \right|$ for all $n \in \text{ℕ}$.
 
 ## Trivial case ($s^\star = 1$)
 
@@ -47,12 +47,14 @@ Let
 
 $$
 \begin{aligned}
-\text{𝒜}&= \lbrace n \in \text{ℕ} \mid a_{n+s} \geq s + a_n \rbrace, \\
-\text{ℬ}&= \lbrace n \in \text{ℕ} \mid a_{n+s} \leq s - a_n \rbrace, \\
-\text{𝒜}^\star&= \lbrace n \in \text{ℕ} \mid a_{n+s^\star} = s^\star + a_n \rbrace , \\
-\text{ℬ}^\star&= \lbrace n \in \text{ℕ} \mid a_{n+ss^\star} = s^\star - a_n \rbrace .
+\text{𝒜} &= \lbrace n \in \text{ℕ} \mid a_{n+s} \geq s + a_n \rbrace, \\
+\text{ℬ} &= \lbrace n \in \text{ℕ} \mid a_{n+s} \leq s - a_n \rbrace, \\
+\text{𝒜}^\star &= \lbrace n \in \text{ℕ} \mid a_{n+s^\star} = s^\star + a_n \rbrace , \\
+\text{ℬ}^\star &= \lbrace n \in \text{ℕ} \mid a_{n+ss^\star} = s^\star - a_n \rbrace .
 \end{aligned}
 $$
 
+Then for all $n \in \text{ℕ}$ we have
 
+$$ n \in \text{𝒜} \iff n \notin \text{ℬ} \text{  and  } n \in \text{𝒜}^\star \iff n \notin \text{ℬ}^\star. $$
 
