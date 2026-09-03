@@ -92,14 +92,16 @@ $x_0 s^\star - y_0 s = 1$, or
 
 $$ k + (l-k) x_0 s^\star = l + (l-k) y_0 s.$$
 
-We have that for any $t \in \text{ℕ}$, $k + x_t s^\star = l + y_t s$, where
+We have that $k + x_t s^\star = l + y_t s$, where
 
 $$
 \begin{aligned}
 &x_t = (l-k) x_0 s^\star + t s, \\
-&y_t = (l-k) y_0 s + t s^\star.
+&y_t = (l-k) y_0 s + t s^\star,
 \end{aligned}
 $$
+
+for any $t \in \text{ℕ}$.
 
 For each $l \in \lbrace 1, 2, ..., s-1 \rbrace$ we pick a large enough $t_l \in \text{ℕ}$ such that $x_{t_l} s^\star > s$ and $y_{t_l} \geq 1$. 
 Then 
@@ -108,7 +110,10 @@ $$ a_{l+y_{t_l} s} = a_{k+x_{t_l} s^*} > x_{t_l} s^\star > s,$$
 
 implying that $l + (y_{t_l} - 1) s \in \text{𝒜}$.
 
-By [Claim 2](#claim2) we have $n \in \text{𝒜}$ for all $n \geq \max_{l} (l + (y_{t_l} - 1) s)$.
+By [Claim 2](#claim2) we have $n \in \text{𝒜}$ for all $n \geq \max_{l} (l + (y_{t_l} - 1) s)$.  
+Next, we prove that $n \in \text{𝒜}^\star$ for all sufficiently large $n \in \text{ℕ}$.  
+Since we have proven that $n \in \text{𝒜}$ for all sufficiently large $n \in \text{ℕ}$, we can pick some $p \in \text{𝒜}$ and, 
+after a similar argument, we can complete this part.  
 
 $\square$
 
