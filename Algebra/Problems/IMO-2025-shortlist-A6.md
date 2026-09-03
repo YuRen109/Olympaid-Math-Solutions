@@ -12,12 +12,14 @@ We say that an infinite sequence $a_1, a_2, ...$ is *periodic* if there exists a
 # Solution
 
 Let $\text{𝕊}$ denote the set of all subsets $S$ of $\text{ℕ}$ such that no positive integer greater than 1 divides all elements of $S$.  
-Suppose that there is some $S \in \text{𝕊}$ such that such a sequence $a_1, a_2, ...$, which is dependent of $S$, in the problem statement exist.  
+Suppose that there is some $S \in \text{𝕊}$ such that such a sequence $a_1, a_2, ...$, which may be dependent of $S$, in the problem statement exist.  
 In this case, let $S^\star \subseteq S$ denote the subset such that for all $s^\star \in S^\star$ we have $a_n = \left| a_{n+s^\star} - s^\star \right|$. 
 the condition 2 in the problem statement implies that $S^\star$ is non-empty, and therefore, $S$ is non-empty.  
 
+For any finite subset $T$ of $\text{ℕ}$, let $\gcd(T)$ denote the greatest common divisor of all elements in $T$.
+
 ### <span id="claim1"></span>Claim 1 (property of $S$)
-Let $S \in \text{𝕊}$. Then there exists 
+For any $S \in \text{𝕊}$ there exists a finite subset $S^\prime$ of $S$ such that $\gcd(S^\prime) = 1$.
 
 
 *Proof.*  
