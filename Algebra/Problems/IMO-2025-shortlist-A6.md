@@ -27,7 +27,7 @@ For the case where $S$ is finite, we have that $\text{gcd}(S) = 1$ because, othe
 $\text{gcd}(S)$ would be a positive integer that divides all elements of $S$ and is also greater than 1.  
 In this case we may find $S^\prime = S$.  
 
-For the case where $S$ is infinite, suppose that every finite subset $S^\prime$ of $S$ satisfies that $\text{gcd}(S^\prime) > 1$. 
+For the case where $S$ is infinite, suppose that every finite subset $S^\prime$ of $S$ satisfies that $\text{gcd}(S^\prime) > 1$.  
 Construct an infinite sequence $s_1, s_2, ...$ of $S$ with $s_i \neq s_j$ for every pair of integers $i$ and $j$ with $i \neq j$. 
 For any $n \in \text{ℕ}$ we denote $S_n = \lbrace s_1, s_2, ..., s_n \rbrace$. 
 Then we have that $\text{gcd}(S_n) > 1$ for all $n \in \text{ℕ}$ and
