@@ -17,7 +17,7 @@ and there is some $s^\star \in S$ such that $a_n = \left| a_{n+s^\star} - s^\sta
 
 ## Trivial case ($s^\star = 1$)
 
-It is apparent that $S$ may be $\left{ 1 \right}$. 
+It is apparent that $S$ may be $\left\{ 1 \right\}$. 
 Therefore, 1 may be an element of $S$.  
 Suppose $s^\star = 1$. Then for all $n \in \text{ℕ}$ we have $a_n = \left| a_{n+1} - 1 \right|$, or
 
