@@ -77,7 +77,7 @@ $\square$
 For all sufficiently large $n \in \text{ℕ}$ we have $n \in \text{𝒜}$ and $n \in \text{𝒜}^\star$.
 
 *Proof.*  
-First, we prove that $n \in \text{𝒜}$ for all sufficiently large $n \in \text{ℕ}$. (So har we haven't determine what are sufficiently large $n$)  
+First, we will prove that $n \in \text{𝒜}$ for all sufficiently large $n \in \text{ℕ}$. (So har we haven't determine what are sufficiently large $n$)  
 We have that there is some $k \in \text{𝒜}^\star$ because, otherwise, we get $a_n$ with $a_{n+s^\star} = s^\star - a_n$ for all $n \in \text{ℕ}$, 
 which is periodic.  
 By [Claim 2](#claim2) we have $k + x s^\star \in \text{𝒜}^\star$, and moreover,  
@@ -111,7 +111,7 @@ $$ a_{l+y_{t_l} s} = a_{k+x_{t_l} s^*} > x_{t_l} s^\star > s,$$
 implying that $l + (y_{t_l} - 1) s \in \text{𝒜}$.
 
 By [Claim 2](#claim2) we have $n \in \text{𝒜}$ for all $n \geq \max_{l} (l + (y_{t_l} - 1) s)$.  
-Next, we prove that $n \in \text{𝒜}^\star$ for all sufficiently large $n \in \text{ℕ}$.  
+Next, we will prove that $n \in \text{𝒜}^\star$ for all sufficiently large $n \in \text{ℕ}$.  
 Since we have proven that $n \in \text{𝒜}$ for all sufficiently large $n \in \text{ℕ}$, we can pick some $p \in \text{𝒜}$ and, 
 after a similar argument, we can complete this part.  
 
