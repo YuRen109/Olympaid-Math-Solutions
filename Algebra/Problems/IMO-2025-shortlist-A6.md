@@ -44,33 +44,18 @@ We may always find a finite subset $S^\prime$ of $S$ such that $\text{gcd}\left(
 2. find an element $s^\star \in S^\star$ since $S^\star$ is non-empty
 3. let $S^{\prime} = \lbrace s^\star \rbrace \cup S^{\prime\prime}$
 
-
-
-
-
-
-
-
-Suppose $S \neq \emptyset$ and $S \neq \lbrace 1 \rbrace$ and $s^\star > 1$.
-
-
-
-By [Claim 1](#claim1) we may pick $s \in S$ such that $\text{gcd}(s^\star,s) = 1$. 
-Note that $s$ may be 1.  
-Let  
+For any $s \in S$ and for any $s^\star \in S^\star$ we denote  
 
 $$
 \begin{aligned}
-\text{𝒜} &= \lbrace n \in \text{ℕ} \mid a_{n+s} \geq s + a_n \rbrace, \\
-\text{ℬ} &= \lbrace n \in \text{ℕ} \mid a_{n+s} \leq s - a_n \rbrace, \\
-\text{𝒜}^\star &= \lbrace n \in \text{ℕ} \mid a_{n+s^\star} = s^\star + a_n \rbrace , \\
-\text{ℬ}^\star &= \lbrace n \in \text{ℕ} \mid a_{n+s^\star} = s^\star - a_n \rbrace .
+\text{𝒜}_s &= \lbrace n \in \text{ℕ} \mid a_{n+s} \geq s + a_n \rbrace, \\
+\text{ℬ}_s &= \lbrace n \in \text{ℕ} \mid a_{n+s} \leq s - a_n \rbrace = \text{ℕ} \backslash \text{𝒜}_s, \\
+\text{𝒜}^\star_{s^\star} &= \lbrace n \in \text{ℕ} \mid a_{n+s^\star} = s^\star + a_n \rbrace , \\
+\text{ℬ}^\star_{s^\star} &= \lbrace n \in \text{ℕ} \mid a_{n+s^\star} = s^\star - a_n \rbrace = \text{ℕ} \backslash \text{𝒜}^\star_{s^\star}.
 \end{aligned}
 $$
 
-Then for all $n \in \text{ℕ}$ we have
 
-$$ n \in \text{𝒜} \iff n \notin \text{ℬ} \text{  and  } n \in \text{𝒜}^\star \iff n \notin \text{ℬ}^\star. $$
 
 ### <span id="claim2"></span>Claim 2 (properties of $\text{𝒜}$ and $\text{𝒜}^\star$)
 Let $k \in \text{ℕ}$.  Then  
