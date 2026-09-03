@@ -148,7 +148,7 @@ For all $n \in \text{ℕ}$ we have $a_{n+1} = a_n + 1$.
 Suppose that $\text{ℬ} \cup \text{ℬ}^\star = \text{ℕ} \backslash (\text{𝒜} \cap \text{𝒜}^\star)$ is non-empty. 
 By [Claim 3](#claim3) we know $\text{ℬ} \cup \text{ℬ}^\star$ has a largest number, denoted by $m$.  
 Then $m \in \text{ℬ}$ or $m \in \text{ℬ}^\star$ and $m + 1 \in \text{𝒜} \cap \text{𝒜}^\star$.  
-Suppose $m \in \text{ℬ}$. Then $m + 1 \in \text{𝒜}$. We have $a_{m + s^} \leq s - a_m$ and $a_{m + s} = a_{m+1} + s-1$, 
+Suppose $m \in \text{ℬ}$. Then $m + 1 \in \text{𝒜}$. We have $a_{m + s} \leq s - a_m$ and $a_{m + s} = a_{m+1} + s-1$, 
 implying that $a_{m+1} + a_{m} \leq 1$, a contradiction. Hence,  $m \notin \text{ℬ}$.  
 In a similar way we have $m \notin \text{ℬ}^\star$.  
 After an argument process similar to [Claim 4](#claim4) we complete the proof.  
