@@ -11,13 +11,13 @@ We say that an infinite sequence $a_1, a_2, ...$ is *periodic* if there exists a
 
 # Solution
 
-Suppose that such sequences $a_1, a_2, ...$ in the problem statement exist. 
+Suppose that such a sequence $a_1, a_2, ...$ in the problem statement exist. 
 Then there there is some $s \in S$ such that $a_n \leq \left| a_{n+s} - s \right|$, 
 and there is some $s^\star \in S$ such that $a_n = \left| a_{n+s^\star} - s^\star \right|$.
 
 ## Trivial case ($s^\star = 1$)
 
-It is apparent that $S$ may be {1}. 
+It is apparent that $S$ may be $\left{ 1 \right}$. 
 Therefore, 1 may be an element of $S$.  
 Suppose $s^\star = 1$. Then for all $n \in \text{ℕ}$ we have $a_n = \left| a_{n+1} - 1 \right|$, or
 
@@ -30,8 +30,13 @@ Since $a_{n+1} \geq 1$ and $a_{n} \geq 1$, we have $a_{n+1} = a_n + 1$ for all $
 Suppose $s^\star > 1$.
 
 ### Claim 1 (property of $S$)
+
 Let $s^\star \in S$ with $s^\star > 1$. 
 Then there is some $s \in S$ such that $\text{gcd}(s^\star,s) = 1$.
+
+*Proof.*  
+Suppose there is no $s \in S$ such that $\text{gcd}(s^\star,s) = 1$. 
+Then all the elements in $S$ have a common divisor $d > 1$, a contradiction to the property of $S$.  
 
 
 
