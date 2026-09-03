@@ -81,11 +81,13 @@ First, we prove that $n \in \text{𝒜}$ for all sufficiently large $n \in \text
 We have that there is some $k \in \text{𝒜}^\star$ because, otherwise, we get $a_n$ with $a_{n+s^\star} = s^\star - a_n$ for all $n \in \text{ℕ}$, 
 which is periodic.  
 By [Claim 2](#claim2) we have $k + x s^\star \in \text{𝒜}^\star$ for all $x \in \text{ℕ}$. Moreover,  
-$$ a_{k+xs^\star} = a_k + x s^\star > x s^\star. $$  
+
+$$ a_{k+xs^\star} = a_k + x s^\star > x s^\star. $$
 
 On the other hand, let $l \in \lbrace 1, 2, ..., s-1 \rbrace$. 
 Since $\text{gcd}(s,s^\star) = 1$, by [Bézout's identity](https://en.wikipedia.org/wiki/B%C3%A9zout%27s_identity) there are some $x_0 \in \text{ℤ}$ and $y_0 \in \text{ℤ}$ such that 
-$$ x_0 s^\star - y_0 s = 1.$$  
+
+$$ x_0 s^\star - y_0 s = 1.$$
 
 
 $\square$
