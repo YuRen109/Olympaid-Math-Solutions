@@ -88,7 +88,7 @@ for all $x \in \text{ℕ}$.
 
 On the other hand, let $l \in \lbrace 1, 2, ..., s-1 \rbrace$.  
 Since $\text{gcd}(s,s^\star) = 1$, by [Bézout's identity](https://en.wikipedia.org/wiki/B%C3%A9zout%27s_identity) there are some $x_0 \in \text{ℤ}$ and $y_0 \in \text{ℤ}$ such that 
-$ x_0 s^\star - y_0 s = 1 $, or
+$x_0 s^\star - y_0 s = 1$, or
 
 $$ k + (l-k) x_0 s^\star = l + (l-k) y_0 s.$$
 
