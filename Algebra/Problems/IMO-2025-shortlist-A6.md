@@ -12,7 +12,7 @@ We say that an infinite sequence $a_1, a_2, ...$ is *periodic* if there exists a
 # Solution
 
 Suppose that such a sequence $a_1, a_2, ...$ in the problem statement exist. 
-Then there there is some $s \in S$ such that $a_n \leq \left| a_{n+s} - s \right|$, 
+Then for all  $n \in \text{ℕ}$, there is some $s \in S$ such that $a_n \leq \left| a_{n+s} - s \right|$, 
 and there is some $s^\star \in S$ such that $a_n = \left| a_{n+s^\star} - s^\star \right|$.
 
 ## Trivial case ($s^\star = 1$)
@@ -39,12 +39,14 @@ Suppose there is no $s \in S$ such that $\text{gcd}(s^\star,s) = 1$.
 Then all the elements in $S$ have a common divisor $d > 1$, a contradiction to the property of $S$.  
 
 
-By Claim 1 we may pick $s \in S$ such that $\text{gcd}(s^\star,s) = 1$. 
+By [Claim 1](#Claim 1) we may pick $s \in S$ such that $\text{gcd}(s^\star,s) = 1$. 
 Note that $s$ may be 1.  
 Let  
 $$
-𝒜 = \lbrace n \in \text{ℕ} \mid \rbrace
-ℬ = \lbrace n \in \text{ℕ} \mid \rbrace
+\begin{aligned}
+𝒜 &= \lbrace n \in \text{ℕ} \mid \rbrace \\
+ℬ &= \lbrace n \in \text{ℕ} \mid \rbrace \\
+\end{aligned}
 $$
 
 
