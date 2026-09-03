@@ -22,7 +22,7 @@ For the case where $S$ is finite, we have that $\text{gcd}(S) = 1$ because, othe
 $\text{gcd}(S)$ would be a positive integer that divides all elements of $S$ and is also greater than 1.  
 In this case we may find $S^\prime = S$.  
 
-For the case where $S$ is infinite, suppose that every finite subset $S^\prime$ of $S$ satisfies that $\text{gcd}(S^\prime) > 1$.  
+For the case where $S$ is infinite, suppose that every finite subset $S^\prime$ of $S$ satisfies that $\text{gcd}\left(S^\prime\right) > 1$.  
 Construct an infinite sequence $s_1, s_2, ...$ of elements of $S$ with $s_i \neq s_j$ for every pair of integers $i$ and $j$ with $i \neq j$. 
 For any $n \in \text{ℕ}$ we denote $S_n = \lbrace s_1, s_2, ..., s_n \rbrace$. 
 Then we have that $\text{gcd}(S_n) > 1$ for all $n \in \text{ℕ}$ and
@@ -39,7 +39,7 @@ Suppose that there is some $S \in \text{𝕊}$ such that such a sequence $a_1, a
 In this case, let $S^\star \subseteq S$ denote the subset such that for each $s^\star \in S^\star$ and for all $n \in \text{ℕ}$ 
 we have $a_n = \left| a_{n+s^\star} - s^\star \right|$.  
 The condition 2 in the problem statement implies that $S^\star$ is non-empty, and therefore, $S$ is non-empty.  
-We may always find a finite subset $S^\prime$ of $S$ such that $\text{gcd}(S^\prime) = 1$ and $S^\prime \cap S\star \neq \emptyset$ by the following process: 
+We may always find a finite subset $S^\prime$ of $S$ such that $\text{gcd}(S^\prime) = 1$ and $S^\prime \cap S^\star \neq \emptyset$ by the following process: 
 1. find a finite subset $S^{\prime\prime}$ of $S$ such that $\text{gcd}(S^{\prime\prime}) = 1$ by [Claim 1](#claim1)
 2. find an element $s^\star \in S^\star$ since $S^\star$ is non-empty
 3. let $S^{\prime} = \lbrace s^\star \rbrace \cup S^{\prime\prime}$
