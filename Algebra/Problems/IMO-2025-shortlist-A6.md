@@ -17,7 +17,7 @@ and there is some $s^\star \in S$ such that $a_n = \left| a_{n+s^\star} - s^\sta
 
 ## Trivial case ($s^\star = 1$)
 
-It is apparent that $S$ may be $\left\{ 1 \right\}$. 
+It is apparent that $S$ may be $\{ 1 \}$. 
 Therefore, 1 may be an element of $S$.  
 Suppose $s^\star = 1$. Then for all $n \in \text{ℕ}$ we have $a_n = \left| a_{n+1} - 1 \right|$, or
 
@@ -39,7 +39,7 @@ Suppose there is no $s \in S$ such that $\text{gcd}(s^\star,s) = 1$.
 Then all the elements in $S$ have a common divisor $d > 1$, a contradiction to the property of $S$.  
 
 
-Pick $s \in S$ such that $\text{gcd}(s^\star,s) = 1$. 
+By Claim 1 we may pick $s \in S$ such that $\text{gcd}(s^\star,s) = 1$. 
 Note that $s$ may be 1.  
 Let  
 $$
