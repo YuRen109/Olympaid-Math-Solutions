@@ -47,10 +47,10 @@ Let
 
 $$
 \begin{aligned}
-\text{𝒜} &= \lbrace n \in \text{ℕ} \mid a_{n+s} \geq s + a_n \rbrace, \\
-\text{ℬ} &= \lbrace n \in \text{ℕ} \mid a_{n+s} \leq s - a_n \rbrace, \\
-\text{𝒜}^\star &= \lbrace n \in \text{ℕ} \mid a_{n+s^\star} = s^\star + a_n \rbrace , \\
-\text{ℬ}^\star &= \lbrace n \in \text{ℕ} \mid a_{n+s^\star} = s^\star - a_n \rbrace .
+&\text{𝒜} = \lbrace n \in \text{ℕ} \mid a_{n+s} \geq s + a_n \rbrace, \\
+&\text{ℬ} = \lbrace n \in \text{ℕ} \mid a_{n+s} \leq s - a_n \rbrace, \\
+&\text{𝒜}^\star = \lbrace n \in \text{ℕ} \mid a_{n+s^\star} = s^\star + a_n \rbrace , \\
+&\text{ℬ}^\star = \lbrace n \in \text{ℕ} \mid a_{n+s^\star} = s^\star - a_n \rbrace .
 \end{aligned}
 $$
 
@@ -96,10 +96,19 @@ We have that for any $t \in \text{ℕ}$, $k + x s^\star = l + y s$, where
 
 $$
 \begin{aligned}
-x &= (l-k) x_0 s^\star + t s, \\
-y &= (l-k) y_0 s + t s^\star.
+&x = (l-k) x_0 s^\star + t s, \\
+&y = (l-k) y_0 s + t s^\star.
 \end{aligned}
 $$
+
+For each $l \in \lbrace 1, 2, ..., s-1 \rbrace$ we pick a large enough $t_l \in \text{ℕ}$ such that $x s^\star > s $ and $y \geq 1$. 
+Then 
+
+$$ a_{l+ys} = a_{k+xs^*} > x s^\star > s,$$
+
+implying that $l + (y-1) s \in \text{𝒜}$.
+
+By [Claim 2] we have $n \in \text{𝒜}$ for all $n \geq \text{max}_l (l + (y-1) s)$
 
 $\square$
 
