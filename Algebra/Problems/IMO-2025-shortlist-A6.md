@@ -21,8 +21,7 @@ For any finite subset $T$ of $\text{ℕ}$, let $\text{gcd}(T)$ denote the greate
 
 ### <span id="claim1"></span>Claim 1 (property of $S$)
 1.1    For any $S \in \text{𝕊}$ there exists a finite subset $S^\prime$ of $S$ such that $\text{gcd}(S^\prime) = 1$.  
-1.2    For any $S \in \text{𝕊}$ there exists a finite subset $S^\prime$ of $S$ such that $\text{gcd}(S^\prime) = 1$ 
-and $S^\prime \cap S^\star \neq \emptyset$. 
+1.2    For any $S \in \text{𝕊}$ there exists a finite subset $S^\prime$ of $S$ such that $\text{gcd}(S^\prime) = 1$ and $S^\prime \cap S^\star \neq \emptyset$. 
 
 
 *Proof.*  
