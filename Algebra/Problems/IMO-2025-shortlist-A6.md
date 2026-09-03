@@ -17,7 +17,7 @@ In this case, let $S^\star \subseteq S$ denote the subset such that for each $s^
 we have $a_n = \left| a_{n+s^\star} - s^\star \right|$. 
 the condition 2 in the problem statement implies that $S^\star$ is non-empty, and therefore, $S$ is non-empty.  
 
-For any finite subset $T$ of $\text{ℕ}$, let $\text{gcd}(T)$ denote the greatest common divisor of all elements in $T$.
+For any finite subset $T$ of $\text{ℕ}$, let $\text{gcd}(T)$ denote the greatest common divisor of all elements of $T$.
 
 ### <span id="claim1"></span>Claim 1 (property of $S$)
 For any $S \in \text{𝕊}$ there exists a finite subset $S^\prime$ of $S$ such that $\text{gcd}(S^\prime) = 1$.  
@@ -32,9 +32,10 @@ Construct an infinite sequence $s_1, s_2, ...$ of $S$ with $s_i \neq s_j$ for ev
 For any $n \in \text{ℕ}$ we denote $S_n = \lbrace s_1, s_2, ..., s_n \rbrace$. 
 Then we have that $\text{gcd}(S_n) > 1$ for all $n \in \text{ℕ}$ and
 
-$$ s_1 = \text{gcd}(S_1) \geq \text{gcd}(S_2) \geq \text{gcd}(S_3) \geq ... .$$
+$$ s_1 = \text{gcd}(S_1) \geq \text{gcd}(S_2) \geq \text{gcd}(S_3) \geq ... ,$$
 
-
+which implies that $\text{gcd}(S_n) = d$ for some $d \in \text{ℕ}$ for all sufficiently large $n$.  
+However, $d > 1$ and $d$ divides all elements of $S$, a contradiction.  
 
 $\square$
 
