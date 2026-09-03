@@ -23,7 +23,7 @@ It is apparent that $S$ may be $\lbrace 1 \rbrace$.
 Suppose $S = \lbrace 1 \rbrace$ and $s^\star = 1$. 
 Then for all $n \in \text{ℕ}$ we have $a_n = \left| a_{n+1} - 1 \right|$, or
 
-$$a_n = a_{n+1} - 1 \text{ or } a_n = 1 - a_{n+1}$$
+$$a_n = a_{n+1} - 1 \text{  or  } a_n = 1 - a_{n+1}.$$
 
 Since $a_{n+1} \geq 1$ and $a_{n} \geq 1$, we have $a_{n+1} = a_n + 1$ for all $n \in \text{ℕ}$.
 
@@ -38,8 +38,8 @@ Then there is some $s \in S$ such that $\text{gcd}(s^\star,s) = 1$.
 
 *Proof.*  
 Suppose there is no $s \in S$ such that $\text{gcd}(s^\star,s) = 1$. 
-Then all the elements in $S$ have a common divisor $d > 1$, a contradiction to the property of $S$. <span style="float: right;">$\square$</span>
-
+Then all the elements in $S$ have a common divisor $d > 1$, a contradiction to the property of $S$.  
+<span style="float: right;">$\square$</span>
 
 By [Claim 1](#claim-1-property-of-s) we may pick $s \in S$ such that $\text{gcd}(s^\star,s) = 1$. 
 Note that $s$ may be 1.  
@@ -47,8 +47,10 @@ Let
 
 $$
 \begin{aligned}
-\text{𝒜} &= \lbrace n \in \text{ℕ} \mid \rbrace \\
-\text{ℬ} &= \lbrace n \in \text{ℕ} \mid \rbrace
+\text{𝒜} &= \lbrace n \in \text{ℕ} \mid a_{n+s} \geq s + a_n \rbrace, \\
+\text{ℬ} &= \lbrace n \in \text{ℕ} \mid a_{n+s} \leq s - a_n \rbrace, \\
+\text{𝒜}^\star &= \lbrace n \in \text{ℕ} \mid a_{n+s^\star} = s^\star + a_n \rbrace , \\
+\text{ℬ}^\star &= \lbrace n \in \text{ℕ} \mid a_{n+ss^\star} = s^\star - a_n \rbrace .
 \end{aligned}
 $$
 
