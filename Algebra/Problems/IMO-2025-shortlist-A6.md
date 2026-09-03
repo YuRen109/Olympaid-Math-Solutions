@@ -43,8 +43,8 @@ By Claim 1 we may pick $s \in S$ such that $\text{gcd}(s^\star,s) = 1$.
 Note that $s$ may be 1.  
 Let  
 $$
-A = \left\{ n \in \text{ℕ} |
-
+𝒜 = \lbrace n \in \text{ℕ} \mid \rbrace
+ℬ = \lbrace n \in \text{ℕ} \mid \rbrace
 $$
 
 
