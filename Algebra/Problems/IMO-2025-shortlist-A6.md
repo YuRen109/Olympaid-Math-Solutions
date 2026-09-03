@@ -17,7 +17,7 @@ and there is some $s^\star \in S$ such that $a_n = \left| a_{n+s^\star} - s^\sta
 In the following discussion we use the notion $s^\star$ to represent an element in $S$ such that 
 $a_n = \left| a_{n+s^\star} - s^\star \right|$ for all $n \in \text{ℕ}$.
 
-## Trivial case ($s^\star = 1$)
+## <span id="trivial">Trivial case ($s^\star = 1$)
 
 It is apparent that $S$ may be $\lbrace 1 \rbrace$. 
 Suppose $S = \lbrace 1 \rbrace$ and $s^\star = 1$. 
@@ -141,9 +141,22 @@ Similarly, for the case where $x s^\star > 0 > y s$ we can also conclude that $a
 $\square$
 
 
-### Claim 5
+### <span id="claim5">Claim 5
 For all $n \in \text{ℕ}$ we have $a_{n+1} = a_n + 1$.
 
 *Proof.*  
-
+Suppose that $\text{ℬ} \cup \text{ℬ}^\star = \text{ℕ} \backslash (\text{𝒜} \cap \text{𝒜}^\star)$ is non-empty. 
+By [Claim 3](#claim3) we know $\text{ℬ} \cup \text{ℬ}^\star$ has a largest number, denoted by $m$.  
+Then $m \in \text{ℬ}$ or $m \in \text{ℬ}^\star$.  
+Suppose $m \in \text{ℬ}$. Then $m + s^\star \in \text{𝒜}$. We have $ a_{m + s^\star} \leq s - a_m < s$, 
+a contradiction. Hence,  $m \notin \text{ℬ}$.  
+In a similar way we have $m \notin \text{ℬ}^\star$.  
+After an argument process similar to [Claim 4](#claim4) we complete the proof.
 $\square$
+
+Concluding [the trivial case](#trivial) and [Claim 5](#claim5) we get the only solution is that 
+for all $n \in \text{ℕ}$, $a_{n+1} = a_n + 1$ with an initial condition $a_1 \in \text{ℕ}$, or 
+
+$$a_{n} = n + c$$
+
+for some $c \in \text{ℕ} \cup \lbrace 0 \rbrace$.
