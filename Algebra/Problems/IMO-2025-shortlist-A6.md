@@ -42,6 +42,16 @@ Then all the elements in $S$ have a common divisor $d > 1$, a contradiction to t
 By [Claim 1](#Claim 1 (property of $S$)) we may pick $s \in S$ such that $\text{gcd}(s^\star,s) = 1$. 
 Note that $s$ may be 1.  
 Let  
+
+$$
+\begin{aligned}
+1 &= 1 \\
+2 &= 2
+\end{aligned}
+$$
+
+
+
 $$
 \begin{aligned}
 \text{𝒜} &= \lbrace n \in \text{ℕ} \mid \rbrace \\
