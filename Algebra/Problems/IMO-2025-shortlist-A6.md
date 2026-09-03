@@ -151,7 +151,7 @@ Then $m \in \text{ℬ}$ or $m \in \text{ℬ}^\star$.
 Suppose $m \in \text{ℬ}$. Then $m + s^\star \in \text{𝒜}$. We have $a_{m + s^\star} \leq s - a_m < s$, 
 a contradiction. Hence,  $m \notin \text{ℬ}$.  
 In a similar way we have $m \notin \text{ℬ}^\star$.  
-After an argument process similar to [Claim 4](#claim4) we complete the proof.
+After an argument process similar to [Claim 4](#claim4) we complete the proof.  
 $\square$
 
 Concluding [the trivial case](#trivial) and [Claim 5](#claim5) we get the only solution is that 
