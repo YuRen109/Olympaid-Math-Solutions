@@ -13,24 +13,27 @@ We say that an infinite sequence $a_1, a_2, ...$ is *periodic* if there exists a
 
 Let $\text{𝕊}$ denote the set of all subsets $S$ of $\text{ℕ}$ such that no positive integer greater than 1 divides all elements of $S$.  
 Suppose that there is some $S \in \text{𝕊}$ such that such a sequence $a_1, a_2, ...$, which may be dependent of $S$, in the problem statement exist.  
-In this case, let $S^\star \subseteq S$ denote the subset such that for all $s^\star \in S^\star$ we have $a_n = \left| a_{n+s^\star} - s^\star \right|$. 
+In this case, let $S^\star \subseteq S$ denote the subset such that for each $s^\star \in S^\star$ and for all $n \in \text{ℕ}$ 
+we have $a_n = \left| a_{n+s^\star} - s^\star \right|$. 
 the condition 2 in the problem statement implies that $S^\star$ is non-empty, and therefore, $S$ is non-empty.  
 
 For any finite subset $T$ of $\text{ℕ}$, let $\text{gcd}(T)$ denote the greatest common divisor of all elements in $T$.
 
 ### <span id="claim1"></span>Claim 1 (property of $S$)
-For any $S \in \text{𝕊}$ there exists a finite subset $S^\prime$ of $S$ such that $\text{gcd}(S^\prime) = 1$.
-
+For any $S \in \text{𝕊}$ there exists a finite subset $S^\prime$ of $S$ such that $\text{gcd}(S^\prime) = 1$.  
 
 *Proof.*  
 For the case where $S$ is finite, we have that $\text{gcd}(S) = 1$ because, otherwise, 
-$\text{gcd}(S)$ would be a positive integer that divides all elements of $S$ and is also greater than 1.
+$\text{gcd}(S)$ would be a positive integer that divides all elements of $S$ and is also greater than 1.  
+In this case we may find $S^\prime = S$.  
 
 For the case where $S$ is infinite, suppose that every finite subset $S^\prime$ of $S$ satisfies that $\text{gcd}(S^\prime) > 1$. 
 Construct an infinite sequence $s_1, s_2, ...$ of $S$ with $s_i \neq s_j$ for every pair of integers $i$ and $j$ with $i \neq j$. 
 For any $n \in \text{ℕ}$ we denote $S_n = \lbrace s_1, s_2, ..., s_n \rbrace$. 
-Then we have that 
-$\text{gcd}(S_1) \neq $
+Then we have that $\text{gcd}(S_n) > 1$ for all $n \in \text{ℕ}$ and
+
+$$ s_1 = \text{gcd}(S_1) \geq \text{gcd}(S_2) \geq \text{gcd}(S_3) \geq ... .$$
+
 
 
 $\square$
