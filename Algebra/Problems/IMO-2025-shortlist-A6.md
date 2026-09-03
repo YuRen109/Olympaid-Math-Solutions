@@ -92,23 +92,23 @@ $x_0 s^\star - y_0 s = 1$, or
 
 $$ k + (l-k) x_0 s^\star = l + (l-k) y_0 s.$$
 
-We have that for any $t \in \text{ℕ}$, $k + x s^\star = l + y s$, where
+We have that for any $t \in \text{ℕ}$, $k + x_t s^\star = l + y_t s$, where
 
 $$
 \begin{aligned}
-&x = (l-k) x_0 s^\star + t s, \\
-&y = (l-k) y_0 s + t s^\star.
+&x_t = (l-k) x_0 s^\star + t s, \\
+&y_t = (l-k) y_0 s + t s^\star.
 \end{aligned}
 $$
 
-For each $l \in \lbrace 1, 2, ..., s-1 \rbrace$ we pick a large enough $t_l \in \text{ℕ}$ such that $x s^\star > s $ and $y \geq 1$. 
+For each $l \in \lbrace 1, 2, ..., s-1 \rbrace$ we pick a large enough $t_l \in \text{ℕ}$ such that $x_{t_l} s^\star > s $ and $y_{t_l} \geq 1$. 
 Then 
 
-$$ a_{l+ys} = a_{k+xs^*} > x s^\star > s,$$
+$$ a_{l+y_{t_l} s} = a_{k+x_{t_l} s^*} > x s^\star > s,$$
 
-implying that $l + (y-1) s \in \text{𝒜}$.
+implying that $l + (y_{t_l} - 1) s \in \text{𝒜}$.
 
-By [Claim 2] we have $n \in \text{𝒜}$ for all $n \geq \text{max}_l (l + (y-1) s)$
+By [Claim 2](#claim2) we have $n \in \text{𝒜}$ for all $n \geq \text{max}_l (l + (y{t_l} - 1) s)$
 
 $\square$
 
