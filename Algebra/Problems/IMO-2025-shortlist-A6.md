@@ -50,7 +50,7 @@ $$
 \text{𝒜} &= \lbrace n \in \text{ℕ} \mid a_{n+s} \geq s + a_n \rbrace, \\
 \text{ℬ} &= \lbrace n \in \text{ℕ} \mid a_{n+s} \leq s - a_n \rbrace, \\
 \text{𝒜}^\star &= \lbrace n \in \text{ℕ} \mid a_{n+s^\star} = s^\star + a_n \rbrace , \\
-\text{ℬ}^\star &= \lbrace n \in \text{ℕ} \mid a_{n+ss^\star} = s^\star - a_n \rbrace .
+\text{ℬ}^\star &= \lbrace n \in \text{ℕ} \mid a_{n+s^\star} = s^\star - a_n \rbrace .
 \end{aligned}
 $$
 
@@ -59,10 +59,16 @@ Then for all $n \in \text{ℕ}$ we have
 $$ n \in \text{𝒜} \iff n \notin \text{ℬ} \text{  and  } n \in \text{𝒜}^\star \iff n \notin \text{ℬ}^\star. $$
 
 ### Claim 2 (properties of $\text{𝒜}$ and $\text{𝒜}^\star$)
-If $k \in \text{𝒜}$, then $k + ns \in \text{𝒜}$ for all $n \in \text{ℕ}$.  
-If $k \in \text{𝒜}\star$, then $k + ns \in \text{𝒜}\star$ for all $n \in \text{ℕ}$.  
+Let $k \in \text{ℕ}$.  Then  
+  2.1 if $k \in \text{𝒜}$, then $k + ns \in \text{𝒜}$ for all $n \in \text{ℕ}$.  
+  2.2 if $k \in \text{𝒜}^\star$, then $k + ns \in \text{𝒜}\star$ for all $n \in \text{ℕ}$.  
 
 *Proof.*  
-Suppose there is no $s \in S$ such that $\text{gcd}(s^\star,s) = 1$. 
-Then all the elements in $S$ have a common divisor $d > 1$, a contradiction to the property of $S$.  
+$k \in \text{𝒜}$ implies that $a_{k+s} \geq s + a_{k} > s$.  
+Suppose $k+s \in \text{ℬ}$. Then $a_{k+2s} \leq s - a_{k+s}$, which implies that  
+
+$$ a_{k+s} \leq s - a_{k+2s} < s, $$
+
+a contradiction. Hence, $k+s \in \text{𝒜}$. By induction we complete the proof of Claim 2.1.  
+In a similar way we can prove Claim 2.2.  
 $\square$
