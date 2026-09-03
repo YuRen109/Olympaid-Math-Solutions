@@ -12,8 +12,18 @@ We say that an infinite sequence $a_1, a_2, ...$ is *periodic* if there exists a
 # Solution
 
 Let $\text{𝕊}$ denote the set of all subsets $S$ of $\text{ℕ}$ such that no positive integer greater than 1 divides all elements of $S$.  
-Suppose that there is some $S \in \text{𝕊}$ such that such a sequence $a_1, a_2, ...$, which is dependent of $S$, in the problem statement exist. 
-In this case, let $S^\star \subseteq S$ denote the subset such that for all $s^\star \in S$ we have $a_n = \left| a_{n+s^\star} - s^\star \right|$. 
+Suppose that there is some $S \in \text{𝕊}$ such that such a sequence $a_1, a_2, ...$, which is dependent of $S$, in the problem statement exist.  
+In this case, let $S^\star \subseteq S$ denote the subset such that for all $s^\star \in S^\star$ we have $a_n = \left| a_{n+s^\star} - s^\star \right|$. 
+the condition 2 in the problem statement implies that $S^\star$ is non-empty, and therefore, $S$ is non-empty.  
+
+### <span id="claim1"></span>Claim 1 (property of $S$)
+Let $S \in \text{𝕊}$. Then there exists 
+
+
+*Proof.*  
+Suppose there is no $s \in S$ such that $\text{gcd}(s^\star,s) = 1$. 
+Then all the elements in $S$ have a common divisor $d > 1$, a contradiction to the property of $S$.  
+$\square$
 
 
 
@@ -37,15 +47,7 @@ Since $a_{n+1} \geq 1$ and $a_{n} \geq 1$, we have $a_{n+1} = a_n + 1$ for all $
 
 Suppose $S \neq \emptyset$ and $S \neq \lbrace 1 \rbrace$ and $s^\star > 1$.
 
-### <span id="claim1"></span>Claim 1 (property of $S$)
 
-Let $s^\star \in S$ with $s^\star > 1$. 
-Then there is some $s \in S$ such that $\text{gcd}(s^\star,s) = 1$.
-
-*Proof.*  
-Suppose there is no $s \in S$ such that $\text{gcd}(s^\star,s) = 1$. 
-Then all the elements in $S$ have a common divisor $d > 1$, a contradiction to the property of $S$.  
-$\square$
 
 By [Claim 1](#claim1) we may pick $s \in S$ such that $\text{gcd}(s^\star,s) = 1$. 
 Note that $s$ may be 1.  
