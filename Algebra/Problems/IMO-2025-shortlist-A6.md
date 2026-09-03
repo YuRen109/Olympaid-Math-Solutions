@@ -17,8 +17,14 @@ and there is some $s^\star \in S$ such that $a_n = \left| a_{n+s^\star} - s^\sta
 
 ## Trivial case ($s^\star = 1$)
 
-It is apparent that 1 may be an element of $S$.  
-If $a_n = \left| a_{n+1} - 1 \right|$, then $a_n = a_{n+1} - 1$ or $a_n = 1 - a_{n+1}$.
+It is apparent that $S$ may be {1}. 
+Therefore, 1 may be an element of $S$.  
+Suppose $s^\star = 1$. Then for all $n \in \text{ℕ}$ we have $a_n = \left| a_{n+1} - 1 \right|$, or
+$$
+a_n = a_{n+1} - 1 
+\text{or}
+a_n = 1 - a_{n+1}.
+$$
 
 Since $a_{n+1} \geq 1$ and $a_{n} \geq 1$, we have $a_{n+1} = a_n + 1$ for all $n \in \text{ℕ}$.
 
