@@ -13,13 +13,15 @@ We say that an infinite sequence $a_1, a_2, ...$ is *periodic* if there exists a
 
 Suppose that such a sequence $a_1, a_2, ...$ in the problem statement exist. 
 Then for all  $n \in \text{ℕ}$, there is some $s \in S$ such that $a_n \leq \left| a_{n+s} - s \right|$, 
-and there is some $s^\star \in S$ such that $a_n = \left| a_{n+s^\star} - s^\star \right|$.
+and there is some $s^\star \in S$ such that $a_n = \left| a_{n+s^\star} - s^\star \right|$.  
+In the following discussion we use the notion $s^\star$ to represent an element in $S$ such that 
+$a_n = \left| a_{n+s^\star} - s^\star \right|$.
 
 ## Trivial case ($s^\star = 1$)
 
 It is apparent that $S$ may be $\lbrace 1 \rbrace$. 
-Therefore, 1 may be an element of $S$.  
-Suppose $s^\star = 1$. Then for all $n \in \text{ℕ}$ we have $a_n = \left| a_{n+1} - 1 \right|$, or
+Suppose $S = \lbrace 1 \rbrace$ and $s^\star = 1$. 
+Then for all $n \in \text{ℕ}$ we have $a_n = \left| a_{n+1} - 1 \right|$, or
 
 $$a_n = a_{n+1} - 1 \text{ or } a_n = 1 - a_{n+1}$$
 
@@ -27,7 +29,7 @@ Since $a_{n+1} \geq 1$ and $a_{n} \geq 1$, we have $a_{n+1} = a_n + 1$ for all $
 
 ## Case where $s^\star > 1$
 
-Suppose $s^\star > 1$.
+Suppose $S \neq \lbrace 1 \rbrace$ and $s^\star > 1$.
 
 ### Claim 1 (property of $S$)
 
