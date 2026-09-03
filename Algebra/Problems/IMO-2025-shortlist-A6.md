@@ -73,14 +73,21 @@ a contradiction. Hence, $k+s \in \text{𝒜}$. By induction we complete the proo
 In a similar way we can prove Claim 2.2.  
 $\square$
 
-### Claim 3
+### <span id="claim3"></span>Claim 3
 For all sufficiently large $n \in \text{ℕ}$ we have $n \in \text{𝒜}$ and $n \in \text{𝒜}^\star$.
 
 *Proof.*  
-First, we prove that $n \in \text{𝒜}$ for all sufficiently large $n \in \text{ℕ}$. (So har we haven't determine what are sufficient large $n$)  
+First, we prove that $n \in \text{𝒜}$ for all sufficiently large $n \in \text{ℕ}$. (So har we haven't determine what are sufficiently large $n$)  
 We have that there is some $k \in \text{𝒜}^\star$ because, otherwise, we get $a_n$ with $a_{n+s^\star} = s^\star - a_n$ for all $n \in \text{ℕ}$, 
 which is periodic.  
-By [Claim 2](#claim2) we have $k + x s^\star \in \text{𝒜}^\star$ for all $x \in \text{ℕ}$.  
+By [Claim 2](#claim2) we have $k + x s^\star \in \text{𝒜}^\star$ for all $x \in \text{ℕ}$. Moreover,  
+$$ a_{k+xs^\star} = a_k + x s^\star > x s^\star. $$  
+
+On the other hand, let $l \in \lbrace 1, 2, ..., s-1 \rbrace$. 
+Since $\text{gcd}(s,s^\star) = 1$, by [Bézout's identity](https://en.wikipedia.org/wiki/B%C3%A9zout%27s_identity) there are some $x_0 \in \text{ℤ}$ and $y_0 \in \text{ℤ}$ such that 
+$$ x_0 s^\star - y_0 s = 1.$$  
+
+
 $\square$
 
 ### Claim 4
