@@ -60,8 +60,8 @@ $$ n \in \text{𝒜} \iff n \notin \text{ℬ} \text{  and  } n \in \text{𝒜}^\
 
 ### Claim 2 (properties of $\text{𝒜}$ and $\text{𝒜}^\star$)
 Let $k \in \text{ℕ}$.  Then  
-  2.1 if $k \in \text{𝒜}$, then $k + ns \in \text{𝒜}$ for all $n \in \text{ℕ}$.  
-  2.2 if $k \in \text{𝒜}^\star$, then $k + ns \in \text{𝒜}\star$ for all $n \in \text{ℕ}$.  
+2.1  if $k \in \text{𝒜}$, then $k + ns \in \text{𝒜}$ for all $n \in \text{ℕ}$.  
+2.2  if $k \in \text{𝒜}^\star$, then $k + ns \in \text{𝒜}^\star$ for all $n \in \text{ℕ}$.  
 
 *Proof.*  
 $k \in \text{𝒜}$ implies that $a_{k+s} \geq s + a_{k} > s$.  
