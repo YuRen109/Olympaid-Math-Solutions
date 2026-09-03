@@ -47,10 +47,10 @@ Let
 
 $$
 \begin{aligned}
-&\text{𝒜} = \lbrace n \in \text{ℕ} \mid a_{n+s} \geq s + a_n \rbrace, \\
-&\text{ℬ} = \lbrace n \in \text{ℕ} \mid a_{n+s} \leq s - a_n \rbrace, \\
-&\text{𝒜}^\star = \lbrace n \in \text{ℕ} \mid a_{n+s^\star} = s^\star + a_n \rbrace , \\
-&\text{ℬ}^\star = \lbrace n \in \text{ℕ} \mid a_{n+s^\star} = s^\star - a_n \rbrace .
+\text{𝒜} =& \lbrace n \in \text{ℕ} \mid a_{n+s} \geq s + a_n \rbrace, \\
+\text{ℬ} =& \lbrace n \in \text{ℕ} \mid a_{n+s} \leq s - a_n \rbrace, \\
+\text{𝒜}^\star =& \lbrace n \in \text{ℕ} \mid a_{n+s^\star} = s^\star + a_n \rbrace , \\
+\text{ℬ}^\star =& \lbrace n \in \text{ℕ} \mid a_{n+s^\star} = s^\star - a_n \rbrace .
 \end{aligned}
 $$
 
@@ -108,7 +108,7 @@ $$ a_{l+y_{t_l} s} = a_{k+x_{t_l} s^*} > x_{t_l} s^\star > s,$$
 
 implying that $l + (y_{t_l} - 1) s \in \text{𝒜}$.
 
-By [Claim 2](#claim2) we have $n \in \text{𝒜}$ for all $n \geq \text{max}_l (l + (y_{t_l} - 1) s)$
+By [Claim 2](#claim2) we have $n \in \text{𝒜}$ for all $n \geq \text{max}_{l} (l + (y_{t_l} - 1) s)$.
 
 $\square$
 
