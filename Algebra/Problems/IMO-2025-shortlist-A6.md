@@ -45,7 +45,7 @@ Let
 $$
 \begin{aligned}
 𝒜 &= \lbrace n \in \text{ℕ} \mid \rbrace \\
-ℬ &= \lbrace n \in \text{ℕ} \mid \rbrace \\
+ℬ &= \lbrace n \in \text{ℕ} \mid \rbrace
 \end{aligned}
 $$
 
