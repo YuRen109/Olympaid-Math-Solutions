@@ -1,4 +1,4 @@
-# Olympaid-Math-Solutions
+# Math Olympaid Solutions
 I share solutions done on my own to some math olympaid problems or interesting problems.
 
 ## Categories
