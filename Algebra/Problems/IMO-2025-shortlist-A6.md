@@ -15,7 +15,7 @@ Let $\text{𝕊}$ denote the set of all subsets $S$ of $\text{ℕ}$ such that no
 For any finite subset $T$ of $\text{ℕ}$, let $\text{gcd}(T)$ denote the greatest common divisor of all elements of $T$.  
 Then we have the following result:
 ### <span id="claim1"></span>Claim 1 (property of $S$)
-For any $S \in \text{𝕊}$ there exists a finite subset $S^\prime$ of $S$ such that $\text{gcd}(S^\prime) = 1$.  
+For any $S \in \text{𝕊}$ there exists a finite subset $S^\prime$ of $S$ such that $\text{gcd}\left(S^\prime\right) = 1$.  
 
 *Proof.*   
 For the case where $S$ is finite, we have that $\text{gcd}(S) = 1$ because, otherwise, 
@@ -39,8 +39,8 @@ Suppose that there is some $S \in \text{𝕊}$ such that such a sequence $a_1, a
 In this case, let $S^\star \subseteq S$ denote the subset such that for each $s^\star \in S^\star$ and for all $n \in \text{ℕ}$ 
 we have $a_n = \left| a_{n+s^\star} - s^\star \right|$.  
 The condition 2 in the problem statement implies that $S^\star$ is non-empty, and therefore, $S$ is non-empty.  
-We may always find a finite subset $S^\prime$ of $S$ such that $\text{gcd}(S^\prime) = 1$ and $S^\prime \cap S^\star \neq \emptyset$ by the following process: 
-1. find a finite subset $S^{\prime\prime}$ of $S$ such that $\text{gcd}(S^{\prime\prime}) = 1$ by [Claim 1](#claim1)
+We may always find a finite subset $S^\prime$ of $S$ such that $\text{gcd}\left(S^\prime\right) = 1$ and $S^\prime \cap S^\star \neq \emptyset$ by the following process: 
+1. find a finite subset $S^{\prime\prime}$ of $S$ such that $\text{gcd}\left(S^{\prime\prime}\right) = 1$ by [Claim 1](#claim1)
 2. find an element $s^\star \in S^\star$ since $S^\star$ is non-empty
 3. let $S^{\prime} = \lbrace s^\star \rbrace \cup S^{\prime\prime}$
 
