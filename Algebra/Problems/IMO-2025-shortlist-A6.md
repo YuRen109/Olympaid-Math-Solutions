@@ -58,7 +58,7 @@ Then for all $n \in \text{ℕ}$ we have
 
 $$ n \in \text{𝒜} \iff n \notin \text{ℬ} \text{  and  } n \in \text{𝒜}^\star \iff n \notin \text{ℬ}^\star. $$
 
-### Claim 2 (properties of \text{𝒜} and \text{𝒜}^\star)
+### Claim 2 (properties of $\text{𝒜}$ and $\text{𝒜}^\star$)
 If $k \in \text{𝒜}$, then $k + ns \in \text{𝒜}$ for all $n \in \text{ℕ}$.  
 If $k \in \text{𝒜}\star$, then $k + ns \in \text{𝒜}\star$ for all $n \in \text{ℕ}$.  
 
