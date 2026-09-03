@@ -36,7 +36,7 @@ Then there is some $s \in S$ such that $\text{gcd}(s^\star,s) = 1$.
 
 *Proof.*  
 Suppose there is no $s \in S$ such that $\text{gcd}(s^\star,s) = 1$. 
-Then all the elements in $S$ have a common divisor $d > 1$, a contradiction to the property of $S$.  
+Then all the elements in $S$ have a common divisor $d > 1$, a contradiction to the property of $S$. <span style="float: right;">$\square$</span>
 
 
 By [Claim 1](#claim-1-property-of-s) we may pick $s \in S$ such that $\text{gcd}(s^\star,s) = 1$. 
