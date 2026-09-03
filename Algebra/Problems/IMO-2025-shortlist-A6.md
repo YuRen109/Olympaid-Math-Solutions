@@ -11,7 +11,13 @@ We say that an infinite sequence $a_1, a_2, ...$ is *periodic* if there exists a
 
 # Solution
 
-Suppose that such a sequence $a_1, a_2, ...$ in the problem statement exist. 
+Let $\text{𝕊}$ denote the set of all subsets $S$ of $\text{ℕ}$ such that no positive integer greater than 1 divides all elements of $S$.  
+Suppose that there is some $S \in \text{𝕊}$ such that such a sequence $a_1, a_2, ...$, which is dependent of $S$, in the problem statement exist. 
+In this case, let $S^\star \subseteq S$ denote the subset such that for all $s^\star \in S$ we have $a_n = \left| a_{n+s^\star} - s^\star \right|$. 
+
+
+
+
 Then for all  $n \in \text{ℕ}$, there is some $s \in S$ such that $a_n \leq \left| a_{n+s} - s \right|$, 
 and there is some $s^\star \in S$ such that $a_n = \left| a_{n+s^\star} - s^\star \right|$.  
 In the following discussion we use the notion $s^\star$ to represent an element in $S$ such that 
