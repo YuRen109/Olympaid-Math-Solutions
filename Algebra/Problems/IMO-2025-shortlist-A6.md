@@ -31,7 +31,7 @@ Since $a_{n+1} \geq 1$ and $a_{n} \geq 1$, we have $a_{n+1} = a_n + 1$ for all $
 
 Suppose $S \neq \emptyset$ and $S \neq \lbrace 1 \rbrace$ and $s^\star > 1$.
 
-### Claim 1 (property of $S$)
+### <span id="claim1"></span>Claim 1 (property of $S$)
 
 Let $s^\star \in S$ with $s^\star > 1$. 
 Then there is some $s \in S$ such that $\text{gcd}(s^\star,s) = 1$.
@@ -41,7 +41,7 @@ Suppose there is no $s \in S$ such that $\text{gcd}(s^\star,s) = 1$.
 Then all the elements in $S$ have a common divisor $d > 1$, a contradiction to the property of $S$.  
 $\square$
 
-By [Claim 1](#claim-1-property-of-s) we may pick $s \in S$ such that $\text{gcd}(s^\star,s) = 1$. 
+By [Claim 1](#claim1) we may pick $s \in S$ such that $\text{gcd}(s^\star,s) = 1$. 
 Note that $s$ may be 1.  
 Let  
 
@@ -60,8 +60,8 @@ $$ n \in \text{𝒜} \iff n \notin \text{ℬ} \text{  and  } n \in \text{𝒜}^\
 
 ### <span id="claim2"></span>Claim 2 (properties of $\text{𝒜}$ and $\text{𝒜}^\star$)
 Let $k \in \text{ℕ}$.  Then  
-2.1  if $k \in \text{𝒜}$, then $k + ns \in \text{𝒜}$ for all $n \in \text{ℕ}$.  
-2.2  if $k \in \text{𝒜}^\star$, then $k + ns \in \text{𝒜}^\star$ for all $n \in \text{ℕ}$.  
+2.1    if $k \in \text{𝒜}$, then $k + ns \in \text{𝒜}$ for all $n \in \text{ℕ}$.  
+2.2    if $k \in \text{𝒜}^\star$, then $k + ns \in \text{𝒜}^\star$ for all $n \in \text{ℕ}$.  
 
 *Proof.*  
 $k \in \text{𝒜}$ implies that $a_{k+s} \geq s + a_{k} > s$.  
@@ -77,10 +77,10 @@ $\square$
 For all sufficiently large $n \in \text{ℕ}$ we have $n \in \text{𝒜}$ and $n \in \text{𝒜}^\star$.
 
 *Proof.*  
-First, we prove that $n \in \text{𝒜}$ for all sufficiently large $n \in \text{ℕ}$.  
-We have that there is some $k \in \text{𝒜}^\star$ because, otherwise, we get $a_n$ with $a_{n+s^\star} = s^\star - a_n$, 
+First, we prove that $n \in \text{𝒜}$ for all sufficiently large $n \in \text{ℕ}$. (So har we haven't determine what are sufficient large $n$)  
+We have that there is some $k \in \text{𝒜}^\star$ because, otherwise, we get $a_n$ with $a_{n+s^\star} = s^\star - a_n$ for all $n \in \text{ℕ}$, 
 which is periodic.  
-By [Claim 2](#claim2) we have $k + x s^\star \in \text{𝒜}^\star$ for all $x \in \text{ℕ}$.
+By [Claim 2](#claim2) we have $k + x s^\star \in \text{𝒜}^\star$ for all $x \in \text{ℕ}$.  
 $\square$
 
 ### Claim 4
