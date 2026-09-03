@@ -44,8 +44,8 @@ Note that $s$ may be 1.
 Let  
 $$
 \begin{aligned}
-𝒜 &= \lbrace n \in \text{ℕ} \mid \rbrace \\
-ℬ &= \lbrace n \in \text{ℕ} \mid \rbrace
+\text{𝒜} &= \lbrace n \in \text{ℕ} \mid \rbrace \\
+\text{ℬ} &= \lbrace n \in \text{ℕ} \mid \rbrace
 \end{aligned}
 $$
 
