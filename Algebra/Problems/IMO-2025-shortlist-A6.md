@@ -58,7 +58,7 @@ Then for all $n \in \text{ℕ}$ we have
 
 $$ n \in \text{𝒜} \iff n \notin \text{ℬ} \text{  and  } n \in \text{𝒜}^\star \iff n \notin \text{ℬ}^\star. $$
 
-### Claim 2 (properties of $\text{𝒜}$ and $\text{𝒜}^\star$)
+### <span id="claim2"></span>Claim 2 (properties of $\text{𝒜}$ and $\text{𝒜}^\star$)
 Let $k \in \text{ℕ}$.  Then  
 2.1  if $k \in \text{𝒜}$, then $k + ns \in \text{𝒜}$ for all $n \in \text{ℕ}$.  
 2.2  if $k \in \text{𝒜}^\star$, then $k + ns \in \text{𝒜}^\star$ for all $n \in \text{ℕ}$.  
@@ -77,7 +77,10 @@ $\square$
 For all sufficiently large $n \in \text{ℕ}$ we have $n \in \text{𝒜}$ and $n \in \text{𝒜}^\star$.
 
 *Proof.*  
-
+First, we prove that $n \in \text{𝒜}$ for all sufficiently large $n \in \text{ℕ}$.  
+We have that there is some $k \in \text{𝒜}^\star$ because, otherwise, we get $a_n$ with $a_{n+s^\star} = s^\star - a_n$, 
+which is periodic.  
+By [Claim 2](#claim2) we have $k + x s^\star \in \text{𝒜}^\star$ for all $x \in \text{ℕ}$.
 $\square$
 
 ### Claim 4
