@@ -101,7 +101,7 @@ $$
 \end{aligned}
 $$
 
-For each $l \in \lbrace 1, 2, ..., s-1 \rbrace$ we pick a large enough $t_l \in \text{ℕ}$ such that $x_{t_l} s^\star > s $ and $y_{t_l} \geq 1$. 
+For each $l \in \lbrace 1, 2, ..., s-1 \rbrace$ we pick a large enough $t_l \in \text{ℕ}$ such that $x_{t_l} s^\star > s$ and $y_{t_l} \geq 1$. 
 Then 
 
 $$ a_{l+y_{t_l} s} = a_{k+x_{t_l} s^*} > x s^\star > s,$$
