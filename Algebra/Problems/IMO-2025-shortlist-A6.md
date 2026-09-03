@@ -72,3 +72,25 @@ $$ a_{k+s} \leq s - a_{k+2s} < s, $$
 a contradiction. Hence, $k+s \in \text{𝒜}$. By induction we complete the proof of Claim 2.1.  
 In a similar way we can prove Claim 2.2.  
 $\square$
+
+### Claim 3
+For all sufficiently large $n \in \text{ℕ}$ we have $n \in \text{𝒜}$ and $n \in \text{𝒜}^\star$.
+
+*Proof.*  
+
+$\square$
+
+### Claim 4
+For all sufficiently large $n \in \text{ℕ}$ we have $a_{n+1} = a_n + 1$.
+
+*Proof.*  
+
+$\square$
+
+
+### Claim 5
+For all $n \in \text{ℕ}$ we have $a_{n+1} = a_n + 1$.
+
+*Proof.*  
+
+$\square$
