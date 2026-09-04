@@ -65,7 +65,7 @@ for any $s \in S$, any $s^\star \in S^\star$ and any $n \in \text{ℕ}$.
 
 Furthermore, we have the following results.  
 
-### <span id="claim2"></span>Claim 2 (properties of $\text{𝒜} (s)$ and $\text{𝒜}^\star(s^\star)$)  
+### <span id="claim2"></span>Claim 2 (properties of $\text{𝒜} (s)$ and $\text{𝒜}^\star(s)$)  
 Let $s \in S$, $s^\star \in S^\star$ and $k \in \text{ℕ}$. Then  
 2.1    $k \in \text{𝒜}(s) \iff \left[ a_{k} > s \text{  or  } a_{k+s} > s \right]$.  
 2.2    $k \in \text{𝒜}^{\star}(s^\star) \iff \left[ a_{k} > s^\star \text{  or  } a_{k+s^\star} > s^\star \right]$.  
@@ -91,9 +91,9 @@ We may always find a finite non-empty subset $S^\prime$ of $S$ such that $\text{
 Such a $S^{\prime}$ may be written as $S^{\prime} = \lbrace s_1, s_2, ..., s_k \rbrace$ where $k \in \text{ℕ}$, $s_1 \in S^\star$ and $s_1, s_2, ..., s_k \in S$.  
 Denote $\text{𝒜}_i = \text{𝒜}(s_i)$ for each $i \in \lbrace 1, 2,..., k \rbrace$ and, especially $\text{𝒜}^{\star}_1 = \text{𝒜}^{\star}(s_1)$.  
 
-The result of a trivial case where $k = 1$ is shown as follows.  
+The result of the trivial case where $k = 1$ is shown as follows.  
 
-### <span id="claim3"></span>Claim 3 (trivial case where $k=1$)
+### <span id="claim3"></span>Claim 3 (the trivial case where $k=1$)
 
 3.1 $k = 1$ if and only if $S^\prime = \lbrace 1 \rbrace$.  
 3.2 If $k=1$, then $a_{n+1} = a_n + 1$ for all $n \in \text{ℕ}$ (with $a_1 \in \text{ℕ}$).  
@@ -114,14 +114,14 @@ $\square$
 
 Before jumping into the discussion of general cases where $k > 1$, we state some useful theorems here.  
 
-### <span id="bezout"></span>Theorem ([Bézout's identity](https://en.wikipedia.org/wiki/B%C3%A9zout%27s_identity))
+### <span id="bezout"></span>Theorem 4([Bézout's identity](https://en.wikipedia.org/wiki/B%C3%A9zout%27s_identity))
 Let $N = \lbrace n_1, n_2, ..., n_k \rbrace$ be a set of $k$ positive integers with $\text{gcd}(N) = 1$.  
 Then there exist $x_1, x_2, ..., x_k \in \text{ℤ}$ 
 such that 
 
 $$x_1 n_1 + x_2 n_2 + ... + x_k n_k = 1.$$
 
-### <span id="num_semi"></span>Theorem (a corollary from a fundamental theorem of [Numerical semigroup](https://en.wikipedia.org/wiki/Numerical_semigroup))
+### <span id="num_semi"></span>Theorem 5(a corollary from a fundamental theorem of [Numerical semigroup](https://en.wikipedia.org/wiki/Numerical_semigroup))
 Let $N = \lbrace n_1, n_2, ..., n_k \rbrace$ be a set of $k$ positive integers with $\text{gcd}(N) = 1$.  
 Then for all sufficiently large $m \in \text{ℕ}$ there exist $x_1, x_2, ..., x_k \in \text{ℕ}$ 
 such that 
@@ -155,10 +155,10 @@ we may pick a sufficiently large $t_{r,i}$ such that $x_i = r z_i + t_{r,i} x_1 
 $\square$
 
 
-### <span id="claim4"></span>Claim 4 
+### <span id="claim6"></span>Claim 6 
 For all sufficiently large $n \in \text{ℕ}$ we have 
 
-$$n \in \text{𝒜}^\star_1 \cap \text{𝒜}_2 \cap ... \cap \text{𝒜}_k = \text{𝒜}^\star_1 \cap \left( \bigcap_{i=2}^{k} \text{𝒜}_i \right)$$
+$$n \in \text{𝒜}^\star_1 \cap \text{𝒜}_2 \cap ... \cap \text{𝒜}_k = \text{𝒜}^\star_1 \cap \left( \bigcap_{i=2}^{k} \text{𝒜}_i \right).$$
 
 *Proof.*  
 We have that there is some $C \in \text{𝒜}^\star_1$ because, otherwise, we get $a_n$ with $a_{n+s_1} = s_1 - a_n$ for all $n \in \text{ℕ}$, 
@@ -171,14 +171,13 @@ $$C + \sum_{i=1}^{k-1} (c_i + x_i) s_i + x_k s_k \in \text{𝒜}^\star_1 \cap \l
 
 for all $x_0, x_1, ..., x_k \in \text{ℕ}$:  
 
-
 1. By [Claim 2](#claim2) and the fact that $C \in \text{𝒜}^\star_1$ we have $C + ( c_{1} + x_{1} ) s_{1} \in \text{𝒜}^\star_{1}$, 
 and $a_{C + (c_1+x_1) s_1} = a_C + (c_1+x_1) s_1 > c_1 s_1 > s_2$, which implies further that
 
 $$ C + (c_1+x_1) s_1 \in \text{𝒜}_2.$$
 
 Hence, $C + (c_1+x_1) s_1 \in \text{𝒜}^\star_{1} \in \text{𝒜}^\star_{1} \cap \text{𝒜}_2$.  
-3. Suppose that for some $j \in \lbrace 2, ..., k-1\rbrace$ we have 
+2. Suppose that for some $j \in \lbrace 2, ..., k-1\rbrace$ we have 
 
 $$C + \sum_{i=1}^{j-1} (c_i + x_i) s_i \in \text{𝒜}^\star_{1} \cap \left( \bigcap_{i=2}^{j-1} \text{𝒜}_i \right).$$
 
@@ -190,11 +189,20 @@ implying that $C + \sum_{i=1}^{j-1} (c_i + x_i) s_i \in \text{𝒜}_j$ by [Claim
 
 3. As $j$ runs over $\lbrace 2, ..., k-1\rbrace$ we finally conclude that 
 
-for all $x \in \text{ℕ}$.  
+$$C + \sum_{i=1}^{k-1} (c_i + x_i) s_i \in \text{𝒜}^\star_1 \cap \left( \bigcap_{i=2}^{k} \text{𝒜}_i \right),$$
+
+and also,  
+
+$$C + \sum_{i=1}^{k-1} (c_i + x_i) s_i + x_k s_k \in \text{𝒜}^\star_1 \cap \left( \bigcap_{i=2}^{k} \text{𝒜}_i \right).$$
+
+By [Theorem 4](#num_semi), there is $L \in \text{ℕ}$ such that 
+for all $m \in \text{ℕ}$ with $m \geq L$ we have $m = \sum_{i=1}^{k} x_i s_i$.  
+Then $L^\prime = L + C + \sum_{i=1}^{k-1} c_i s_i \in \text{ℕ}$ 
+and for all $m^\prime \in \text{ℕ}$ with $m^\prime \geq L^\prime$ we have $m^\prime \in \text{𝒜}^\star_1 \cap \left( \bigcap_{i=2}^{k} \text{𝒜}_i \right).$
 
 $\square$
 
-### <span id="claim5"></span>Claim 5
+### <span id="claim7"></span>Claim 7
 For all sufficiently large $n \in \text{ℕ}$ we have $a_{n+1} = a_n + 1$.
 
 *Proof.*  
@@ -218,7 +226,7 @@ Similarly, for the case where $x s^\star > 0 > y s$ we can also conclude that $a
 $\square$
 
 
-### <span id="claim5">Claim 5
+### <span id="claim8">Claim 8
 For all $n \in \text{ℕ}$ we have $a_{n+1} = a_n + 1$.
 
 *Proof.*  
