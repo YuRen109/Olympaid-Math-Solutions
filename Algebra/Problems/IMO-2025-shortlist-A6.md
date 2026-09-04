@@ -129,6 +129,28 @@ such that
 $$x_1 n_1 + x_2 n_2 + ... + x_k n_k = m.$$
 
 *Proof.*  
+This a simple corollary from a fundamental theorem of [Numerical semigroup](https://en.wikipedia.org/wiki/Numerical_semigroup).  
+
+Suppose $k = 1$. Then $\text{gcd}(N) = 1$ implies that $N = \lbrace 1 \rbrace$, 
+and for all $m \in \text{ℕ}$ we may find $x_1 = m$ such that $x_1 m = m$.  
+Suppose $k > 1$. It suffices to show that for each $r \in \lbrace 1, 2, ..., n_1 - 1 \rbrace$ 
+there exist $x_2 \in \text{ℕ}$, ..., $x_k \in \text{ℕ}$ such that $x_2 n_2 + ... + x_k n_k \equiv r \pmod{x_1}$.  
+Let $r \in \lbrace 1, 2, ..., n_1 - 1 \rbrace$. 
+By [Bézout's identity](#Bézout) we may find $z_1 \in \text{ℤ}$, $z_2 \in \text{ℤ}$, ..., $z_k \in \text{ℤ}$ such that  
+
+$$z_1 n_1 + z_2 n_2 + ... + z_k n_k = 1,$$
+
+or
+
+$$(r z_2) n_2 + ... + (r z_k) n_k \equiv r \pmod{x_1}.$$
+
+Note that for all $t_{r,2}, t_{r,3}, ..., t_{r,k} \in \text{ℤ}$ we have
+
+$$(r z_2 + t_{r,2} x_1) n_2 + ... + (r z_k + t_{r,k} x_1) n_k \equiv r \pmod{x_1}.$$
+
+For each $r \in \lbrace 1, 2, ..., n_1 - 1 \rbrace$ and 
+for each $i \in \lbrace 2, 3, ..., k-1 \rbrace$ 
+we may pick a sufficiently large $t_{r,i}$ such that $x_i = r z_i + t_{r,i} x_1 > 0$ to complete the proof.  
 
 $\square$
 
