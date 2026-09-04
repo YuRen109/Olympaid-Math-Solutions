@@ -252,7 +252,7 @@ $$
 a_{n+1} = a_{n + \sum_{i=1}^{k} z_i s_i} = a_{n + \sum_{i=1}^{k} \bar{z} (i)} &= a_{n + \sum_{i=1}^{k-1} \bar{z} (i)} + \bar{z} (k) \\
 &= a_{n + \sum_{i=1}^{k-2} \bar{z} (i)} + \bar{z} (k) + \bar{z} (k-1) \\
 &\vdot \\
-&= a_{n} + \bar{z} (k) + \bar{z} (k-1) + \cdot + \bar{z} (1) = a_n + \sum_{i=1}^{k} z_i s_i} = a_{n + \sum_{i=1}^{k} = a_n + 1
+&= a_{n} + \bar{z} (k) + \bar{z} (k-1) + \cdot + \bar{z} (1) = a_n + \sum_{i=1}^{k} z_i s_i} = a_n + \sum_{i=1}^{k} = a_n + 1
 \end{aligned}
 $$
 
