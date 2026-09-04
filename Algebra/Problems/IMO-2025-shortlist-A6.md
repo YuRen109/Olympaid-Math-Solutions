@@ -30,7 +30,7 @@ Then we have that $\text{gcd}(S_n) > 1$ for all $n \in \text{ℕ}$, and
 $$ s_1 = \text{gcd}(S_1) \geq \text{gcd}(S_2) \geq \text{gcd}(S_3) \geq ... , $$
 
 which implies that for all sufficiently large $n$ we have $\text{gcd}(S_n) = d$, where $d \in \text{ℕ}$.  
-However, $d > 1$ and $d$ divides all elements of $S$, a contradiction.  
+However, $d > 1$ and, by induction, we get that $d$ divides all elements of $S$, a contradiction.  
 
 $\square$
 
