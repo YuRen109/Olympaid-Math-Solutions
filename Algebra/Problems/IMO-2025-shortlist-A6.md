@@ -69,8 +69,8 @@ Furthermore, we have the following results.
 Let $s \in S$, $s^\star \in S^\star$ and $k \in \text{ℕ}$. Then  
 2.1    $k \in \text{𝒜}(s) \iff \left[ a_{k} > s \text{  or  } a_{k+s} > s \right]$.  
 2.2    $k \in \text{𝒜}^{\star}(s^\star) \iff \left[ a_{k} > s^\star \text{  or  } a_{k+s^\star} > s^\star \right]$.  
-2.3    if $k \in \text{𝒜}(s)$, then $k + ns \in \text{𝒜}$ for all $n \in \text{ℕ}$.  
-2.4    if $k \in \text{𝒜}^{\star}(s^\star)$, then $k + ns \in \text{𝒜}^\star$ for all $n \in \text{ℕ}$.  
+2.3    If $k \in \text{𝒜}(s)$, then $k + ns \in \text{𝒜}$ for all $n \in \text{ℕ}$.  
+2.4    If $k \in \text{𝒜}^{\star}(s^\star)$, then $k + ns \in \text{𝒜}^\star$ for all $n \in \text{ℕ}$.  
 
 *Proof.*  
 $k \in \text{𝒜}$ implies that $a_{k+s} \geq s + a_{k} > s$.  
@@ -88,7 +88,7 @@ We may always find a finite non-empty subset $S^\prime$ of $S$ such that $\text{
 2. Find an element $s^\star \in S^\star$ since $S^\star$ is non-empty.  
 3. Let $S^{\prime} = \lbrace s^\star \rbrace \cup S^{\prime\prime}$.  
 
-Such a $S^{\prime}$ may be written as $S^{\prime} = \lbrace s_1, s_2, ..., s_k \rbrace$ where $k \in \text{ℕ}$, $s_1 \in S^\star$ and $s_1, s_2, ..., s_k \in S$.  
+Such a $S^{\prime}$ may be written as $S^\prime = \lbrace s_1, s_2, ..., s_k \rbrace$ where $k \in \text{ℕ}$, $s_1 \in S^\star$ and $s_1, s_2, ..., s_k \in S$.  
 Denote $\text{𝒜}_i = \text{𝒜}(s_i)$ for each $i \in \lbrace 1, 2,..., k \rbrace$ and, especially $\text{𝒜}^{\star}_1 = \text{𝒜}^{\star}(s_1)$.  
 
 The result of the trivial case where $k = 1$ is shown as follows.  
@@ -195,16 +195,27 @@ and also,
 
 $$C + \left(\sum_{i=1}^{k-1} c_i s_i\right) +  \left(\sum_{i=1}^{k} x_i s_i\right) = C + \sum_{i=1}^{k-1} (c_i + x_i) s_i + x_k s_k \in \text{𝒜}^\star_1 \cap \left( \bigcap_{i=2}^{k} \text{𝒜}_i \right).$$
 
-By [Theorem 4](#num_semi), there is $L \in \text{ℕ}$ such that 
-for all $m \in \text{ℕ}$ with $m \geq L$ we have $m = \sum_{i=1}^{k} x_i s_i$.  
+
+By [Theorem 4](#num_semi), since $\text{gcd}\left(S^\prime\right) = 1$, 
+there is $L \in \text{ℕ}$ such that for all $m \in \text{ℕ}$ with $m \geq L$ 
+there exist $x_1, x_2, ..., x_k \in \text{ℕ}$ such that  $m = \sum_{i=1}^{k} x_i s_i$.  
 Let $L^\prime = L + C + \sum_{i=1}^{k-1} c_i s_i \in \text{ℕ}$. 
 Then for all $m^\prime \in \text{ℕ}$ with $m^\prime \geq L^\prime$ we have $m^\prime \in \text{𝒜}^\star_1 \cap \left( \bigcap_{i=2}^{k} \text{𝒜}_i \right).$
 
 $\square$
 
 ### <span id="claim7"></span>Claim 7
+
 $$\text{𝒜}^\star_1 \cap \left( \bigcap_{i=2}^{k} \text{𝒜}_i \right) = \text{ℕ}.$$
 
+*Proof*  
+By [Claim 6](#claim6) we know that if $\text{ℬ}^\star_1 \cup \left( \bigcup_{i=2}^{k} \text{ℬ}_i \right) = \text{ℕ} \backslash \left[ \text{𝒜}^\star_1 \cap \left( \bigcap_{i=2}^{k} \text{𝒜}_i \right) \right]$ is non-empty, 
+then $\text{ℬ}^\star_1 \cup \left( \bigcup_{i=2}^{k} \text{ℬ}_i \right)$ contains a largest number.  
+Suppose that $m \in \text{ℕ}$ is the largest number in $\text{ℬ}^\star_1 \cup \left( \bigcup_{i=2}^{k} \text{ℬ}_i \right)$. 
+Then we have that $m \in \text{ℬ}^\star_1$ or $m \in \text{ℬ}_j$ for some $j \in \lbrace 2, 3, ..., k\rbrace$.  
+
+
+$\square$
 
 ### <span id="claim8"></span>Claim 8
 For all sufficiently large $n \in \text{ℕ}$ we have $a_{n+1} = a_n + 1$.
