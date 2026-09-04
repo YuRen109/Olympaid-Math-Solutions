@@ -114,14 +114,14 @@ $\square$
 
 Before jumping into the discussion of general cases where $k > 1$, we state some useful theorems here.  
 
-### <span id="bezout"></span>Theorem 4([Bézout's identity](https://en.wikipedia.org/wiki/B%C3%A9zout%27s_identity))
+### <span id="bezout"></span>Theorem 4 ([Bézout's identity](https://en.wikipedia.org/wiki/B%C3%A9zout%27s_identity))
 Let $N = \lbrace n_1, n_2, ..., n_k \rbrace$ be a set of $k$ positive integers with $\text{gcd}(N) = 1$.  
 Then there exist $x_1, x_2, ..., x_k \in \text{ℤ}$ 
 such that 
 
 $$x_1 n_1 + x_2 n_2 + ... + x_k n_k = 1.$$
 
-### <span id="num_semi"></span>Theorem 5(a corollary from a fundamental theorem of [Numerical semigroup](https://en.wikipedia.org/wiki/Numerical_semigroup))
+### <span id="num_semi"></span>Theorem 5 (a corollary from a fundamental theorem of [Numerical semigroup](https://en.wikipedia.org/wiki/Numerical_semigroup))
 Let $N = \lbrace n_1, n_2, ..., n_k \rbrace$ be a set of $k$ positive integers with $\text{gcd}(N) = 1$.  
 Then for all sufficiently large $m \in \text{ℕ}$ there exist $x_1, x_2, ..., x_k \in \text{ℕ}$ 
 such that 
@@ -176,7 +176,7 @@ and $a_{C + (c_1+x_1) s_1} = a_C + (c_1+x_1) s_1 > c_1 s_1 > s_2$, which implies
 
 $$ C + (c_1+x_1) s_1 \in \text{𝒜}_2.$$
 
-Hence, $C + (c_1+x_1) s_1 \in \text{𝒜}^\star_{1} \in \text{𝒜}^\star_{1} \cap \text{𝒜}_2$.  
+Hence, $C + (c_1+x_1) s_1 \in \text{𝒜}^\star_{1} \cap \text{𝒜}_2$.  
 2. Suppose that for some $j \in \lbrace 2, ..., k-1\rbrace$ we have 
 
 $$C + \sum_{i=1}^{j-1} (c_i + x_i) s_i \in \text{𝒜}^\star_{1} \cap \left( \bigcap_{i=2}^{j-1} \text{𝒜}_i \right).$$
@@ -197,7 +197,7 @@ $$C + \sum_{i=1}^{k-1} (c_i + x_i) s_i + x_k s_k \in \text{𝒜}^\star_1 \cap \l
 
 By [Theorem 4](#num_semi), there is $L \in \text{ℕ}$ such that 
 for all $m \in \text{ℕ}$ with $m \geq L$ we have $m = \sum_{i=1}^{k} x_i s_i$.  
-Then $L^\prime = L + C + \sum_{i=1}^{k-1} c_i s_i \in \text{ℕ}$ 
+Then let $L^\prime = L + C + \sum_{i=1}^{k-1} c_i s_i \in \text{ℕ}$ 
 and for all $m^\prime \in \text{ℕ}$ with $m^\prime \geq L^\prime$ we have $m^\prime \in \text{𝒜}^\star_1 \cap \left( \bigcap_{i=2}^{k} \text{𝒜}_i \right).$
 
 $\square$
