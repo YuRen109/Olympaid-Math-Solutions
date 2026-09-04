@@ -134,9 +134,9 @@ This a simple corollary from a fundamental theorem of [Numerical semigroup](http
 Suppose $k = 1$. Then $\text{gcd}(N) = 1$ implies that $N = \lbrace 1 \rbrace$, 
 and for all $m \in \text{ℕ}$ we may find $x_1 = m$ such that $x_1 m = m$.  
 Suppose $k > 1$. It suffices to show that for each $r \in \lbrace 1, 2, ..., n_1 - 1 \rbrace$ 
-there exist $x_2 \in \text{ℕ}$, ..., $x_k \in \text{ℕ}$ such that 
+there exist $x_2, x_3, ..., x_k \in \text{ℕ}$ such that 
 
-$$ \sum^{k}_{i=2} x_i n_i \equiv r \pmod{x_1} $$.  
+$$\sum^{k}_{i=2} x_i n_i \equiv r \pmod{x_1}.$$
 
 
 Let $r \in \lbrace 1, 2, ..., n_1 - 1 \rbrace$. 
