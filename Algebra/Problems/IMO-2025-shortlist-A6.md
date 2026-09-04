@@ -235,7 +235,7 @@ $\square$
 
 $$\text{𝒜}^\star_1 \cap \left( \bigcap_{i=2}^{k} \text{𝒜}_i \right) = \text{ℕ}.$$
 
-*Proof*  
+*Proof.*  
 By [Claim 6](#claim6) we know that if $\text{ℬ}^\star_1 \cup \left( \bigcup_{i=2}^{k} \text{ℬ}\_i \right) = \text{ℕ} \backslash \left[ \text{𝒜}^\star\_1 \cap \left( \bigcap_{i=2}^{k} \text{𝒜}\_i \right) \right]$ is non-empty, 
 then $\text{ℬ}^\star_1 \cup \left( \bigcup_{i=2}^{k} \text{ℬ}\_{i} \right)$ contains a largest number.  
 Suppose that $m \in \text{ℕ}$ is the largest number in $\text{ℬ}^\star_1 \cup \left( \bigcup_{i=2}^{k} \text{ℬ}{\_i} \right)$. 
@@ -255,7 +255,7 @@ $\square$
 
 
 ### <span id="claim9">Claim 9
-For all $n \in \text{ℕ}$ we have $a_{n+1} = a_n + 1$ (with $a_1 \in \text{ℕ}$).
+For all $n \in \text{ℕ}$ we have $a_{n+1} = a_n + 1$ for all $n \in \text{ℕ}$ (with $a_1 \in \text{ℕ}$).
 
 *Proof.*  
 By [Claim 7](#claim7) and [Claim 8](#claim8) we complete the proof.  
