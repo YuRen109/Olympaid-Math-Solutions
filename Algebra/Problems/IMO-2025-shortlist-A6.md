@@ -25,7 +25,7 @@ In this case we may find $S^\prime = S$.
 For the case where $S$ is infinite, suppose that every finite subset $S^\prime$ of $S$ satisfies that $\text{gcd}\left(S^\prime\right) > 1$.  
 Construct an infinite sequence $s_1, s_2, \cdots$ of elements of $S$ such that  
 1. $s_1$ is the smallest number in $S$, and 
-2. $s_n$ is the smallest number in $S \backslash \lbrace s_1, s_2, \cdots, s_{n-1} \rbrace$ , for every $n \in \text{ℕ}$.  
+2. $s_n$ is the smallest number in $S \backslash \lbrace s_1, s_2, \cdots, s_{n-1} \rbrace$ for each $n \in \text{ℕ}$.  
 
 The above process is ordering the elements of $S$.  
 For any $n \in \text{ℕ}$ we denote $S_n = \lbrace s_1, s_2, \cdots, s_n \rbrace$.  
@@ -271,8 +271,10 @@ $$\text{𝒜}^\star_1 \cap \left( \bigcap_{i=2}^{k} \text{𝒜}_i \right) = \tex
 By [Claim 6](#claim6) we know that if $\text{ℬ}^\star_1 \cup \left( \bigcup_{i=2}^{k} \text{ℬ}\_i \right) = \text{ℕ} \backslash \left[ \text{𝒜}^\star\_1 \cap \left( \bigcap_{i=2}^{k} \text{𝒜}\_i \right) \right]$ is non-empty, 
 then $\text{ℬ}^\star_1 \cup \left( \bigcup_{i=2}^{k} \text{ℬ}\_{i} \right)$ contains a largest number.  
 Suppose that $m \in \text{ℕ}$ is the largest number in $\text{ℬ}^\star_1 \cup \left( \bigcup_{i=2}^{k} \text{ℬ}{\_i} \right)$. 
-Then we have that $m \in \text{ℬ}^\star_1$ or $m \in \text{ℬ}{\_j}$ for some $j \in \lbrace 2, 3, \cdots, k\rbrace$, 
-and $m+1 \in \text{𝒜}^\star\_1 \cap \left( \bigcap_{i=2}^{k} \text{𝒜}_i \right)$.  
+Then we have that $m \in \text{ℬ}^\star_1$ or $m \in \text{ℬ}{\_j}$ for some $j \in \lbrace 2, 3, \cdots, k\rbrace$.  
+
+By [Claim 7](#claim7) we have that $m+1 \in \text{𝒜}^\star\_1 \cap \left( \bigcap_{i=2}^{k} \text{𝒜}\_i \right)$, 
+and $a_{l+1} = a_{l} + 1$ for each $l \in \text{ℕ}$ with $l \geq m + 1$.  
 
 For the case where $m \in \text{ℬ}^\star\_1$, we have that $a_{m+s_1} = s_1 - a_m$. 
 By [Claim 7](#claim7), since $m+1 \in \text{𝒜}^\star\_1$, we have that $a_{m+s_1} = a_{m+1} + s_1 - 1$, 
@@ -282,9 +284,6 @@ Hence, $m \notin \text{ℬ}^\star\_1$.
 In a similar way we may prove that $m \notin \text{ℬ}^\star\_j$ for all $j \in \lbrace 2, 3, \cdots, k\rbrace$.
 
 $\square$
-
-
-
 
 ### <span id="claim9">Claim 9
 For all $n \in \text{ℕ}$ we have $a_{n+1} = a_n + 1$ for all $n \in \text{ℕ}$ (with $a_1 \in \text{ℕ}$).
