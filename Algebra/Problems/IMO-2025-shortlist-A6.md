@@ -26,6 +26,7 @@ For the case where $S$ is infinite, suppose that every finite subset $S^\prime$ 
 Construct an infinite sequence $s_1, s_2, ...$ of elements of $S$ such that  
 1. $s_1$ is the smallest number in $S$, and 
 2. $s_n$ is the smallest number in $S \backslash \lbrace s_1, s_2, ..., s_{n-1} \rbrace$ , for every $n \in \text{ℕ}$.  
+
 The above process is ordering the elements of $S$.  
 For any $n \in \text{ℕ}$ we denote $S_n = \lbrace s_1, s_2, ..., s_n \rbrace$.  
 Then we have that $\text{gcd}(S_n) > 1$ for all $n \in \text{ℕ}$, and 
