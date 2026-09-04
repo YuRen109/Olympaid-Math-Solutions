@@ -254,7 +254,8 @@ such that $a_{n + s_j} > a_n + s_j$. Then
 
 $$ a_n + s_1 + s_j = a_{n + s_1 s_j} = a_{n + s_j s_1} > a_n + s_j s_1, $$
 
-a contradiction. Hence, we have that $a_{n + s} = a_n + s$ for all $n \geq L$ and all $j \in \lbrace 2, 3, \cdots, k\rbrace$.
+a contradiction. 
+Hence, we have that $a_{n + s} = a_n + s$ for all $n \in \text{ℕ}$ with $n \geq L$ and all $j \in \lbrace 2, 3, \cdots, k\rbrace$.
 
 Again, by [Bézout's identity](#bezout), since $\text{gcd} \lbrace S^\prime \rbrace$, 
 there are some $z_1, z_2, \cdots, z_k \in \text{ℤ}$ such that $\sum_{i=1}^{k} z_i s_i = 1$. 
@@ -265,11 +266,11 @@ from $\lbrace 1, 2, \cdots, k\rbrace$ to $\lbrace z_1 s_1, z_2 s_2, \cdots, z_k 
 $$ \bar{z} (1) \geq \bar{z} (2) \geq \cdots > 0 > \cdots \geq \bar{z} (k).  $$
 
 Then $\sum_{i=1}^{j} \bar{z} (i) > 0$ for each $j \in \lbrace 1, 2, \cdots, k\rbrace$.  
-(The construction of $\bar{z}$ helps with the application of $a_{n + s} = a_n + s$ for sufficiently large $n$)
+The construction of $\bar{z}$ helps with the application of $a_{n + s} = a_n + s$ for sufficiently large $n$.  
 
-Let $n \geq L$. Then we have $L \leq n + \sum_{i=1}^{j} \bar{z} (i)$ for each $j \in \lbrace 1, 2, \cdots, k\rbrace$.  
-($n + \sum_{i=1}^{j} \bar{z} (i)$ are sufficiently large by our definition)
-
+Let $n \in \text{ℕ}$ with $n \in $ $n \geq L$.  
+Then we have $L \leq n + \sum_{i=1}^{j} \bar{z} (i)$ for each $j \in \lbrace 1, 2, \cdots, k\rbrace$ 
+(($n + \sum_{i=1}^{j} \bar{z} (i)$ are sufficiently large by our definition in the context)).  
 Therefore,  
 
 $$
