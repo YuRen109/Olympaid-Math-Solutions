@@ -171,16 +171,24 @@ $$C + \sum_{i=1}^{k-1} (c_i + x_i) s_i + x_k s_k \in \text{𝒜}^\star_1 \cap \l
 
 for all $x_0, x_1, ..., x_k \in \text{ℕ}$:  
 
-1. By [Claim 2](#claim2) and the fact that $C \in \text{𝒜}^\star_1$ we have $C + ( c_{1} + x_{1} ) s_{1} \in \text{𝒜}^\star_{1}$, 
-and $a_{C + (c_1+x_1) s_1} = a_C + (c_1+x_1) s_1 > c_1 s_1 > s_2$, which implies further that $C + (c_1+x_1) s_1 \in \text{𝒜}_2$. 
-Hence, $C + (c_1+x_1) s_1 \in \text{𝒜}^\star_{1} \in \text{𝒜}^\star_{1} \cap \text{𝒜}_2$.
-2. Suppose that for some $j \in \lbrace 2, ..., k-1\rbrace$ we have 
 
-$$C + \sum_{i=1}^{j-1} (c_i + x_i) s_i \in \text{𝒜}^\star_{1} \cap \left( \bigcap_{i=2}^{j} \text{𝒜}_i \right).$$
+1. By [Claim 2](#claim2) and the fact that $C \in \text{𝒜}^\star_1$ we have $C + ( c_{1} + x_{1} ) s_{1} \in \text{𝒜}^\star_{1}$, 
+and $a_{C + (c_1+x_1) s_1} = a_C + (c_1+x_1) s_1 > c_1 s_1 > s_2$, which implies further that
+
+$$ C + (c_1+x_1) s_1 \in \text{𝒜}_2.$$
+
+Hence, $C + (c_1+x_1) s_1 \in \text{𝒜}^\star_{1} \in \text{𝒜}^\star_{1} \cap \text{𝒜}_2$.  
+3. Suppose that for some $j \in \lbrace 2, ..., k-1\rbrace$ we have 
+
+$$C + \sum_{i=1}^{j-1} (c_i + x_i) s_i \in \text{𝒜}^\star_{1} \cap \left( \bigcap_{i=2}^{j-1} \text{𝒜}_i \right).$$
 
 Then 
 
-3.
+$$a_{C + \sum_{i=1}^{j-1} (c_i + x_i) s_i} = a_{C} + \sum_{i=1}^{j-1} (c_i + x_i) s_i > c_{j-1} s_{j-1} > s_{j},$$
+
+implying that $C + \sum_{i=1}^{j-1} (c_i + x_i) s_i \in \text{𝒜}_j$ by [Claim 2.1](#claim2)
+
+3. As $j$ runs over $\lbrace 2, ..., k-1\rbrace$ we finally conclude that 
 
 for all $x \in \text{ℕ}$.  
 
