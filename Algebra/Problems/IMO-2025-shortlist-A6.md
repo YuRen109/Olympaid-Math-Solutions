@@ -11,7 +11,7 @@ We say that an infinite sequence $a_1, a_2, \cdots$ is *periodic* if there exist
 
 # Solution
 
-Let $\text{𝕊}$ denote the set of all subsets $S$ of $\text{ℕ}$ such that no positive integer greater than 1 divides all elements of $S$.  
+Let $\text{𝕊}$ denote the collection of all subsets $S$ of $\text{ℕ}$ such that no positive integer greater than 1 divides all elements of $S$.  
 For any finite non-empty subset $T$ of $\text{ℕ}$, let $\text{gcd}(T)$ denote the greatest common divisor of all elements of $T$.  
 Then we have the following result:
 ### <span id="claim1"></span>Claim 1 (property of $S$)
