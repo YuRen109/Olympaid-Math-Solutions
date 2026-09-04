@@ -93,7 +93,7 @@ Denote $\text{𝒜}_i = \text{𝒜}(s_i)$ for each $i \in \lbrace 1, 2,..., k \r
 
 The result of a trivial case where $k = 1$ is shown as follows.  
 
-### <span id="claim3"></span>Claim 3 (trivial case of $S^{\prime}$)
+### <span id="claim3"></span>Claim 3 (trivial case where $k=1$)
 
 3.1 $k = 1$ if and only if $S^\prime = \lbrace 1 \rbrace$.  
 3.2 If $k=1$, then $a_{n+1} = a_n + 1$ for all $n \in \text{ℕ}$ (with $a_1 \in \text{ℕ}$).  
@@ -112,9 +112,9 @@ Since $a_n \in \text{ℕ}$ for all $n \in \text{ℕ}$, it suffices to let $a_1 \
 
 $\square$
 
-Before jumping into the discussion of general cases, we state some useful theorems here.  
+Before jumping into the discussion of general cases where $k > 1$, we state some useful theorems here.  
 
-### <span id="Bézout"></span>Theorem ([Bézout's identity](https://en.wikipedia.org/wiki/B%C3%A9zout%27s_identity))
+### <span id="bezout"></span>Theorem ([Bézout's identity](https://en.wikipedia.org/wiki/B%C3%A9zout%27s_identity))
 Let $N = \lbrace n_1, n_2, ..., n_k \rbrace$ be a set of $k$ positive integers with $\text{gcd}(N) = 1$.  
 Then there exist $x_1, x_2, ..., x_k \in \text{ℤ}$ 
 such that 
@@ -140,7 +140,7 @@ $$ \sum^{k}_{i=2} x_i n_i \equiv r \pmod{x_1} $$.
 
 
 Let $r \in \lbrace 1, 2, ..., n_1 - 1 \rbrace$. 
-By [Bézout's identity](#Bézout) we may find $z_1, z_2, ..., z_k \in \text{ℤ}$ such that $\sum^{k}_{i=1} z_i n_i = 1$, or  
+By [Bézout's identity](#bezout) we may find $z_1, z_2, ..., z_k \in \text{ℤ}$ such that $\sum^{k}_{i=1} z_i n_i = 1$, or  
 
 $$\sum^{k}_{i=2} (r z_i) n_i \equiv r \pmod{x_1}.$$
 
@@ -156,7 +156,9 @@ $\square$
 
 
 ### <span id="claim4"></span>Claim 4 
-For all sufficiently large $n \in \text{ℕ}$ we have $n \in \text{𝒜}^\star_1 \cap \text{𝒜}_2 \cap ... \cap \text{𝒜}_k = \text{𝒜}^\star_1 \cap \left( \bigcap_{i=2}^{k} \text{𝒜}_i \right)$.
+For all sufficiently large $n \in \text{ℕ}$ we have 
+
+$$n \in \text{𝒜}^\star_1 \cap \text{𝒜}_2 \cap ... \cap \text{𝒜}_k = \text{𝒜}^\star_1 \cap \left( \bigcap_{i=2}^{k} \text{𝒜}_i \right)$$
 
 *Proof.*  
 We have that there is some $C \in \text{𝒜}^\star_1$ because, otherwise, we get $a_n$ with $a_{n+s_1} = s_1 - a_n$ for all $n \in \text{ℕ}$, 
@@ -171,7 +173,7 @@ for all $x \in \text{ℕ}$.
 
 $\square$
 
-### <span id="claim4"></span>Claim 4
+### <span id="claim5"></span>Claim 5
 For all sufficiently large $n \in \text{ℕ}$ we have $a_{n+1} = a_n + 1$.
 
 *Proof.*  
