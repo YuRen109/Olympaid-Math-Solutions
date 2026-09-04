@@ -65,7 +65,7 @@ for any $s \in S$, any $s^\star \in S^\star$ and any $n \in \text{ℕ}$.
 
 Furthermore, we have the following results.  
 
-### <span id="claim2"></span>Claim 2 (properties of $\text{𝒜} (s)$ and $\text{𝒜}^{\star} (s^\star)$)  
+### <span id="claim2"></span>Claim 2 (properties of $\text{𝒜} (s)$ and $\text{𝒜}^\star (s^\star)$)  
 Let $s \in S$, $s^\star \in S^\star$ and $k \in \text{ℕ}$. Then  
 2.1    $k \in \text{𝒜}(s) \iff \left[ a_{k} > s \text{  or  } a_{k+s} > s \right]$.  
 2.2    $k \in \text{𝒜}^{\star}(s^\star) \iff \left[ a_{k} > s^\star \text{  or  } a_{k+s^\star} > s^\star \right]$.  
@@ -84,9 +84,9 @@ $\square$
 
 
 We may always find a finite non-empty subset $S^\prime$ of $S$ such that $\text{gcd}\left(S^\prime\right) = 1$ and $S^\prime \cap S^\star \neq \emptyset$ by the following process: 
-1. find a finite non-empty subset $S^{\prime\prime}$ of $S$ such that $\text{gcd}\left(S^{\prime\prime}\right) = 1$ by [Claim 1](#claim1)
-2. find an element $s^\star \in S^\star$ since $S^\star$ is non-empty
-3. let $S^{\prime} = \lbrace s^\star \rbrace \cup S^{\prime\prime}$
+1. Find a finite non-empty subset $S^{\prime\prime}$ of $S$ such that $\text{gcd}\left(S^{\prime\prime}\right) = 1$ by [Claim 1](#claim1).  
+2. Find an element $s^\star \in S^\star$ since $S^\star$ is non-empty.  
+3. Let $S^{\prime} = \lbrace s^\star \rbrace \cup S^{\prime\prime}$.  
 
 Such a $S^{\prime}$ may be written as $S^{\prime} = \lbrace s_1, s_2, ..., s_k \rbrace$ where $k \in \text{ℕ}$, $s_1 \in S^\star$ and $s_1, s_2, ..., s_k \in S$.  
 Denote $\text{𝒜}_i = \text{𝒜}(s_i)$ for each $i \in \lbrace 1, 2,..., k \rbrace$ and, especially $\text{𝒜}^{\star}_1 = \text{𝒜}^{\star}(s_1)$.  
@@ -101,7 +101,7 @@ The result of a trivial case where $k = 1$ is shown as follows.
 *Proof.*  
 It is apparent that Claim 3.1 holds.  
 Now we will prove Claim 3.2.  
-Since $1 \in S^\star$, for all $n \in \text{ℕ}$ we have $n \in \text{𝒜}^{\star}(1) \iff n \notin \text{ℬ}^{\star}(1) $, or  
+Since $1 \in S^\star$, for all $n \in \text{ℕ}$ we have $n \in \text{𝒜}^{\star}(1) \iff n \notin \text{ℬ}^{\star}(1)$, or  
 
 $$ a_{n+1} = a_n + 1 \iff a_{n+1} \neq 1 - a_n .$$
 
