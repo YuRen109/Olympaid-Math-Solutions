@@ -23,23 +23,28 @@ We say that an infinite sequence $a_1, a_2, \cdots$ is *periodic* if there exist
 5. Get that $a_n$ increases to the end once it starts to increase (and it eventually does).  
    Analyze **the increasingness of $a_n$ for large $n$**.
 6. Get the increasingness of $a_n$ from **the conditions 1 and 2 and those key elements**.  
-   Realize that **those finitely many key elements determine finitely probable steps of $a_n$ for large $n$**.  
+   Realize that **those key elements determine finite probable steps of $a_n$ for large $n$**.  
 7. Realize that with those probable steps one can determine $a_n$ for all large enough $n$ 
    thanks to that the greatest common divisor of those key elements is 1.  
    Get the form of the solution for all large enough $n$.  
 8. Argue the uniqueness of the form for all $n$.  
 
-
 # Solution
 
 Let $\text{𝕊}$ denote the collection of all subsets $S$ of $\text{ℕ}$ such that no positive integer greater than 1 divides all elements of $S$.  
-For any finite non-empty subset $T$ of $\text{ℕ}$, let $\text{gcd}(T)$ denote the greatest common divisor of all elements of $T$.  
-Then we have the following result:
-### <span id="claim1"></span>Claim 1 (property of $S$)
-For any non-empty $S \in \text{𝕊}$ there exists a finite non-empty subset $S^\prime$ of $S$ such that $\text{gcd}\left(S^\prime\right) = 1$.  
+For any finite non-empty subset $T$ of $\text{ℕ}$, let $\text{gcd} T$ denote the greatest common divisor of all elements of $T$.  
+For any finite subset $F$ of $\text{ℕ}$, let $\# F$ denote the number of elements of $F$.  
+
+$$ \newcommand{\test}{\text{𝕊}}$$
+
+$$ \test $$
+
+Then we have the following result.
+### <span id="claim1"></span>Claim 1 (a property of $S$)
+For any non-empty $S \in \text{𝕊}$ there exists a finite non-empty subset $S^\prime$ of $S$ such that $\text{gcd} S^\prime = 1$.  
 
 *Proof.*   
-For the case where $S$ is finite, we have that $\text{gcd}(S) = 1$ because, otherwise, 
+For the case where $S$ is finite, we have that $\text{gcd} S = 1$ because, otherwise, 
 $\text{gcd}(S)$ would be a positive integer that divides all elements of $S$ and is also greater than 1.  
 In this case we may find $S^\prime = S$.  
 
