@@ -318,7 +318,7 @@ By [Claim 3](#claim3) and [Claim 9](#claim9) we conclude that
 the only possible solution is $a_{n+1} = a_n + 1$ for all $n \in \text{ℕ}$ (with $a_1 \in \text{ℕ}$), or
 $a_n = n + N$ for some $N \in \text{ℕ}$.  
 
-### What I learned
+# What I learned
 1. [Bézout's identity](https://en.wikipedia.org/wiki/B%C3%A9zout%27s_identity)
 2. [Numerical semigroups](https://en.wikipedia.org/wiki/Numerical_semigroup)
 3. Picking finitely many key elements from an infinite set.
