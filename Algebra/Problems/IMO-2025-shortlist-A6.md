@@ -32,7 +32,7 @@ We say that an infinite sequence $a_1, a_2, \cdots$ is *periodic* if there exist
 # Solution
 
 Let $\text{𝕊}$ denote the collection of all subsets $S$ of $\text{ℕ}$ such that no positive integer greater than 1 divides all elements of $S$.  
-For any finite non-empty subset $T$ of $\text{ℕ}$, let $\text{gcd}(T)$ denote the greatest common divisor of all elements of $T$.  
+For any finite non-empty subset $T$ of $\text{ℕ}$, let $\text{gcd }T$ denote the greatest common divisor of all elements of $T$.  
 For any finite subset $F$ of $\text{ℕ}$, let ${\\#} F$ denote the number of elements of $F$.  
 
 Then we have the following result.
@@ -146,7 +146,7 @@ Since $a_n \in \text{ℕ}$ for all $n \in \text{ℕ}$, it is necessary to let $a
 
 $\square$
 
-Before jumping into the discussion of general cases where $k > 1$, we state some useful theorems here.  
+Before jumping into the discussion of general cases where ${\\#} S^\prime > 1$, we state some useful theorems here.  
 
 ### <span id="bezout"></span>Theorem 4 ([Bézout's identity](https://en.wikipedia.org/wiki/B%C3%A9zout%27s_identity))
 Let $N = \lbrace n_1, n_2, \cdots, n_k \rbrace$ be a set of $k$ positive integers with $\text{gcd}(N) = 1$.  
