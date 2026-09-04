@@ -23,7 +23,10 @@ $\text{gcd}(S)$ would be a positive integer that divides all elements of $S$ and
 In this case we may find $S^\prime = S$.  
 
 For the case where $S$ is infinite, suppose that every finite subset $S^\prime$ of $S$ satisfies that $\text{gcd}\left(S^\prime\right) > 1$.  
-Construct an infinite sequence $s_1, s_2, ...$ of elements of $S$ with $s_i \neq s_j$ for every pair of integers $i$ and $j$ with $i \neq j$.  
+Construct an infinite sequence $s_1, s_2, ...$ of elements of $S$ such that  
+1. $s_1$ is the smallest number in $S$, and 
+2. $s_n$ is the smallest number in $S \backslash \lbrace s_1, s_2, ..., s_{n-1} \rbrace$ , for every $n \in \text{ℕ}$.  
+The above process is ordering the elements of $S$.  
 For any $n \in \text{ℕ}$ we denote $S_n = \lbrace s_1, s_2, ..., s_n \rbrace$.  
 Then we have that $\text{gcd}(S_n) > 1$ for all $n \in \text{ℕ}$, and 
 
