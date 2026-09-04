@@ -168,12 +168,12 @@ For each $i \in \lbrace 1, 2, ..., k-1\rbrace$ we pick $c_i \in \text{ℕ}$ with
 Then by the following process we may show that 
 $C + \sum_{i=1}^{k-1} (c_i + x_i) s_i + x_k s_k \in \text{𝒜}^\star_1 \cap \left( \bigcap_{i=2}^{k} \text{𝒜}_i \right)$ for all $x_0, x_1, ..., x_k \in \text{ℕ}$:  
 
-1. By [Claim 2](#claim2) and the fact that $C \in \text{𝒜}^\star_1$ we have $C + (c_1+x_1) s_1 \in \text{𝒜}^{\star}_{1}$, 
+1. By [Claim 2](#claim2) and the fact that $C \in \text{𝒜}^\star_1$ we have $C + ( c_{1} + x_{1} ) s_{1} \in \text{𝒜}^\star_{1}$, 
 and $a_{C + (c_1+x_1) s_1} = a_C + (c_1+x_1) s_1 > s_2$, which implies further that $C + (c_1+x_1) s_1 \in \text{𝒜}_2$. 
 Hence, $C + (c_1+x_1) s_1 \in \text{𝒜}^{\star}_{1} \in \text{𝒜}^{\star}_{1} \cap \text{𝒜}_2$.  
 2. Suppose that for some $j \in \lbrace 2, ..., k-1\rbrace$ we have 
 
-$$C + \sum_{i=1}^{j-1} (c_i + x_i) s_i \in \text{𝒜}^{\star}_{1} \in \text{𝒜}^{\star}_{1} \cap \left( \bigcap_{i=2}^{j} \text{𝒜}_i \right)$$
+$$C + \sum_{i=1}^{j-1} (c_i + x_i) s_i \in \text{𝒜}^{\star}_{1} \cap \left( \bigcap_{i=2}^{j} \text{𝒜}_i \right)$$
 
 3.
 
