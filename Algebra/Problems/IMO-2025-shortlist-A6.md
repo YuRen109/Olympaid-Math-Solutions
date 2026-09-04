@@ -3,24 +3,32 @@
 Let $S$ be a set of positive integers, possibly infinite, such that no positive integer greater than 1 divides all elements of $S$.  
 Determine all non-periodic infinite sequences $a_1, a_2, \cdots$ of positive integers such that, for all positive integers $n$,  
 1. $a_n \leq \left| a_{n+l} - l \right|$ for all $l \in S$, and
-2. $a_n = \left| a_{n+l} - l \right|$ for at least one $l \in S$.
+2. $a_n = \left| a_{n+l} - l \right|$ for at least one $l \in S$.  
+
 
 We say that an infinite sequence $a_1, a_2, \cdots$ is *periodic* if there exists a positive integer $t$ such that $a_n = a_{n+t}$ for all positive integers $n$.
 
 # Key idea
 
 1. Look into properties of $S$.  
-   That **"no positive integer greater than 1 divides all elements of $S$"** let me consider some tricks related to $\text{gcd}$.  
-   For example, [Bézout's identity](https://en.wikipedia.org/wiki/B%C3%A9zout%27s_identity).
-2. Find **finitely many key elements** in $S$ (even though it is infinite) and use them to see properties of $a_n$.  
-   Because finitely many key elements are sufficient to represent properties of $S$ where $a_n$ would be confined,
-   if the properties are relevant to $\text{gcd}$.
+   Consider some tricks related to $\text{gcd}$ (for example, [Bézout's identity](https://en.wikipedia.org/wiki/B%C3%A9zout%27s_identity).)
+   because of the property that **"no positive integer greater than 1 divides all elements of $S$"**.     
+2. Find **finitely many key elements** in $S$ (even though it is infinite) and use them to see properties of $a_n$,
+   because finitely many key elements are sufficient to represent properties of $S$ where $a_n$ would be confined, 
+   if the properties are relevant to $\text{gcd}$.  
    Besides, avoid defining $\text{gcd}$ for infinite sets of integers.  
-   
 4. Observe **the condition 2** and the requirement of **non-periodic infinite sequences** in the problem statement.  
-   It is not hard to imagine that $a_n$ would finally escape from periodicity as $n$ goes to infinity.
-   Start to 
-5. 
+   Imagine that $a_n$ would finally escape from periodicity as $n$ goes to infinity.  
+   Should be incline to that **$a_n$ is unbounded**.
+5. Get that $a_n$ increases to the end once it starts to increase (and it eventually does).  
+   Analyze **the increasingness of $a_n$ for large $n$**.
+6. Get the increasingness of $a_n$ from **the conditions 1 and 2 and those key elements**.  
+   Realize that **those finitely many key elements determine finitely probable steps of $a_n$ for large $n$**.  
+7. Realize that with those probable steps one can determine $a_n$ for all large enough $n$ 
+   thanks to that the greatest common divisor of those key elements is 1.  
+   Get the form of the solution for all large enough $n$.  
+8. Argue the uniqueness of the form for all $n$.  
+
 
 # Solution
 
