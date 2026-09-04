@@ -209,8 +209,11 @@ $\square$
 $$\text{𝒜}^\star_1 \cap \left( \bigcap_{i=2}^{k} \text{𝒜}_i \right) = \text{ℕ}.$$
 
 *Proof*  
-By [Claim 6](#claim6) we know that if $\text{ℬ}^\star_1 \cup \left( \bigcup_{i=2}^{k} \text{ℬ}_i \right) = \text{ℕ} \backslash \left[ \text{𝒜}^\star_1 \cap \left( \bigcap_{i=2}^{k} \text{𝒜}_i \right) \right]$ is non-empty, 
-then $\text{ℬ}^\star_1 \cup \left( \bigcup_{i=2}^{k} \text{ℬ}_i \right)$ contains a largest number.  
+By [Claim 6](#claim6) we know that if 
+
+$$\text{ℬ}^\star_1 \cup \left( \bigcup_{i=2}^{k} \text{ℬ}_i \right) = \text{ℕ} \backslash \left[ \text{𝒜}^\star_1 \cap \left( \bigcap_{i=2}^{k} \text{𝒜}_i \right) \right]$$  
+
+is non-empty, then $\text{ℬ}^\star_1 \cup \left( \bigcup_{i=2}^{k} \text{ℬ}_i \right)$ contains a largest number.  
 Suppose that $m \in \text{ℕ}$ is the largest number in $\text{ℬ}^\star_1 \cup \left( \bigcup_{i=2}^{k} \text{ℬ}_i \right)$. 
 Then we have that $m \in \text{ℬ}^\star_1$ or $m \in \text{ℬ}_j$ for some $j \in \lbrace 2, 3, ..., k\rbrace$.  
 
