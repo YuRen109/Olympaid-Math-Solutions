@@ -82,10 +82,9 @@ and
 
 $$ k \in \text{ℬ}(s) \iff a_{k+s} \leq s - a_{k} \implies \left[ a_{s} \leq s \text{  and } a_{k+s} \leq s \right]. $$
 
-Claim 2.2 may be proven in a similar way.
+In a similar way we can prove Claim 2.2.  
 
-
-
+Next, we will prove Claim 2.3.  
 $k \in \text{𝒜}$ implies that $a_{k+s} \geq s + a_{k} > s$.  
 Suppose $k+s \in \text{ℬ}$. Then $a_{k+2s} \leq s - a_{k+s}$, which implies that  
 
@@ -94,7 +93,6 @@ $$ a_{k+s} \leq s - a_{k+2s} < s, $$
 a contradiction. Hence, $k+s \in \text{𝒜}$. By induction we complete the proof of Claim 2.3.  
 In a similar way we can prove Claim 2.4.  
 $\square$
-
 
 We may always find a finite non-empty subset $S^\prime$ of $S$ such that $\text{gcd}\left(S^\prime\right) = 1$ and $S^\prime \cap S^\star \neq \emptyset$ by the following process: 
 1. Find a finite non-empty subset $S^{\prime\prime}$ of $S$ such that $\text{gcd}\left(S^{\prime\prime}\right) = 1$ by [Claim 1](#claim1).  
@@ -122,7 +120,7 @@ $$ a_{n+1} = a_n + 1 \iff a_{n+1} \neq 1 - a_n .$$
 Suppose $a_{k+1} = 1 - a_k$ for some $k \in \text{ℕ}$. Then $a_{k+1} + a_k = 1$, which is a contradiction 
 since $a_k \geq 1$ and $a_{k+1} \geq 1$.  
 Hence, $a_{n+1} = a_n + 1$ for all $n \in \text{ℕ}$.  
-Since $a_n \in \text{ℕ}$ for all $n \in \text{ℕ}$, it is necessary to let $a_1 \in \text{ℕ}$.
+Since $a_n \in \text{ℕ}$ for all $n \in \text{ℕ}$, it is necessary to let $a_1 \in \text{ℕ}$.  
 
 $\square$
 
@@ -221,12 +219,15 @@ Then for all $m^\prime \in \text{ℕ}$ with $m^\prime \geq L^\prime$ we have $m^
 $\square$
 
 ### <span id="claim7"></span>Claim 7
-Let $n \in \text{ℕ}$.  
-If $n \in \text{𝒜}^\star_1 \cap \left( \bigcap_{i=2}^{k} \text{𝒜}\_i \right)$, then $a_{n+1} = a_n + 1$.
+For all sufficiently $n \in \text{ℕ}$ we have $a_{n+1} = a_n + 1$.
 
 *Proof.*  
-By [Claim 3](#claim3) there exists some $N \in \text{ℕ}$ such that $a_{n + s} \geq a_n + s$ and $a_{n + s^\star} = a_n + s^\star$ for all $n \geq N$.  
-Suppose there is some $n \geq N$ such that $a_{n + s} > a_n + s$. Then 
+By [Claim 6](#claim6) we have that there is some $M \in \text{ℕ}$ such that 
+for all $n \in \text{ℕ}$ with $n \geq N$ we have 
+$n \in \text{𝒜}^\star_1 \cap \left( \bigcap_{i=2}^{k} \text{𝒜}\_i \right)$.
+
+Suppose there are some $n \geq N$ and some $j \in \lbrace 2, 3, ..., k\rbrace$ 
+such that $a_{n + s} > a_n + s$. Then 
 
 $$ a_n + s s^\star = a_{n + s s^\star} = a_{n + s^\star s} > a_n + s^\star s, $$
 
