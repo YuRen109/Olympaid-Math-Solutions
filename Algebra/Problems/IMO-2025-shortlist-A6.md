@@ -205,7 +205,7 @@ Then by the following process we may show that
 
 $$C + \sum_{i=1}^{{\\#}S^\prime-1} (c_i + x_i) s_i + x_{{\\#}S^\prime} s_{{\\#}S^\prime} \in \text{𝒜}^\star_1 \cap \left( \bigcap_{i=2}^{{\\#}S^\prime} \text{𝒜}_i \right)$$ 
 
-for all $x_1, x_2, \cdots, x_k \in \text{ℕ}$:  
+for all $x_1, x_2, \cdots, x_{{\\#}S^\prime} \in \text{ℕ}$:  
 
    1. By [Claim 2.4](#claim2) and the fact that $C \in \text{𝒜}^\star_1$ we have $C + ( c_{1} + x_{1} ) s_{1} \in \text{𝒜}^\star_{1}$, 
 and $a_{C + (c_1+x_1) s_1} = a_C + (c_1+x_1) s_1 > c_1 s_1 > s_2$, which, by [Claim 2.2](#claim2), implies further that
@@ -226,7 +226,7 @@ $$a_{C + \sum_{i=1}^{j-1} (c_i + x_i) s_i} = a_{C} + \sum_{i=1}^{j-1} (c_i + x_i
 
    3. As $j$ runs over $\lbrace 2, \cdots, {\\#}S^\prime\rbrace$ we finally conclude that 
 
-$$C + \sum_{i=1}^{{\\#}S^\primek-1} (c_i + x_i) s_i \in \text{𝒜}^\star_1 \cap \left( \bigcap_{i=2}^{{\\#}S^\prime} \text{𝒜}_i \right),$$
+$$C + \sum_{i=1}^{{{\\#}S^\prime}-1} (c_i + x_i) s_i \in \text{𝒜}^\star_1 \cap \left( \bigcap_{i=2}^{{\\#}S^\prime} \text{𝒜}_i \right),$$
 
    and also,  
 
