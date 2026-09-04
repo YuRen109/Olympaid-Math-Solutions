@@ -12,10 +12,10 @@ We say that an infinite sequence $a_1, a_2, ...$ is *periodic* if there exists a
 # Solution
 
 Let $\text{𝕊}$ denote the set of all subsets $S$ of $\text{ℕ}$ such that no positive integer greater than 1 divides all elements of $S$.  
-For any finite subset $T$ of $\text{ℕ}$, let $\text{gcd}(T)$ denote the greatest common divisor of all elements of $T$.  
+For any finite non-empty subset $T$ of $\text{ℕ}$, let $\text{gcd}(T)$ denote the greatest common divisor of all elements of $T$.  
 Then we have the following result:
 ### <span id="claim1"></span>Claim 1 (property of $S$)
-For any non-empty $S \in \text{𝕊}$ there exists a finite subset $S^\prime$ of $S$ such that $\text{gcd}\left(S^\prime\right) = 1$.  
+For any non-empty $S \in \text{𝕊}$ there exists a finite non-empty subset $S^\prime$ of $S$ such that $\text{gcd}\left(S^\prime\right) = 1$.  
 
 *Proof.*   
 For the case where $S$ is finite, we have that $\text{gcd}(S) = 1$ because, otherwise, 
@@ -43,10 +43,7 @@ Suppose that there is some $S \in \text{𝕊}$ such that such a sequence $a_1, a
 In this case, let $S^\star \subseteq S$ denote the subset such that for each $s^\star \in S^\star$ and for all $n \in \text{ℕ}$ 
 we have $a_n = \left| a_{n+s^\star} - s^\star \right|$.  
 The condition 2 in the problem statement implies that $S^\star$ is non-empty, and therefore, $S$ is non-empty.  
-We may always find a finite subset $S^\prime$ of $S$ such that $\text{gcd}\left(S^\prime\right) = 1$ and $S^\prime \cap S^\star \neq \emptyset$ by the following process: 
-1. find a finite subset $S^{\prime\prime}$ of $S$ such that $\text{gcd}\left(S^{\prime\prime}\right) = 1$ by [Claim 1](#claim1)
-2. find an element $s^\star \in S^\star$ since $S^\star$ is non-empty
-3. let $S^{\prime} = \lbrace s^\star \rbrace \cup S^{\prime\prime}$
+
 
 For any $s \in S$ and for any $s^\star \in S^\star$ we denote  
 
@@ -58,6 +55,21 @@ $$
 \text{ℬ}^{\star}\left( s^\star \right) &= \lbrace n \in \text{ℕ} \mid a_{n+s^\star} = s^\star - a_n \rbrace = \text{ℕ} \backslash \text{𝒜}^{\star}\left( s^\star \right).
 \end{aligned}
 $$
+
+
+We may always find a finite non-empty subset $S^\prime$ of $S$ such that $\text{gcd}\left(S^\prime\right) = 1$ and $S^\prime \cap S^\star \neq \emptyset$ by the following process: 
+1. find a finite non-empty subset $S^{\prime\prime}$ of $S$ such that $\text{gcd}\left(S^{\prime\prime}\right) = 1$ by [Claim 1](#claim1)
+2. find an element $s^\star \in S^\star$ since $S^\star$ is non-empty
+3. let $S^{\prime} = \lbrace s^\star \rbrace \cup S^{\prime\prime}$
+
+Such a $S^{\prime}$ may be written as $S^{\prime} = \lbrace s_1, s_2, ..., s_k \rbrace$ with $s_1 \in S^\star$ and $s_1, s_2, ..., s_k \in S$.  
+
+
+
+
+
+
+
 
 
 
