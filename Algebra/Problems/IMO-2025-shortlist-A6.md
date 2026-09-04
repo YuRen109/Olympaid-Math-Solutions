@@ -133,7 +133,7 @@ $$x_1 n_1 + x_2 n_2 + ... + x_k n_k = m.$$
 This a simple corollary from a fundamental theorem of [Numerical semigroup](https://en.wikipedia.org/wiki/Numerical_semigroup).  
 
 Suppose $k = 1$. Then $\text{gcd}(N) = 1$ implies that $N = \lbrace 1 \rbrace$, 
-and for all $m \in \text{ℕ}$ we may find $x_1 = m$ such that $x_1 m = m$.  
+and for all $m \in \text{ℕ}$ we may find $x_1 = m$ such that $x_1 \cdot 1 = m$.  
 Suppose $k > 1$. It suffices to show that for each $r \in \lbrace 1, 2, ..., n_1 - 1 \rbrace$ 
 there exist $x_2, x_3, ..., x_k \in \text{ℕ}$ such that 
 
@@ -187,7 +187,7 @@ Then
 
 $$a_{C + \sum_{i=1}^{j-1} (c_i + x_i) s_i} = a_{C} + \sum_{i=1}^{j-1} (c_i + x_i) s_i > c_{j-1} s_{j-1} > s_{j},$$
 
-implying that $C + \sum_{i=1}^{j-1} (c_i + x_i) s_i \in \text{𝒜}_j$ by [Claim 2.1](#claim2)
+implying that $C + \sum_{i=1}^{j-1} (c_i + x_i) s_i \in \text{𝒜}_j$ by [Claim 2.1](#claim2).
 
 3. As $j$ runs over $\lbrace 2, ..., k\rbrace$ we finally conclude that 
 
