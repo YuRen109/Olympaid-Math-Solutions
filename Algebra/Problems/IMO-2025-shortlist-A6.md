@@ -41,25 +41,24 @@ For any non-empty $S \in \text{𝕊}$ there exists a finite non-empty subset $S^
 
 *Proof.*   
 For the case where $S$ is finite, we have that $\text{gcd }S = 1$ because, otherwise, 
-$\text{gcd }S$ would be a positive integer that divides all elements of $S$ and is also greater than 1.  
+$\text{gcd }S > 1$ would be a positive integer that divides all elements of $S$.  
 In this case we may find $S^\prime = S$.  
 
-For the case where $S$ is infinite, suppose that every finite subset $S^\prime$ of $S$ satisfies that $\text{gcd}\left(S^\prime\right) > 1$.  
+For the case where $S$ is infinite, suppose that every finite subset $S^\prime$ of $S$ satisfies that $\text{gcd }S^\prime > 1$.  
 Construct an infinite sequence $s_1, s_2, \cdots$ of elements of $S$ such that  
 1. $s_1$ is the smallest number in $S$, and 
 2. $s_n$ is the smallest number in $S \backslash \lbrace s_1, s_2, \cdots, s_{n-1} \rbrace$ for each $n \in \text{ℕ}$.  
 
 The above process is ordering the elements of $S$.  
 For any $n \in \text{ℕ}$ we denote $S_n = \lbrace s_1, s_2, \cdots, s_n \rbrace$.  
-Then we have that $\text{gcd}(S_n) > 1$ for all $n \in \text{ℕ}$, and 
+Then we have that $\text{gcd }S_n > 1$ for all $n \in \text{ℕ}$, and 
 
-$$ s_1 = \text{gcd}(S_1) \geq \text{gcd}(S_2) \geq \text{gcd}(S_3) \geq \cdots , $$
+$$ s_1 = \text{gcd }S_1 \geq \text{gcd }S_2 \geq \cdots , $$
 
-which implies that for all sufficiently large $n$ we have $\text{gcd}(S_n) = d$, where $d \in \text{ℕ}$.  
+which implies that for all sufficiently large $n$ we have $\text{gcd }S_n = d$, where $d \in \text{ℕ}$.  
 However, $d > 1$ and, by induction, we get that $d$ divides all elements of $S$, a contradiction.  
 
 $\square$
-
 
 Suppose that there is some $S \in \text{𝕊}$ such that such a non-periodic sequence $a_1, a_2, \cdots$ of positive integer, 
 which may be dependent of $S$, in the problem statement exist.  
@@ -115,8 +114,8 @@ a contradiction. Hence, $k+s \in \text{𝒜}$. By induction we complete the proo
 In a similar way we can prove Claim 2.4.  
 $\square$
 
-We may always find a finite non-empty subset $S^\prime$ of $S$ such that $\text{gcd}\left(S^\prime\right) = 1$ and $S^\prime \cap S^\star \neq \emptyset$ by the following process: 
-1. Find a finite non-empty subset $S^{\prime\prime}$ of $S$ such that $\text{gcd}\left(S^{\prime\prime}\right) = 1$ by [Claim 1](#claim1).  
+We may always find a finite non-empty subset $S^\prime$ of $S$ such that $\text{gcd }S^\prime = 1$ and $S^\prime \cap S^\star \neq \emptyset$ by the following process: 
+1. Find a finite non-empty subset $S^{\prime\prime}$ of $S$ such that $\text{gcd }S^{\prime\prime} = 1$ by [Claim 1](#claim1).  
 2. Find an element $s^\star \in S^\star$ since $S^\star$ is non-empty.  
 3. Let $S^{\prime} = \lbrace s^\star \rbrace \cup S^{\prime\prime}$.  
 
@@ -166,16 +165,17 @@ $$x_1 n_1 + x_2 n_2 + \cdots + x_k n_k = m.$$
 This a simple corollary from a fundamental theorem of [Numerical semigroups](https://en.wikipedia.org/wiki/Numerical_semigroup).  
 Here we provide a proof that does not need to introduce the concept of Numerical semigroups.  
 
-Suppose $k = 1$. Then $\text{gcd}(N) = 1$ implies that $N = \lbrace 1 \rbrace$, 
+Suppose $k = 1$. Then $\text{gcd }N = 1$ implies that $N = \lbrace 1 \rbrace$, 
 and for all $m \in \text{ℕ}$ we may find $x_1 = m$ such that $x_1 \cdot 1 = m$.  
 Suppose $k > 1$. It suffices to show that for each $r \in \lbrace 1, 2, \cdots, n_1 - 1 \rbrace$ 
 there exist $x_2, x_3, \cdots, x_k \in \text{ℕ}$ such that 
 
 $$\sum^{k}_{i=2} x_i n_i \equiv r \pmod{n_1}.$$
 
+By [Bézout's identity](#bezout), since $\text{gcd }N = 1$, 
+we may find $z_1, z_2, \cdots, z_k \in \text{ℤ}$ such that $\sum^{k}_{i=1} z_i n_i = 1$, or  
 
 Let $r \in \lbrace 1, 2, \cdots, n_1 - 1 \rbrace$. 
-By [Bézout's identity](#bezout) we may find $z_1, z_2, \cdots, z_k \in \text{ℤ}$ such that $\sum^{k}_{i=1} z_i n_i = 1$, or  
 
 $$\sum^{k}_{i=2} (r z_i) n_i \equiv r \pmod{n_1}.$$
 
@@ -258,7 +258,7 @@ $$ a_n + s_1 + s_j = a_{n + s_1 s_j} = a_{n + s_j s_1} > a_n + s_j s_1, $$
 a contradiction. 
 Hence, we have that $a_{n + s} = a_n + s$ for all $n \in \text{ℕ}$ with $n \geq L$ and all $j \in \lbrace 2, 3, \cdots, k\rbrace$.
 
-Again, by [Bézout's identity](#bezout), since $\text{gcd} \lbrace S^\prime \rbrace$, 
+Again, by [Bézout's identity](#bezout), since $\text{gcd } S^\prime = 1$, 
 there are some $z_1, z_2, \cdots, z_k \in \text{ℤ}$ such that $\sum_{i=1}^{k} z_i s_i = 1$. 
 
 Now we sort the sequence $z_1 s_1, z_2 s_2, \cdots, z_k s_k$ by defining a bijection $\bar{z}$
