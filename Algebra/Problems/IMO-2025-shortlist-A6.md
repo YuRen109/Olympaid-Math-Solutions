@@ -133,7 +133,7 @@ such that
 
 $$x_1 n_1 + x_2 n_2 + ... + x_k n_k = 1.$$
 
-### <span id="num_semi"></span>Theorem 5 (a corollary from a fundamental theorem of [Numerical semigroup](https://en.wikipedia.org/wiki/Numerical_semigroup))
+### <span id="num_semi"></span>Theorem 5 (a corollary from a fundamental theorem of [Numerical semigroups](https://en.wikipedia.org/wiki/Numerical_semigroup))
 Let $N = \lbrace n_1, n_2, ..., n_k \rbrace$ be a set of $k$ positive integers with $\text{gcd}(N) = 1$.  
 Then for all sufficiently large $m \in \text{ℕ}$ there exist $x_1, x_2, ..., x_k \in \text{ℕ}$ 
 such that 
@@ -141,7 +141,7 @@ such that
 $$x_1 n_1 + x_2 n_2 + ... + x_k n_k = m.$$
 
 *Proof.*  
-This a simple corollary from a fundamental theorem of [Numerical semigroup](https://en.wikipedia.org/wiki/Numerical_semigroup).  
+This a simple corollary from a fundamental theorem of [Numerical semigroups](https://en.wikipedia.org/wiki/Numerical_semigroup).  
 
 Suppose $k = 1$. Then $\text{gcd}(N) = 1$ implies that $N = \lbrace 1 \rbrace$, 
 and for all $m \in \text{ℕ}$ we may find $x_1 = m$ such that $x_1 \cdot 1 = m$.  
@@ -209,7 +209,7 @@ and also,
 $$C + \left(\sum_{i=1}^{k-1} c_i s_i\right) +  \left(\sum_{i=1}^{k} x_i s_i\right) = C + \sum_{i=1}^{k-1} (c_i + x_i) s_i + x_k s_k \in \text{𝒜}^\star_1 \cap \left( \bigcap_{i=2}^{k} \text{𝒜}_i \right).$$
 
 
-By [Theorem 4](#num_semi), since $\text{gcd}\left(S^\prime\right) = 1$, 
+By [Theorem 5](#num_semi), since $\text{gcd}\left(S^\prime\right) = 1$, 
 there is $L \in \text{ℕ}$ such that, 
 for all $m \in \text{ℕ}$ with $m \geq L$, 
 there exist $x_1, x_2, ..., x_k \in \text{ℕ}$ such that  $m = \sum_{i=1}^{k} x_i s_i$.  
@@ -222,26 +222,30 @@ $\square$
 For all sufficiently $n \in \text{ℕ}$ we have $a_{n+1} = a_n + 1$.
 
 *Proof.*  
-By [Claim 6](#claim6) we have that there is some $M \in \text{ℕ}$ such that 
-for all $n \in \text{ℕ}$ with $n \geq N$ we have 
+By [Claim 6](#claim6) we have that there is some $L \in \text{ℕ}$ such that 
+for all $n \in \text{ℕ}$ with $n \geq L$ we have 
 $n \in \text{𝒜}^\star_1 \cap \left( \bigcap_{i=2}^{k} \text{𝒜}\_i \right)$.
 
-Suppose there are some $n \geq N$ and some $j \in \lbrace 2, 3, ..., k\rbrace$ 
-such that $a_{n + s} > a_n + s$. Then 
+Suppose there are some $n \geq L$ and some $j \in \lbrace 2, 3, ..., k\rbrace$ 
+such that $a_{n + s_j} > a_n + s_j$. Then 
 
-$$ a_n + s s^\star = a_{n + s s^\star} = a_{n + s^\star s} > a_n + s^\star s, $$
+$$ a_n + s_1 + s_j = a_{n + s_1 s_j} = a_{n + s_j s} > a_n + s_j s, $$
 
-a contradiction. Hence, we have that $a_{n + s} = a_n + s$ for all $n \geq N$.
+a contradiction. Hence, we have that $a_{n + s} = a_n + s$ for all $n \geq L$ and all $j \in \lbrace 2, 3, ..., k\rbrace$.
 
-Again, by [Bézout's identity](https://en.wikipedia.org/wiki/B%C3%A9zout%27s_identity) there are some $x \in \text{ℤ}$ and $y \in \text{ℤ}$ such that 
-$x s^\star + y s = 1$. Note that it is either $x s^\star > 0 > y s$ or $y s > 0 > x s^\star$.  
+Again, by [Bézout's identity](https://en.wikipedia.org/wiki/B%C3%A9zout%27s_identity) there are some $z_1, z_2, ..., z_k \in \text{ℤ}$ 
+such that $\sum_{i=1}^{k} z_i s_i = 1$. 
 
-For the case where $x s^\star > 0 > y s$ we have
+Now we sort the sequence $z_1 s_1, z_2 s_2, ..., z_k s_k$ by defining a bijection $\bar{z}$
+from $\lbrace 1, 2, ..., k\rbrace$ to $\lbrace z_1 s_1, z_2 s_2, ..., z_k s_k\rbrace$ such that 
 
-$$ a_{n+1} = a_{n + x s^\star + y s} = a_{n + x s^\star} + y s = a_n + y s + x s^\star = a_n + 1 $$
+$$ \bar{z} (1) \geq \bar{z} (2) \geq ... \geq 0 > ... \geq \bar{z} (k).  $$
+
+Then $L \leq n < $
+
+$$ a_{n+1} = a_{n + \sum_{i=1}^{k} z_i s_i} = a_{n + \sum_{i=1}^{k} z_i s_i} + y s = a_n + y s + x s^\star = a_n + 1 $$
 
 for all $n \geq N$.  
-Similarly, for the case where $x s^\star > 0 > y s$ we can also conclude that $a_{n+1} = a_n + 1$ for all $n \geq N$.
 
 $\square$
 
