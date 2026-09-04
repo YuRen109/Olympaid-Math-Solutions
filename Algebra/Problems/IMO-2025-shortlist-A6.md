@@ -277,11 +277,9 @@ $$
 a_{n+1} = a_{n + \sum_{i=1}^{k} z_i s_i} = a_{n + \sum_{i=1}^{k} \bar{z} (i)} &= a_{n + \sum_{i=1}^{k-1} \bar{z} (i)} + \bar{z} (k) \\
 &= a_{n + \sum_{i=1}^{k-2} \bar{z} (i)} + \bar{z} (k) + \bar{z} (k-1) \\
 &\vdots \\
-&= a_{n} + \bar{z} (k) + \bar{z} (k-1) + \cdots + \bar{z} (1) = a_n + \sum_{i=1}^{k} z_i s_i = a_n + 1
+&= a_{n} + \bar{z} (k) + \bar{z} (k-1) + \cdots + \bar{z} (1) = a_n + \sum_{i=1}^{k} z_i s_i = a_n + 1.
 \end{aligned}
 $$
-
-for all $n \geq N$.  
 
 $\square$
 
@@ -320,5 +318,7 @@ the only possible solution is $a_{n+1} = a_n + 1$ for all $n \in \text{ℕ}$ (wi
 $a_n = n + N$ for some $N \in \text{ℕ}$.  
 
 ### What I learned
-1. [Bézout's identity](https://en.wikipedia.org/wiki/B%C3%A9zout%27s_identity))
+1. [Bézout's identity](https://en.wikipedia.org/wiki/B%C3%A9zout%27s_identity)
 2. [Numerical semigroups](https://en.wikipedia.org/wiki/Numerical_semigroup)
+3. Picking finitely many key elements from an infinite set.
+4. Arguing propositions hold for large $n$ at first, and then arguing them hold for all $n$.
