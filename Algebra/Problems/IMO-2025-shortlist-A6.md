@@ -41,8 +41,8 @@ $\square$
 
 Suppose that there is some $S \in \text{𝕊}$ such that such a non-periodic sequence $a_1, a_2, \cdots$ of positive integer, 
 which may be dependent of $S$, in the problem statement exist.  
-In this case, let $S^\star \subseteq S$ denote the subset such that for each $s^\star \in S^\star$ and for all $n \in \text{ℕ}$ 
-we have $a_n = \left| a_{n+s^\star} - s^\star \right|$.  
+In this case, let $S^\star \subseteq S$ denote the collection of each $s^\star \in S$ 
+such that $a_n = \left| a_{n+s^\star} - s^\star \right|$ for all $n \in \text{ℕ}$.  
 The condition 2 in the problem statement implies that $S^\star$ is non-empty, and therefore, $S$ is non-empty.  
 
 
