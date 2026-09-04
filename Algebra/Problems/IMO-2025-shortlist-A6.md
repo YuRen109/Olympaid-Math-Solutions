@@ -73,6 +73,19 @@ Let $s \in S$, $s^\star \in S^\star$ and $k \in \text{ℕ}$. Then
 2.4    If $k \in \text{𝒜}^{\star}(s^\star)$, then $k + ns \in \text{𝒜}^\star$ for all $n \in \text{ℕ}$.  
 
 *Proof.*  
+First, we will prove Claim 2.1. 
+Claim 2.1 holds since 
+
+$$k \in \text{𝒜}(s) \iff a_{k+s} \geq s + a_{k} > s \implies \left[ a_{k} > s \text{  or  } a_{k+s} > s \right], $$
+
+and  
+
+$$ k \in \text{ℬ}(s) \iff a_{k+s} \leq s - a_{k} \implies \left[ a_{s} \leq s \text{  and } a_{k+s} \leq s \right]. $$
+
+Claim 2.2 may be proven in a similar way.
+
+
+
 $k \in \text{𝒜}$ implies that $a_{k+s} \geq s + a_{k} > s$.  
 Suppose $k+s \in \text{ℬ}$. Then $a_{k+2s} \leq s - a_{k+s}$, which implies that  
 
