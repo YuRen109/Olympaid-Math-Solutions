@@ -33,7 +33,7 @@ We say that an infinite sequence $a_1, a_2, \cdots$ is *periodic* if there exist
 
 Let $\text{𝕊}$ denote the collection of all subsets $S$ of $\text{ℕ}$ such that no positive integer greater than 1 divides all elements of $S$.  
 For any finite non-empty subset $T$ of $\text{ℕ}$, let $\text{gcd}(T)$ denote the greatest common divisor of all elements of $T$.  
-For any finite subset $F$ of $\text{ℕ}$, let ${\#} F$ denote the number of elements of $F$.  
+For any finite subset $F$ of $\text{ℕ}$, let ${\\\#} F$ denote the number of elements of $F$.  
 
 
 
@@ -42,7 +42,7 @@ Then we have the following result.
 For any non-empty $S \in \text{𝕊}$ there exists a finite non-empty subset $S^\prime$ of $S$ such that $\text{gcd}\left( S^\prime \right)= 1$.  
 
 *Proof.*   
-For the case where $S$ is finite, we have that $\text{gcd} S = 1$ because, otherwise, 
+For the case where $S$ is finite, we have that $\text{gcd}(S) = 1$ because, otherwise, 
 $\text{gcd}(S)$ would be a positive integer that divides all elements of $S$ and is also greater than 1.  
 In this case we may find $S^\prime = S$.  
 
