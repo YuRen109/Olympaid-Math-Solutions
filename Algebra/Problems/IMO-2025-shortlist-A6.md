@@ -11,7 +11,7 @@ We say that an infinite sequence $a_1, a_2, \cdots$ is *periodic* if there exist
 # Key idea
 
 1. Look into properties of $S$.  
-   Consider some tricks related to $\text{gcd}$ (for example, [Bézout's identity](https://en.wikipedia.org/wiki/B%C3%A9zout%27s_identity).)
+   Consider some tricks related to $\text{gcd}$ (for example, [Bézout's identity](https://en.wikipedia.org/wiki/B%C3%A9zout%27s_identity))
    because of the property that **"no positive integer greater than 1 divides all elements of $S$"**.     
 2. Find **finitely many key elements** in $S$ (even though it is infinite) and use them to see properties of $a_n$,
    because finitely many key elements are sufficient to represent properties of $S$ where $a_n$ would be confined, 
@@ -163,6 +163,7 @@ $$x_1 n_1 + x_2 n_2 + \cdots + x_k n_k = m.$$
 
 *Proof.*  
 This a simple corollary from a fundamental theorem of [Numerical semigroups](https://en.wikipedia.org/wiki/Numerical_semigroup).  
+Here we provide a proof that does not need to introduce the concept of Numerical semigroups.  
 
 Suppose $k = 1$. Then $\text{gcd}(N) = 1$ implies that $N = \lbrace 1 \rbrace$, 
 and for all $m \in \text{ℕ}$ we may find $x_1 = m$ such that $x_1 \cdot 1 = m$.  
@@ -319,3 +320,5 @@ the only possible solution is $a_{n+1} = a_n + 1$ for all $n \in \text{ℕ}$ (wi
 $a_n = n + N$ for some $N \in \text{ℕ}$.  
 
 ### What I learned
+1. [Bézout's identity](https://en.wikipedia.org/wiki/B%C3%A9zout%27s_identity))
+2. [Numerical semigroups](https://en.wikipedia.org/wiki/Numerical_semigroup)
