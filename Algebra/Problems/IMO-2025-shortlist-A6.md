@@ -89,7 +89,8 @@ We may always find a finite non-empty subset $S^\prime$ of $S$ such that $\text{
 3. Let $S^{\prime} = \lbrace s^\star \rbrace \cup S^{\prime\prime}$.  
 
 Such a $S^{\prime}$ may be written as $S^\prime = \lbrace s_1, s_2, ..., s_k \rbrace$ where $k \in \text{ℕ}$, $s_1 \in S^\star$ and $s_1, s_2, ..., s_k \in S$.  
-Denote $\text{𝒜}_i = \text{𝒜}(s_i)$ for each $i \in \lbrace 1, 2,..., k \rbrace$ and, especially $\text{𝒜}^{\star}_1 = \text{𝒜}^{\star}(s_1)$.  
+Denote $\text{𝒜}_i = \text{𝒜}(s_i)$ and $\text{ℬ}_i = \text{ℬ}(s_i)$ for each $i \in \lbrace 1, 2,..., k \rbrace$ 
+and, especially $\text{𝒜}^{\star}_1 = \text{𝒜}^{\star}(s_1)$ and $\text{ℬ}^{\star}_1 = \text{ℬ}^{\star}(s_1)$.  
 
 The result of the trivial case where $k = 1$ is shown as follows.  
 
@@ -169,7 +170,7 @@ Then by the following process we may show that
 
 $$C + \sum_{i=1}^{k-1} (c_i + x_i) s_i + x_k s_k \in \text{𝒜}^\star_1 \cap \left( \bigcap_{i=2}^{k} \text{𝒜}_i \right)$$ 
 
-for all $x_0, x_1, ..., x_k \in \text{ℕ}$:  
+for all $x_1, x_2, ..., x_k \in \text{ℕ}$:  
 
 1. By [Claim 2](#claim2) and the fact that $C \in \text{𝒜}^\star_1$ we have $C + ( c_{1} + x_{1} ) s_{1} \in \text{𝒜}^\star_{1}$, 
 and $a_{C + (c_1+x_1) s_1} = a_C + (c_1+x_1) s_1 > c_1 s_1 > s_2$, which implies further that
