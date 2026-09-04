@@ -148,14 +148,14 @@ $\square$
 Before jumping into the discussion of general cases where ${\\#} S^\prime > 1$, we state some useful theorems here.  
 
 ### <span id="bezout"></span>Theorem 4 ([Bézout's identity](https://en.wikipedia.org/wiki/B%C3%A9zout%27s_identity))
-Let $N = \lbrace n_1, n_2, \cdots, n_k \rbrace$ be a set of $k$ positive integers with $\text{gcd}(N) = 1$.  
+Let $N = \lbrace n_1, n_2, \cdots, n_k \rbrace$ be a set of $k$ positive integers with $\text{gcd }N = 1$.  
 Then there exist $x_1, x_2, \cdots, x_k \in \text{ℤ}$ 
 such that 
 
 $$x_1 n_1 + x_2 n_2 + \cdots + x_k n_k = 1.$$
 
 ### <span id="num_semi"></span>Theorem 5 (a corollary from a fundamental theorem of [Numerical semigroups](https://en.wikipedia.org/wiki/Numerical_semigroup))
-Let $N = \lbrace n_1, n_2, \cdots, n_k \rbrace$ be a set of $k$ positive integers with $\text{gcd}(N) = 1$.  
+Let $N = \lbrace n_1, n_2, \cdots, n_k \rbrace$ be a set of $k$ positive integers with $\text{gcd }N = 1$.  
 Then for all sufficiently large $m \in \text{ℕ}$ there exist $x_1, x_2, \cdots, x_k \in \text{ℕ}$ 
 such that 
 
