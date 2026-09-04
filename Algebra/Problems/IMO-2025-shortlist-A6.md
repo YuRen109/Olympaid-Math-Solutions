@@ -121,7 +121,7 @@ We may always find a finite non-empty subset $S^\prime$ of $S$ such that $\text{
 
 Such a $S^{\prime}$ may be written as $S^\prime = \lbrace s_1, s_2, \cdots, s_{{\\#} S^\prime} \rbrace$ 
 where $s_1 \in S^\star$ and $s_1, s_2, \cdots, s_{{\\#} S^\prime} \in S$.  
-Denote $\text{𝒜}_i = \text{𝒜}(s_i)$ and $\text{ℬ}_i = \text{ℬ}(s_i)$ for each $i \in \lbrace 1, 2, \cdots, k \rbrace$ 
+Denote $\text{𝒜}_i = \text{𝒜}(s_i)$ and $\text{ℬ}_i = \text{ℬ}(s_i)$ for each $i \in \lbrace 1, 2, \cdots, {\\#} S^\prime\rbrace$ 
 and, especially $\text{𝒜}^{\star}_1 = \text{𝒜}^{\star}(s_1)$ and $\text{ℬ}^{\star}_1 = \text{ℬ}^{\star}(s_1)$.  
 
 The result of the trivial case where ${\\#} S^\prime = 1$ is shown as follows.  
