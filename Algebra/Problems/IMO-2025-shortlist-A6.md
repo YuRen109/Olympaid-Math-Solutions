@@ -194,7 +194,7 @@ $\square$
 ### <span id="claim6"></span>Claim 6 
 For all sufficiently large $n \in \text{ℕ}$ we have 
 
-$$n \in \text{𝒜}^\star\_1 \cap \text{𝒜}\_2 \cap \cdots \cap \text{𝒜}\_{\\#}S^\prime = \text{𝒜}^\star\_1 \cap \left( \bigcap_{i=2}^{{\\#}S^\prime} \text{𝒜}\_i \right).$$
+$$n \in \text{𝒜}^\star\_1 \cap \text{𝒜}\_2 \cap \cdots \cap \text{𝒜}\_{{\\#}S^\prime} = \text{𝒜}^\star\_1 \cap \left( \bigcap_{i=2}^{{\\#}S^\prime} \text{𝒜}\_i \right).$$
 
 *Proof.*  
 We have that there is some $C \in \text{𝒜}^\star_1$ because, otherwise, we get $a_n$ with $a_{n+s_1} = s_1 - a_n$ for all $n \in \text{ℕ}$, 
@@ -203,7 +203,7 @@ which is periodic.
 For each $i \in \lbrace 1, 2, \cdots, {\\#}S^\prime-1\rbrace$ we pick $c_i \in \text{ℕ}$ with $c_i s_i > s_{i+1}$.  
 Then by the following process we may show that 
 
-$$C + \sum_{i=1}^{{\\#}S^\prime-1} (c_i + x_i) s_i + x_{\\#}S^\prime s_{\\#}S^\prime \in \text{𝒜}^\star_1 \cap \left( \bigcap_{i=2}^{{\\#}S^\prime} \text{𝒜}_i \right)$$ 
+$$C + \sum_{i=1}^{{\\#}S^\prime-1} (c_i + x_i) s_i + x_{{\\#}S^\prime} s_{{\\#}S^\prime} \in \text{𝒜}^\star_1 \cap \left( \bigcap_{i=2}^{{\\#}S^\prime} \text{𝒜}_i \right)$$ 
 
 for all $x_1, x_2, \cdots, x_k \in \text{ℕ}$:  
 
@@ -230,14 +230,14 @@ $$C + \sum_{i=1}^{{\\#}S^\primek-1} (c_i + x_i) s_i \in \text{𝒜}^\star_1 \cap
 
    and also,  
 
-$$C + \left(\sum_{i=1}^{k-1} c_i s_i\right) +  \left(\sum_{i=1}^{k} x_i s_i\right) = C + \sum_{i=1}^{k-1} (c_i + x_i) s_i + x_k s_k \in \text{𝒜}^\star_1 \cap \left( \bigcap_{i=2}^{k} \text{𝒜}_i \right).$$
+$$C + \left(\sum_{i=1}^{{\\#}S^\prime-1} c_i s_i\right) +  \left(\sum_{i=1}^{{\\#}S^\prime} x_i s_i\right) = C + \sum_{i=1}^{{\\#}S^\prime-1} (c_i + x_i) s_i + x_{{\\#}S^\prime} s_{{\\#}S^\prime} \in \text{𝒜}^\star_1 \cap \left( \bigcap_{i=2}^{{\\#}S^\prime} \text{𝒜}_i \right).$$
 
 
 By [Theorem 5](#num_semi), since $\text{gcd }S^\prime = 1$, there is $L \in \text{ℕ}$ such that, 
 for all $m \in \text{ℕ}$ with $m \geq L$, 
-there exist $x_1, x_2, \cdots, x_k \in \text{ℕ}$ such that  $m = \sum_{i=1}^{k} x_i s_i$.  
+there exist $x_1, x_2, \cdots, x_{{\\#}S^\prime} \in \text{ℕ}$ such that  $m = \sum_{i=1}^{{{\\#}S^\prime}} x_i s_i$.  
 Let $L^\prime = L + C + \sum_{i=1}^{k-1} c_i s_i \in \text{ℕ}$.  
-Then for all $m^\prime \in \text{ℕ}$ with $m^\prime \geq L^\prime$ we have $m^\prime \in \text{𝒜}^\star_1 \cap \left( \bigcap_{i=2}^{k} \text{𝒜}_i \right).$
+Then for all $m^\prime \in \text{ℕ}$ with $m^\prime \geq L^\prime$ we have $m^\prime \in \text{𝒜}^\star_1 \cap \left( \bigcap_{i=2}^{{{\\#}S^\prime}} \text{𝒜}_i \right).$
 
 $\square$
 
@@ -261,7 +261,7 @@ Again, by [Bézout's identity](#bezout), since $\text{gcd } S^\prime = 1$,
 there are some $z_1, z_2, \cdots, z_{\\#}S^\prime \in \text{ℤ}$ such that $\sum_{i=1}^{{\\#}S^\prime} z_i s_i = 1$. 
 
 Now we sort the sequence $z_1 s_1, z_2 s_2, \cdots, z_{\\#}S^\prime s_{\\#}S^\prime$ by defining a bijection $\bar{z}$
-from $\lbrace 1, 2, \cdots, {\\#}S^\prime\rbrace$ to $\lbrace z_1 s_1, z_2 s_2, \cdots, z_{\\#}S^\prime s_{\\#}S^\prime\rbrace$ such that 
+from $\lbrace 1, 2, \cdots, {\\#}S^\prime\rbrace$ to $\lbrace z_1 s_1, z_2 s_2, \cdots, z_{{\\#}S^\prime} s_{{\\#}S^\prime}\rbrace$ such that 
 
 $$ \bar{z} (1) \geq \bar{z} (2) \geq \cdots > 0 > \cdots \geq \bar{z} ({\\#}S^\prime).  $$
 
@@ -275,10 +275,10 @@ Therefore,
 
 $$
 \begin{aligned}
-a_{n+1} = a_{n + \sum_{i=1}^{k} z_i s_i} = a_{n + \sum_{i=1}^{k} \bar{z} (i)} &= a_{n + \sum_{i=1}^{k-1} \bar{z} (i)} + \bar{z} (k) \\
-&= a_{n + \sum_{i=1}^{k-2} \bar{z} (i)} + \bar{z} (k) + \bar{z} (k-1) \\
+a_{n+1} = a_{n + \sum_{i=1}^{{{\\#}S^\prime}} z_i s_i} = a_{n + \sum_{i=1}^{{{\\#}S^\prime}} \bar{z} (i)} &= a_{n + \sum_{i=1}^{k-1} \bar{z} (i)} + \bar{z} ({{\\#}S^\prime}) \\
+&= a_{n + \sum_{i=1}^{{{\\#}S^\prime}-2} \bar{z} (i)} + \bar{z} ({{\\#}S^\prime}) + \bar{z} ({{\\#}S^\prime}-1) \\
 &\vdots \\
-&= a_{n} + \bar{z} (k) + \bar{z} (k-1) + \cdots + \bar{z} (1) = a_n + \sum_{i=1}^{k} z_i s_i = a_n + 1.
+&= a_{n} + \bar{z} ({{\\#}S^\prime}) + \bar{z} ({{\\#}S^\prime}-1) + \cdots + \bar{z} (1) = a_n + \sum_{i=1}^{{{\\#}S^\prime}} z_i s_i = a_n + 1.
 \end{aligned}
 $$
 
@@ -294,7 +294,7 @@ then $\text{ℬ}^\star_1 \cup \left( \bigcup_{i=2}^{{\\#}S^\prime} \text{ℬ}\_{
 Suppose that $m \in \text{ℕ}$ is the largest number in $\text{ℬ}^\star_1 \cup \left( \bigcup_{i=2}^{{\\#}S^\prime} \text{ℬ}{\_i} \right)$. 
 Then we have that $m \in \text{ℬ}^\star_1$ or $m \in \text{ℬ}{\_j}$ for some $j \in \lbrace 2, 3, \cdots, {\\#}S^\prime\rbrace$.  
 
-By [Claim 7](#claim7) we have that $m+1 \in \text{𝒜}^\star\_1 \cap \left( \bigcap_{i=2}^{k} \text{𝒜}\_i \right)$, 
+By [Claim 7](#claim7) we have that $m+1 \in \text{𝒜}^\star\_1 \cap \left( \bigcap_{i=2}^{{{\\#}S^\prime}} \text{𝒜}\_i \right)$, 
 and $a_{l+1} = a_{l} + 1$ for each $l \in \text{ℕ}$ with $l \geq m + 1$.  
 
 For the case where $m \in \text{ℬ}^\star\_1$, we have that $a_{m+s_1} = s_1 - a_m$. 
