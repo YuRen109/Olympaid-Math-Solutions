@@ -35,8 +35,6 @@ Let $\text{𝕊}$ denote the collection of all subsets $S$ of $\text{ℕ}$ such 
 For any finite non-empty subset $T$ of $\text{ℕ}$, let $\text{gcd}(T)$ denote the greatest common divisor of all elements of $T$.  
 For any finite subset $F$ of $\text{ℕ}$, let ${\\#} F$ denote the number of elements of $F$.  
 
-
-
 Then we have the following result.
 ### <span id="claim1"></span>Claim 1 (a property of $S$)
 For any non-empty $S \in \text{𝕊}$ there exists a finite non-empty subset $S^\prime$ of $S$ such that $\text{gcd}\left( S^\prime \right)= 1$.  
@@ -122,17 +120,17 @@ We may always find a finite non-empty subset $S^\prime$ of $S$ such that $\text{
 2. Find an element $s^\star \in S^\star$ since $S^\star$ is non-empty.  
 3. Let $S^{\prime} = \lbrace s^\star \rbrace \cup S^{\prime\prime}$.  
 
-Such a $S^{\prime}$ may be written as $S^\prime = \lbrace s_1, s_2, \cdots, s_k \rbrace$ 
-where $k \in \text{ℕ}$, $s_1 \in S^\star$ and $s_1, s_2, \cdots, s_k \in S$.  
+Such a $S^{\prime}$ may be written as $S^\prime = \lbrace s_1, s_2, \cdots, s_{{\\#} S^\prime} \rbrace$ 
+where $s_1 \in S^\star$ and $s_1, s_2, \cdots, s_{{\\#} S^\prime} \in S$.  
 Denote $\text{𝒜}_i = \text{𝒜}(s_i)$ and $\text{ℬ}_i = \text{ℬ}(s_i)$ for each $i \in \lbrace 1, 2, \cdots, k \rbrace$ 
 and, especially $\text{𝒜}^{\star}_1 = \text{𝒜}^{\star}(s_1)$ and $\text{ℬ}^{\star}_1 = \text{ℬ}^{\star}(s_1)$.  
 
-The result of the trivial case where $k = 1$ is shown as follows.  
+The result of the trivial case where ${\\#} S^\prime = 1$ is shown as follows.  
 
-### <span id="claim3"></span>Claim 3 (the trivial case where $k=1$)
+### <span id="claim3"></span>Claim 3 (the trivial case where ${\\#} S^\prime = 1$)
 
-3.1 $k = 1$ if and only if $S^\prime = \lbrace 1 \rbrace$.  
-3.2 If $k = 1$, then $a_{n+1} = a_n + 1$ for all $n \in \text{ℕ}$ (with $a_1 \in \text{ℕ}$).  
+3.1 ${\\#} S^\prime = 1$ if and only if $S^\prime = \lbrace 1 \rbrace$.  
+3.2 If ${\\#} S^\prime = 1$, then $a_{n+1} = a_n + 1$ for all $n \in \text{ℕ}$ (with $a_1 \in \text{ℕ}$).  
 
 *Proof.*  
 It is apparent that Claim 3.1 holds.  
