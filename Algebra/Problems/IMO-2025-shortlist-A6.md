@@ -242,7 +242,7 @@ Then for all $m^\prime \in \text{ℕ}$ with $m^\prime \geq L^\prime$ we have $m^
 $\square$
 
 ### <span id="claim7"></span>Claim 7
-For all sufficiently $n \in \text{ℕ}$ we have $a_{n+1} = a_n + 1$.
+For all sufficiently large $n \in \text{ℕ}$ we have $a_{n+1} = a_n + 1$.
 
 *Proof.*  
 By [Claim 6](#claim6) we have that there is some $L \in \text{ℕ}$ such that 
@@ -260,7 +260,7 @@ Hence, we have that $a_{n + s} = a_n + s$ for all $n \in \text{ℕ}$ with $n \ge
 Again, by [Bézout's identity](#bezout), since $\text{gcd } S^\prime = 1$, 
 there are some $z_1, z_2, \cdots, z_{\\#}S^\prime \in \text{ℤ}$ such that $\sum_{i=1}^{{\\#}S^\prime} z_i s_i = 1$. 
 
-Now we sort the sequence $z_1 s_1, z_2 s_2, \cdots, z_{\\#}S^\prime s_{\\#}S^\prime$ by defining a bijection $\bar{z}$
+Now we sort the sequence $z_1 s_1, z_2 s_2, \cdots, z_{{\\#}S^\prime} s_{{\\#}S^\prime}$ by defining a bijection $\bar{z}$
 from $\lbrace 1, 2, \cdots, {\\#}S^\prime\rbrace$ to $\lbrace z_1 s_1, z_2 s_2, \cdots, z_{{\\#}S^\prime} s_{{\\#}S^\prime}\rbrace$ such that 
 
 $$ \bar{z} (1) \geq \bar{z} (2) \geq \cdots > 0 > \cdots \geq \bar{z} ({\\#}S^\prime).  $$
@@ -289,7 +289,7 @@ $\square$
 $$\text{𝒜}^\star_1 \cap \left( \bigcap_{i=2}^{{\\#}S^\prime} \text{𝒜}_i \right) = \text{ℕ}.$$
 
 *Proof.*  
-By [Claim 6](#claim6) we know that if $\text{ℬ}^\star_1 \cup \left( \bigcup_{i=2}^{{\\#}S^\prime} \text{ℬ}\_i \right) = \text{ℕ} \backslash \left[ \text{𝒜}^\star\_1 \cap \left( \bigcap_{i=2}^{k} \text{𝒜}\_i \right) \right]$ is non-empty, 
+By [Claim 6](#claim6) we know that if $\text{ℬ}^\star_1 \cup \left( \bigcup_{i=2}^{{\\#}S^\prime} \text{ℬ}\_i \right) = \text{ℕ} \backslash \left[ \text{𝒜}^\star\_1 \cap \left( \bigcap_{i=2}^{{{\\#}S^\prime}} \text{𝒜}\_i \right) \right]$ is non-empty, 
 then $\text{ℬ}^\star_1 \cup \left( \bigcup_{i=2}^{{\\#}S^\prime} \text{ℬ}\_{i} \right)$ contains a largest number.  
 Suppose that $m \in \text{ℕ}$ is the largest number in $\text{ℬ}^\star_1 \cup \left( \bigcup_{i=2}^{{\\#}S^\prime} \text{ℬ}{\_i} \right)$. 
 Then we have that $m \in \text{ℬ}^\star_1$ or $m \in \text{ℬ}{\_j}$ for some $j \in \lbrace 2, 3, \cdots, {\\#}S^\prime\rbrace$.  
