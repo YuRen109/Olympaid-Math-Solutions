@@ -50,9 +50,9 @@ For any $s \in S$ and for any $s^\star \in S^\star$ we denote
 $$
 \begin{aligned}
 \text{𝒜}(s) &= \lbrace n \in \text{ℕ} \mid a_{n+s} \geq s + a_n \rbrace, \\
-\text{ℬ}\left( s \right) &= \lbrace n \in \text{ℕ} \mid a_{n+s} \leq s - a_n \rbrace = \text{ℕ} \backslash \text{𝒜}\left( s \right), \\
-\text{𝒜}^{\star}\left( s^\star \right) &= \lbrace n \in \text{ℕ} \mid a_{n+s^\star} = s^\star + a_n \rbrace , \\
-\text{ℬ}^{\star}\left( s^\star \right) &= \lbrace n \in \text{ℕ} \mid a_{n+s^\star} = s^\star - a_n \rbrace = \text{ℕ} \backslash \text{𝒜}^{\star}\left( s^\star \right).
+\text{ℬ}(s) &= \lbrace n \in \text{ℕ} \mid a_{n+s} \leq s - a_n \rbrace = \text{ℕ} \backslash \text{𝒜}\left( s \right), \\
+\text{𝒜}^{\star}(s^\star) &= \lbrace n \in \text{ℕ} \mid a_{n+s^\star} = s^\star + a_n \rbrace , \\
+\text{ℬ}^{\star}(s^\star) &= \lbrace n \in \text{ℕ} \mid a_{n+s^\star} = s^\star - a_n \rbrace = \text{ℕ} \backslash \text{𝒜}^{\star}\left( s^\star \right).
 \end{aligned}
 $$
 
@@ -63,7 +63,7 @@ We may always find a finite non-empty subset $S^\prime$ of $S$ such that $\text{
 3. let $S^{\prime} = \lbrace s^\star \rbrace \cup S^{\prime\prime}$
 
 Such a $S^{\prime}$ may be written as $S^{\prime} = \lbrace s_1, s_2, ..., s_k \rbrace$ with $s_1 \in S^\star$ and $s_1, s_2, ..., s_k \in S$.  
-Denote $\text{𝒜}_i = \text{𝒜}( s )$
+Denote $\text{𝒜}_i = \text{𝒜}(s_i)$ and, especially $\text{𝒜}^{\star}_1 = \text{𝒜}^{\star}(s_1)$.  
 
 
 
