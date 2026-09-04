@@ -193,7 +193,7 @@ $$C + \sum_{i=1}^{k-1} c_i s_i + \sum_{i=1}^{k} x_i s_i = \sum_{i=1}^{k-1} (c_i 
 
 and also,  
 
-$$C +  = C + \sum_{i=1}^{k-1} (c_i + x_i) s_i + x_k s_k \in \text{𝒜}^\star_1 \cap \left( \bigcap_{i=2}^{k} \text{𝒜}_i \right).$$
+$$C + \left(\sum_{i=1}^{k-1} c_i s_i\right) +  \left(\sum_{i=1}^{k} x_i s_i\right) = C + \sum_{i=1}^{k-1} (c_i + x_i) s_i + x_k s_k \in \text{𝒜}^\star_1 \cap \left( \bigcap_{i=2}^{k} \text{𝒜}_i \right).$$
 
 By [Theorem 4](#num_semi), there is $L \in \text{ℕ}$ such that 
 for all $m \in \text{ℕ}$ with $m \geq L$ we have $m = \sum_{i=1}^{k} x_i s_i$.  
@@ -203,7 +203,7 @@ Then for all $m^\prime \in \text{ℕ}$ with $m^\prime \geq L^\prime$ we have $m^
 $\square$
 
 ### <span id="claim7"></span>Claim 7
-$$\text{𝒜}^\star_1 \cap \left( \bigcap_{i=2}^{k} \text{𝒜}_i \right) = \text{ℕ}$$
+$$\text{𝒜}^\star_1 \cap \left( \bigcap_{i=2}^{k} \text{𝒜}_i \right) = \text{ℕ}.$$
 
 
 ### <span id="claim8"></span>Claim 8
