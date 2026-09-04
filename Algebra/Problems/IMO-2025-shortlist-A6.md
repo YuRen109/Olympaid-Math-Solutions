@@ -266,7 +266,7 @@ from $\lbrace 1, 2, \cdots, {\\#}S^\prime\rbrace$ to $\lbrace z_1 s_1, z_2 s_2, 
 $$ \bar{z} (1) \geq \bar{z} (2) \geq \cdots > 0 > \cdots \geq \bar{z} ({\\#}S^\prime).  $$
 
 Then $\sum_{i=1}^{j} \bar{z} (i) > 0$ for each $j \in \lbrace 1, 2, \cdots, {\\#}S^\prime\rbrace$.  
-The construction of $\bar{z}$ helps with the application of $a_{n + s} = a_n + s$ for sufficiently large $n$.  
+The construction of $\bar{z}$ helps with the application of $a_{n + s_j} = a_n + s_j$ for sufficiently large $n$.  
 
 Let $n \in \text{ℕ}$ with $n \geq L$.  
 Then we have $L \leq n + \sum_{i=1}^{j} \bar{z} (i)$ for each $j \in \lbrace 1, 2, \cdots, {\\#}S^\prime\rbrace$ 
