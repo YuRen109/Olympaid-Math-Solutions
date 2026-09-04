@@ -10,12 +10,15 @@ We say that an infinite sequence $a_1, a_2, \cdots$ is *periodic* if there exist
 # Key idea
 
 1. Look into properties of $S$.  
-   That **"no positive integer greater than 1 divides all elements of $S$"** let me consider some trick related to $\text{gcd}$.  
+   That **"no positive integer greater than 1 divides all elements of $S$"** let me consider some tricks related to $\text{gcd}$.  
    For example, [Bézout's identity](https://en.wikipedia.org/wiki/B%C3%A9zout%27s_identity).
-2. Find **finitely many key elements** in $S$ (even though it is infinite) and use them to see properties of $a_n$.
-   Because finitely many key elements are sufficient to represent properties of $S$ where $a_n$ may be confined.  
-3. Observe **the condition 2** and the requirement of **non-periodic infinite sequences** in the problem statement.
+2. Find **finitely many key elements** in $S$ (even though it is infinite) and use them to see properties of $a_n$.  
+   Because finitely many key elements are sufficient to represent properties of $S$ where $a_n$ would be confined,
+   if the properties are relevant to $\text{gcd}.  Besides, avoid defining $\text{gcd}$ for infinite sets of integers.  
+   
+3. Observe **the condition 2** and the requirement of **non-periodic infinite sequences** in the problem statement.  
    It is not hard to imagine that $a_n$ would finally escape from periodicity as $n$ goes to infinity.
+   Start to 
 4. 
 
 # Solution
