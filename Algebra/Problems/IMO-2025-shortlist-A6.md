@@ -116,14 +116,14 @@ Before jumping into the discussion of general cases, we state some useful theore
 
 ### <span id="Bézout"></span>Theorem ([Bézout's identity](https://en.wikipedia.org/wiki/B%C3%A9zout%27s_identity))
 Let $N = \lbrace n_1, n_2, ..., n_k \rbrace$ be a set of $k$ positive integers with $\text{gcd}(N) = 1$.  
-Then there exist $x_1 \in \text{ℤ}$, $x_2 \in \text{ℤ}$, ..., $x_k \in \text{ℤ}$ 
+Then there exist $x_1, x_2, ..., x_k \in \text{ℤ}$ 
 such that 
 
 $$x_1 n_1 + x_2 n_2 + ... + x_k n_k = 1.$$
 
 ### <span id="num_semi"></span>Theorem (a corollary from a fundamental theorem of [Numerical semigroup](https://en.wikipedia.org/wiki/Numerical_semigroup))
 Let $N = \lbrace n_1, n_2, ..., n_k \rbrace$ be a set of $k$ positive integers with $\text{gcd}(N) = 1$.  
-Then for all sufficiently large $m \in \text{ℕ}$ there exist $x_1 \in \text{ℕ}$, $x_2 \in \text{ℕ}$, ..., $x_k \in \text{ℕ}$ 
+Then for all sufficiently large $m \in \text{ℕ}$ there exist $x_1, x_2, ..., x_k \in \text{ℕ}$ 
 such that 
 
 $$x_1 n_1 + x_2 n_2 + ... + x_k n_k = m.$$
@@ -136,17 +136,13 @@ and for all $m \in \text{ℕ}$ we may find $x_1 = m$ such that $x_1 m = m$.
 Suppose $k > 1$. It suffices to show that for each $r \in \lbrace 1, 2, ..., n_1 - 1 \rbrace$ 
 there exist $x_2 \in \text{ℕ}$, ..., $x_k \in \text{ℕ}$ such that $x_2 n_2 + ... + x_k n_k \equiv r \pmod{x_1}$.  
 Let $r \in \lbrace 1, 2, ..., n_1 - 1 \rbrace$. 
-By [Bézout's identity](#Bézout) we may find $z_1 \in \text{ℤ}$, $z_2 \in \text{ℤ}$, ..., $z_k \in \text{ℤ}$ such that  
+By [Bézout's identity](#Bézout) we may find $z_1, z_2, ..., z_k \in \text{ℤ}$ such that $\sum^{k}_{i=1} z_i n_i = 1$, or  
 
-$$z_1 n_1 + z_2 n_2 + ... + z_k n_k = 1,$$
-
-or
-
-$$(r z_2) n_2 + ... + (r z_k) n_k \equiv r \pmod{x_1}.$$
+$$\sum^{k}_{i=2} (r z_i) n_i \equiv r \pmod{x_1}.$$
 
 Note that for all $t_{r,2}, t_{r,3}, ..., t_{r,k} \in \text{ℤ}$ we have
 
-$$(r z_2 + t_{r,2} x_1) n_2 + ... + (r z_k + t_{r,k} x_1) n_k \equiv r \pmod{x_1}.$$
+$$\sum^{k}_{i=2} (r z_i + t_{r,i} x_1) n_i \equiv r \pmod{x_1}.$$
 
 For each $r \in \lbrace 1, 2, ..., n_1 - 1 \rbrace$ and 
 for each $i \in \lbrace 2, 3, ..., k-1 \rbrace$ 
@@ -155,47 +151,19 @@ we may pick a sufficiently large $t_{r,i}$ such that $x_i = r z_i + t_{r,i} x_1 
 $\square$
 
 
-### <span id="claim3"></span>Claim 3
-For all sufficiently large $n \in \text{ℕ}$ we have $n \in \text{𝒜}$ and $n \in \text{𝒜}^\star$.
+### <span id="claim4"></span>Claim 4 
+For all sufficiently large $n \in \text{ℕ}$ we have $n \in \text{𝒜}^\star_1 \cap \text{𝒜}_2 \cap ... \cap \text{𝒜}_k = \text{𝒜}^\star_1 \cap \left( \bigcap_{i=2}^{k} \text{𝒜}_i \right)$.
 
 *Proof.*  
-First, we will prove that $n \in \text{𝒜}$ for all sufficiently large $n \in \text{ℕ}$. (So har we haven't determine what are sufficiently large $n$)  
-We have that there is some $k \in \text{𝒜}^\star$ because, otherwise, we get $a_n$ with $a_{n+s^\star} = s^\star - a_n$ for all $n \in \text{ℕ}$, 
+We have that there is some $C \in \text{𝒜}^\star_1$ because, otherwise, we get $a_n$ with $a_{n+s_1} = s_1 - a_n$ for all $n \in \text{ℕ}$, 
 which is periodic.  
-By [Claim 2](#claim2) we have $k + x s^\star \in \text{𝒜}^\star$, and moreover,  
 
-$$ a_{k+xs^\star} = a_k + x s^\star > x s^\star $$
+For each $i \in \lbrace 1, 2, ..., k-1\rbrace$ we pick $c_i \in \text{ℕ}$ with $c_i s_i > s_{i+1}$.  
+Then by the following process we may show that $ C + \sum_{i=0}^{k-1} (c_i + x_i) s_i + x_k s_k \in $ for all $x_0, x_1, ..., x_k \in \text{ℕ}$:  
+
+By [Claim 2](#claim2) and the fact that $C \in \text{𝒜}^\star_1$ we have $k + y_0 s_1 \in \text{𝒜}^\star$, and $$ a_{k+xs^\star} = a_k + x s^\star > x s^\star $$
 
 for all $x \in \text{ℕ}$.  
-
-On the other hand, let $l \in \lbrace 1, 2, ..., s-1 \rbrace$.  
-Since $\text{gcd}(s,s^\star) = 1$, by [Bézout's identity](https://en.wikipedia.org/wiki/B%C3%A9zout%27s_identity) there are some $x_0 \in \text{ℤ}$ and $y_0 \in \text{ℤ}$ such that 
-$x_0 s^\star - y_0 s = 1$, or
-
-$$ k + (l-k) x_0 s^\star = l + (l-k) y_0 s.$$
-
-We have that $k + x_t s^\star = l + y_t s$, where
-
-$$
-\begin{aligned}
-&x_t = (l-k) x_0 s^\star + t s, \\
-&y_t = (l-k) y_0 s + t s^\star,
-\end{aligned}
-$$
-
-for any $t \in \text{ℕ}$.
-
-For each $l \in \lbrace 1, 2, ..., s-1 \rbrace$ we pick a large enough $t_l \in \text{ℕ}$ such that $x_{t_l} s^\star > s$ and $y_{t_l} \geq 1$. 
-Then 
-
-$$ a_{l+y_{t_l} s} = a_{k+x_{t_l} s^*} > x_{t_l} s^\star > s,$$
-
-implying that $l + (y_{t_l} - 1) s \in \text{𝒜}$.
-
-By [Claim 2](#claim2) we have $n \in \text{𝒜}$ for all $n \geq \max_{l} (l + (y_{t_l} - 1) s)$.  
-Next, we will prove that $n \in \text{𝒜}^\star$ for all sufficiently large $n \in \text{ℕ}$.  
-Since we have proven that $n \in \text{𝒜}$ for all sufficiently large $n \in \text{ℕ}$, we can pick some $p \in \text{𝒜}$ and, 
-after a similar argument, we can complete this part.  
 
 $\square$
 
