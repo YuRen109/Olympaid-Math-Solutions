@@ -95,9 +95,11 @@ $\square$
 Before jumping into the discussion of general cases, we state some useful theorems here.  
 
 ### Theorem ([Bézout's identity](https://en.wikipedia.org/wiki/B%C3%A9zout%27s_identity))
+Let $N = n_1, n_2, ..., n_k$ be a set of $k$ positive integers with $\text{gcd}(N)$.  
+Then there exist $x_1 \in \in \text{ℤ}$, $x_2 \in \in \text{ℤ}$, ..., $x_k \in \in \text{ℤ}$ 
+such that $x_1 n_1 + x_2 n_2 + ... + x_k n_k = 1$.
 
-
-### Theorem ()
+### Theorem ([Numerical semigroup](https://en.wikipedia.org/wiki/Numerical_semigroup))
 
 
 ### <span id="claim3"></span>Claim 2 (properties of $\text{𝒜}$ and $\text{𝒜}^\star$)
