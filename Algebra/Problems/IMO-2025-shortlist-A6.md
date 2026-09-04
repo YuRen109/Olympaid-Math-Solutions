@@ -68,10 +68,13 @@ Denote $\text{𝒜}_i = \text{𝒜}(s_i)$ for each $i \in \lbrace 1, 2,..., k \r
 
 ### <span id="claim2"></span>Claim 2 (trivial case of $S^{\prime}$)
 
-$$ k = 1 \iff S = \lbrace 1 \rbrace.$$
+2.1 $k = 1$ if and only if $S^\prime = \lbrace 1 \rbrace$.
+2.2 If $k=1$, then $a_{n+1} = a_n + 1$.
 
-
-
+*Proof.*  
+It is apparent that Claim 2.1 holds.  
+Now we will prove Claim 2.2.  
+$\square$
 
 
 
