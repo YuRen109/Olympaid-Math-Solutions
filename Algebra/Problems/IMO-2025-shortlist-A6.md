@@ -208,27 +208,8 @@ Then for all $m^\prime \in \text{ℕ}$ with $m^\prime \geq L^\prime$ we have $m^
 $\square$
 
 ### <span id="claim7"></span>Claim 7
-
-$$\text{𝒜}^\star_1 \cap \left( \bigcap_{i=2}^{k} \text{𝒜}_i \right) = \text{ℕ}.$$
-
-*Proof*  
-By [Claim 6](#claim6) we know that if 
-
-$$\text{ℬ}^\star_1 \cup \left( \bigcup_{i=2}^{k} \text{ℬ}_i \right) = \text{ℕ} \backslash \left[ \text{𝒜}^\star_1 \cap \left( \bigcap_{i=2}^{k} \text{𝒜}_i \right) \right]$$  
-
-is non-empty, then $\text{ℬ}^\star_1 \cup \left( \bigcup_{i=2}^{k} \text{ℬ}\_{i} \right)$ contains a largest number.  
-Suppose that $m \in \text{ℕ}$ is the largest number in $\text{ℬ}^\star_1 \cup \left( \bigcup_{i=2}^{k} \text{ℬ}{\_i} \right)$. 
-Then we have that $m \in \text{ℬ}^\star_1$ or $m \in \text{ℬ}{\_j}$ for some $j \in \lbrace 2, 3, ..., k\rbrace$, 
-and $m+1 \in \text{𝒜}^\star\_1 \cap \left( \bigcap_{i=2}^{k} \text{𝒜}_i \right)$.  
-
-For the case where $m \in \text{ℬ}^\star{\_1}$
-
-
-$\square$
-
-### <span id="claim8"></span>Claim 8
 Let $n \in \text{ℕ}$.  
-If $\text{𝒜}^\star_1 \cap \left( \bigcap_{i=2}^{k} \text{𝒜}\_i \right)$, then $a_{n+1} = a_n + 1$.
+If $n \in \text{𝒜}^\star_1 \cap \left( \bigcap_{i=2}^{k} \text{𝒜}\_i \right)$, then $a_{n+1} = a_n + 1$.
 
 *Proof.*  
 By [Claim 3](#claim3) there exists some $N \in \text{ℕ}$ such that $a_{n + s} \geq a_n + s$ and $a_{n + s^\star} = a_n + s^\star$ for all $n \geq N$.  
@@ -250,25 +231,36 @@ Similarly, for the case where $x s^\star > 0 > y s$ we can also conclude that $a
 
 $\square$
 
+### <span id="claim8"></span>Claim 8
 
-### <span id="claim8">Claim 8
-For all $n \in \text{ℕ}$ we have $a_{n+1} = a_n + 1$.
+$$\text{𝒜}^\star_1 \cap \left( \bigcap_{i=2}^{k} \text{𝒜}_i \right) = \text{ℕ}.$$
 
-*Proof.*  
-Suppose that $\text{ℬ} \cup \text{ℬ}^\star = \text{ℕ} \backslash (\text{𝒜} \cap \text{𝒜}^\star)$ is non-empty. 
-By [Claim 3](#claim3) we know $\text{ℬ} \cup \text{ℬ}^\star$ has a largest number, denoted by $m$.  
-Then $m \in \text{ℬ}$ or $m \in \text{ℬ}^\star$ and $m + 1 \in \text{𝒜} \cap \text{𝒜}^\star$.  
-Suppose $m \in \text{ℬ}$. Then $m + 1 \in \text{𝒜}$. We have $a_{m + s} \leq s - a_m$ and $a_{m + s} = a_{m+1} + s-1$, 
-implying that $a_{m+1} + a_{m} \leq 1$, a contradiction. Hence,  $m \notin \text{ℬ}$.  
-In a similar way we have $m \notin \text{ℬ}^\star$.  
-After an argument process similar to [Claim 4](#claim4) we complete the proof.  
+*Proof*  
+By [Claim 6](#claim6) we know that if $\text{ℬ}^\star_1 \cup \left( \bigcup_{i=2}^{k} \text{ℬ}\_i \right) = \text{ℕ} \backslash \left[ \text{𝒜}^\star\_1 \cap \left( \bigcap_{i=2}^{k} \text{𝒜}\_i \right) \right]$ is non-empty, 
+then $\text{ℬ}^\star_1 \cup \left( \bigcup_{i=2}^{k} \text{ℬ}\_{i} \right)$ contains a largest number.  
+Suppose that $m \in \text{ℕ}$ is the largest number in $\text{ℬ}^\star_1 \cup \left( \bigcup_{i=2}^{k} \text{ℬ}{\_i} \right)$. 
+Then we have that $m \in \text{ℬ}^\star_1$ or $m \in \text{ℬ}{\_j}$ for some $j \in \lbrace 2, 3, ..., k\rbrace$, 
+and $m+1 \in \text{𝒜}^\star\_1 \cap \left( \bigcap_{i=2}^{k} \text{𝒜}_i \right)$.  
+
+For the case where $m \in \text{ℬ}^\star\_1$, we have that $a_{m+s_1} = s_1 - a_m$. 
+By [Claim 7](#claim7), since $m+1 \in \text{𝒜}^\star\_1$, we have that $a_{m+s_1} = a_{m+1} + s_1 - 1$, 
+implying that $a_{m} + a_{m+1} = 1$, a contradiction. 
+Hence, $m \notin \text{ℬ}^\star\_1$.  
+
+In a similar way we may prove that $m \notin \text{ℬ}^\star\_j$ for all $j \in \lbrace 2, 3, ..., k\rbrace$.
+
 $\square$
 
-Concluding [the trivial case](#trivial) and [Claim 5](#claim5) we get the only solution is that 
-for all $n \in \text{ℕ}$, $a_{n+1} = a_n + 1$ with an initial condition $a_1 \in \text{ℕ}$, or 
 
-$$a_{n} = n + c$$
 
-for some $c \in \text{ℕ} \cup \lbrace 0 \rbrace$.
+
+### <span id="claim9">Claim 9
+For all $n \in \text{ℕ}$ we have $a_{n+1} = a_n + 1$ (with $a_1 \in \text{ℕ}$).
+
+*Proof.*  
+By [Claim 7](#claim7) and [Claim 8](#claim8) we complete the proof.  
+
+$\square$  
+
 
 ### What I learned
