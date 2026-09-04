@@ -65,7 +65,7 @@ for any $s \in S$, any $s^\star \in S^\star$ and any $n \in \text{ℕ}$.
 
 Furthermore, we have the following results.  
 
-### <span id="claim2"></span>Claim 2 (properties of $\text{𝒜} (s)$ and $\text{𝒜}^\star(s)$)  
+### <span id="claim2"></span>Claim 2 (properties of $\text{𝒜}(s)$ and $\text{𝒜}^\star$)  
 Let $s \in S$, $s^\star \in S^\star$ and $k \in \text{ℕ}$. Then  
 2.1    $k \in \text{𝒜}(s) \iff \left[ a_{k} > s \text{  or  } a_{k+s} > s \right]$.  
 2.2    $k \in \text{𝒜}^{\star}(s^\star) \iff \left[ a_{k} > s^\star \text{  or  } a_{k+s^\star} > s^\star \right]$.  
@@ -190,7 +190,7 @@ implying that $C + \sum_{i=1}^{j-1} (c_i + x_i) s_i \in \text{𝒜}_j$ by [Claim
 
 3. As $j$ runs over $\lbrace 2, ..., k-1\rbrace$ we finally conclude that 
 
-$$C + \sum_{i=1}^{k-1} c_i s_i + \sum_{i=1}^{k} x_i s_i = \sum_{i=1}^{k-1} (c_i + x_i) s_i \in \text{𝒜}^\star_1 \cap \left( \bigcap_{i=2}^{k} \text{𝒜}_i \right),$$
+$$C + \sum_{i=1}^{k-1} (c_i + x_i) s_i \in \text{𝒜}^\star_1 \cap \left( \bigcap_{i=2}^{k} \text{𝒜}_i \right),$$
 
 and also,  
 
