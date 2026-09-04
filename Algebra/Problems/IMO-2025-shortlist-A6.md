@@ -109,7 +109,7 @@ $$ a_{n+1} = a_n + 1 \iff a_{n+1} \neq 1 - a_n .$$
 Suppose $a_{k+1} = 1 - a_k$ for some $k \in \text{ℕ}$. Then $a_{k+1} + a_k = 1$, which is a contradiction 
 since $a_k \geq 1$ and $a_{k+1} \geq 1$.  
 Hence, $a_{n+1} = a_n + 1$ for all $n \in \text{ℕ}$.  
-Since $a_n \in \text{ℕ}$ for all $n \in \text{ℕ}$, it suffices to let $a_1 \in \text{ℕ}$.
+Since $a_n \in \text{ℕ}$ for all $n \in \text{ℕ}$, it is necessary to let $a_1 \in \text{ℕ}$.
 
 $\square$
 
