@@ -63,6 +63,26 @@ $$ \left[ n \in \text{𝒜}(s) \iff n \notin \text{ℬ}(s) \right] \text{  and  
 
 for any $s \in S$, any $s^\star \in S^\star$ and any $n \in \text{ℕ}$.  
 
+Furthermore, we have the following results.  
+
+### <span id="claim2"></span>Claim 2 (properties of $\text{𝒜}$ and $\text{𝒜}^\star$)
+Let $s \in S$, $s^\star \in S^\star$ and $k \in \text{ℕ}$.  Then  
+2.1    
+2.2
+2.3    if $k \in \text{𝒜}$, then $k + ns \in \text{𝒜}$ for all $n \in \text{ℕ}$.  
+2.4    if $k \in \text{𝒜}^\star$, then $k + ns \in \text{𝒜}^\star$ for all $n \in \text{ℕ}$.  
+
+*Proof.*  
+$k \in \text{𝒜}$ implies that $a_{k+s} \geq s + a_{k} > s$.  
+Suppose $k+s \in \text{ℬ}$. Then $a_{k+2s} \leq s - a_{k+s}$, which implies that  
+
+$$ a_{k+s} \leq s - a_{k+2s} < s, $$
+
+a contradiction. Hence, $k+s \in \text{𝒜}$. By induction we complete the proof of Claim 2.1.  
+In a similar way we can prove Claim 2.2.  
+$\square$
+
+
 We may always find a finite non-empty subset $S^\prime$ of $S$ such that $\text{gcd}\left(S^\prime\right) = 1$ and $S^\prime \cap S^\star \neq \emptyset$ by the following process: 
 1. find a finite non-empty subset $S^{\prime\prime}$ of $S$ such that $\text{gcd}\left(S^{\prime\prime}\right) = 1$ by [Claim 1](#claim1)
 2. find an element $s^\star \in S^\star$ since $S^\star$ is non-empty
@@ -73,7 +93,7 @@ Denote $\text{𝒜}_i = \text{𝒜}(s_i)$ for each $i \in \lbrace 1, 2,..., k \r
 
 The result of a trivial case where $k = 1$ is shown as follows.  
 
-### <span id="claim2"></span>Claim 2 (trivial case of $S^{\prime}$)
+### <span id="claim3"></span>Claim 3 (trivial case of $S^{\prime}$)
 
 2.1 $k = 1$ if and only if $S^\prime = \lbrace 1 \rbrace$.  
 2.2 If $k=1$, then $a_{n+1} = a_n + 1$ for all $n \in \text{ℕ}$ (with $a_1 \in \text{ℕ}$).  
@@ -94,34 +114,24 @@ $\square$
 
 Before jumping into the discussion of general cases, we state some useful theorems here.  
 
-### Theorem ([Bézout's identity](https://en.wikipedia.org/wiki/B%C3%A9zout%27s_identity))
+### <span id="Bézout"></span>Theorem ([Bézout's identity](https://en.wikipedia.org/wiki/B%C3%A9zout%27s_identity))
 Let $N = \lbrace n_1, n_2, ..., n_k \rbrace$ be a set of $k$ positive integers with $\text{gcd}(N) = 1$.  
 Then there exist $x_1 \in \text{ℤ}$, $x_2 \in \text{ℤ}$, ..., $x_k \in \text{ℤ}$ 
 such that 
 
 $$x_1 n_1 + x_2 n_2 + ... + x_k n_k = 1.$$
 
-### Theorem (a corollary from a fundamental theorem of [Numerical semigroup](https://en.wikipedia.org/wiki/Numerical_semigroup))
+### <span id="num_semi"></span>Theorem (a corollary from a fundamental theorem of [Numerical semigroup](https://en.wikipedia.org/wiki/Numerical_semigroup))
 Let $N = \lbrace n_1, n_2, ..., n_k \rbrace$ be a set of $k$ positive integers with $\text{gcd}(N) = 1$.  
-Then for all sufficiently large $m \in \text{ℕ}$ there exist $x_1 \in \text{ℤ}$, $x_2 \in \text{ℤ}$, ..., $x_k \in \text{ℤ}$ 
+Then for all sufficiently large $m \in \text{ℕ}$ there exist $x_1 \in \text{ℕ}$, $x_2 \in \text{ℕ}$, ..., $x_k \in \text{ℕ}$ 
 such that 
 
 $$x_1 n_1 + x_2 n_2 + ... + x_k n_k = m.$$
 
-### <span id="claim3"></span>Claim 2 (properties of $\text{𝒜}$ and $\text{𝒜}^\star$)
-Let $k \in \text{ℕ}$.  Then  
-2.1    if $k \in \text{𝒜}$, then $k + ns \in \text{𝒜}$ for all $n \in \text{ℕ}$.  
-2.2    if $k \in \text{𝒜}^\star$, then $k + ns \in \text{𝒜}^\star$ for all $n \in \text{ℕ}$.  
-
 *Proof.*  
-$k \in \text{𝒜}$ implies that $a_{k+s} \geq s + a_{k} > s$.  
-Suppose $k+s \in \text{ℬ}$. Then $a_{k+2s} \leq s - a_{k+s}$, which implies that  
 
-$$ a_{k+s} \leq s - a_{k+2s} < s, $$
-
-a contradiction. Hence, $k+s \in \text{𝒜}$. By induction we complete the proof of Claim 2.1.  
-In a similar way we can prove Claim 2.2.  
 $\square$
+
 
 ### <span id="claim3"></span>Claim 3
 For all sufficiently large $n \in \text{ℕ}$ we have $n \in \text{𝒜}$ and $n \in \text{𝒜}^\star$.
@@ -210,3 +220,5 @@ for all $n \in \text{ℕ}$, $a_{n+1} = a_n + 1$ with an initial condition $a_1 \
 $$a_{n} = n + c$$
 
 for some $c \in \text{ℕ} \cup \lbrace 0 \rbrace$.
+
+### What I learned
