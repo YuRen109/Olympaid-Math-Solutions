@@ -99,7 +99,7 @@ Let $N = \lbrace n_1, n_2, ..., n_k \rbrace$ be a set of $k$ positive integers w
 Then there exist $x_1 \in \in \text{ℤ}$, $x_2 \in \in \text{ℤ}$, ..., $x_k \in \in \text{ℤ}$ 
 such that $x_1 n_1 + x_2 n_2 + ... + x_k n_k = 1$.
 
-### Theorem ([Numerical semigroup](https://en.wikipedia.org/wiki/Numerical_semigroup))
+### Theorem (a corollary from a fundamental theorem of [Numerical semigroup](https://en.wikipedia.org/wiki/Numerical_semigroup))
 Let $N = \lbrace n_1, n_2, ..., n_k \rbrace$ be a set of $k$ positive integers with $\text{gcd}(N) = 1$.  
 Then for all sufficiently large $m \in \text{ℕ}$ there exist $x_1 \in \in \text{ℤ}$, $x_2 \in \in \text{ℤ}$, ..., $x_k \in \in \text{ℤ}$ 
 such that $x_1 n_1 + x_2 n_2 + ... + x_k n_k = m$.
