@@ -207,34 +207,33 @@ $$C + \sum_{i=1}^{k-1} (c_i + x_i) s_i + x_k s_k \in \text{𝒜}^\star_1 \cap \l
 
 for all $x_1, x_2, \cdots, x_k \in \text{ℕ}$:  
 
-1. By [Claim 2](#claim2) and the fact that $C \in \text{𝒜}^\star_1$ we have $C + ( c_{1} + x_{1} ) s_{1} \in \text{𝒜}^\star_{1}$, 
-and $a_{C + (c_1+x_1) s_1} = a_C + (c_1+x_1) s_1 > c_1 s_1 > s_2$, which implies further that
+   1. By [Claim 2.4](#claim2) and the fact that $C \in \text{𝒜}^\star_1$ we have $C + ( c_{1} + x_{1} ) s_{1} \in \text{𝒜}^\star_{1}$, 
+and $a_{C + (c_1+x_1) s_1} = a_C + (c_1+x_1) s_1 > c_1 s_1 > s_2$, which, by [Claim 2.2](#claim2), implies further that
 
 $$ C + (c_1+x_1) s_1 \in \text{𝒜}_2.$$
 
-Hence, $C + (c_1+x_1) s_1 \in \text{𝒜}^\star_{1} \cap \text{𝒜}_2$.  
+   Hence, $C + (c_1+x_1) s_1 \in \text{𝒜}^\star_{1} \cap \text{𝒜}_2$.  
 
-2. Suppose that for some $j \in \lbrace 2, \cdots, k\rbrace$ we have 
+   2. Suppose that for some $j \in \lbrace 2, \cdots, k\rbrace$ we have 
 
 $$C + \sum_{i=1}^{j-1} (c_i + x_i) s_i \in \text{𝒜}^\star_{1} \cap \left( \bigcap_{i=2}^{j-1} \text{𝒜}_i \right).$$
 
-Then 
+   Then 
 
 $$a_{C + \sum_{i=1}^{j-1} (c_i + x_i) s_i} = a_{C} + \sum_{i=1}^{j-1} (c_i + x_i) s_i > c_{j-1} s_{j-1} > s_{j},$$
 
-implying that $C + \sum_{i=1}^{j-1} (c_i + x_i) s_i \in \text{𝒜}_j$ by [Claim 2.1](#claim2).
+   implying that $C + \sum_{i=1}^{j-1} (c_i + x_i) s_i \in \text{𝒜}_j$ by [Claim 2.1](#claim2).
 
-3. As $j$ runs over $\lbrace 2, \cdots, k\rbrace$ we finally conclude that 
+   3. As $j$ runs over $\lbrace 2, \cdots, k\rbrace$ we finally conclude that 
 
 $$C + \sum_{i=1}^{k-1} (c_i + x_i) s_i \in \text{𝒜}^\star_1 \cap \left( \bigcap_{i=2}^{k} \text{𝒜}_i \right),$$
 
-and also,  
+   and also,  
 
 $$C + \left(\sum_{i=1}^{k-1} c_i s_i\right) +  \left(\sum_{i=1}^{k} x_i s_i\right) = C + \sum_{i=1}^{k-1} (c_i + x_i) s_i + x_k s_k \in \text{𝒜}^\star_1 \cap \left( \bigcap_{i=2}^{k} \text{𝒜}_i \right).$$
 
 
-By [Theorem 5](#num_semi), since $\text{gcd}\left(S^\prime\right) = 1$, 
-there is $L \in \text{ℕ}$ such that, 
+By [Theorem 5](#num_semi), since $\text{gcd }S^\prime = 1$, there is $L \in \text{ℕ}$ such that, 
 for all $m \in \text{ℕ}$ with $m \geq L$, 
 there exist $x_1, x_2, \cdots, x_k \in \text{ℕ}$ such that  $m = \sum_{i=1}^{k} x_i s_i$.  
 Let $L^\prime = L + C + \sum_{i=1}^{k-1} c_i s_i \in \text{ℕ}$.  
@@ -271,7 +270,7 @@ The construction of $\bar{z}$ helps with the application of $a_{n + s} = a_n + s
 
 Let $n \in \text{ℕ}$ with $n \in $ $n \geq L$.  
 Then we have $L \leq n + \sum_{i=1}^{j} \bar{z} (i)$ for each $j \in \lbrace 1, 2, \cdots, k\rbrace$ 
-(($n + \sum_{i=1}^{j} \bar{z} (i)$ are sufficiently large by our definition in the context)).  
+($n + \sum_{i=1}^{j} \bar{z} (i)$ are sufficiently large by our definition in the context).  
 Therefore,  
 
 $$
