@@ -233,17 +233,28 @@ $$ a_n + s_1 + s_j = a_{n + s_1 s_j} = a_{n + s_j s} > a_n + s_j s, $$
 
 a contradiction. Hence, we have that $a_{n + s} = a_n + s$ for all $n \geq L$ and all $j \in \lbrace 2, 3, ..., k\rbrace$.
 
-Again, by [Bézout's identity](https://en.wikipedia.org/wiki/B%C3%A9zout%27s_identity) there are some $z_1, z_2, ..., z_k \in \text{ℤ}$ 
-such that $\sum_{i=1}^{k} z_i s_i = 1$. 
+Again, by [Bézout's identity](#bezout), since $\text{gcd} \lbrace S^\prime \rbrace$, 
+there are some $z_1, z_2, ..., z_k \in \text{ℤ}$ such that $\sum_{i=1}^{k} z_i s_i = 1$. 
 
 Now we sort the sequence $z_1 s_1, z_2 s_2, ..., z_k s_k$ by defining a bijection $\bar{z}$
 from $\lbrace 1, 2, ..., k\rbrace$ to $\lbrace z_1 s_1, z_2 s_2, ..., z_k s_k\rbrace$ such that 
 
 $$ \bar{z} (1) \geq \bar{z} (2) \geq ... \geq 0 > ... \geq \bar{z} (k).  $$
 
-Then $L \leq n < $
+Then $\sum_{i=1}^{j} \bar{z} (i) > 0$ for each $j \in \lbrace 1, 2, ..., k\rbrace$.  
+(The construction of $\bar{z}$ helps with the application of $a_{n + s} = a_n + s$ for sufficiently large $n$)
 
-$$ a_{n+1} = a_{n + \sum_{i=1}^{k} z_i s_i} = a_{n + \sum_{i=1}^{k} z_i s_i} + y s = a_n + y s + x s^\star = a_n + 1 $$
+Let $n \geq L$ we have $L \leq n + \sum_{i=1}^{j} \bar{z} (i)$ for each $j \in \lbrace 1, 2, ..., k\rbrace$. 
+($n + \sum_{i=1}^{j} \bar{z} (i)$ are sufficiently large by our definition)
+
+$$
+\begin{aligned}
+a_{n+1} = a_{n + \sum_{i=1}^{k} z_i s_i} = a_{n + \sum_{i=1}^{k} \bar{z} (i)} &= a_{n + \sum_{i=1}^{k-1} \bar{z} (i)} + \bar{z} (k) \\
+&= a_{n + \sum_{i=1}^{k-2} \bar{z} (i)} + \bar{z} (k) + \bar{z} (k-1) \\
+&\vdot \\
+&= a_{n} + \bar{z} (k) + \bar{z} (k-1) + \cdot + \bar{z} (1) = a_n + \sum_{i=1}^{k} z_i s_i} = a_{n + \sum_{i=1}^{k} = a_n + 1
+\end{aligned}
+$$
 
 for all $n \geq N$.  
 
