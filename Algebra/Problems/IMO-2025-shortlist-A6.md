@@ -1,11 +1,11 @@
 # Problem
 
 Let $S$ be a set of positive integers, possibly infinite, such that no positive integer greater than 1 divides all elements of $S$.  
-Determine all non-periodic infinite sequences $a_1, a_2, ...$ of positive integers such that, for all positive integers $n$,  
+Determine all non-periodic infinite sequences $a_1, a_2, \cdots$ of positive integers such that, for all positive integers $n$,  
 1. $a_n \leq \left| a_{n+l} - l \right|$ for all $l \in S$, and
 2. $a_n = \left| a_{n+l} - l \right|$ for at least one $l \in S$.
 
-We say that an infinite sequence $a_1, a_2, ...$ is *periodic* if there exists a positive integer $t$ such that $a_n = a_{n+t}$ for all positive integers $n$.
+We say that an infinite sequence $a_1, a_2, \cdots$ is *periodic* if there exists a positive integer $t$ such that $a_n = a_{n+t}$ for all positive integers $n$.
 
 # Key idea
 
@@ -23,15 +23,15 @@ $\text{gcd}(S)$ would be a positive integer that divides all elements of $S$ and
 In this case we may find $S^\prime = S$.  
 
 For the case where $S$ is infinite, suppose that every finite subset $S^\prime$ of $S$ satisfies that $\text{gcd}\left(S^\prime\right) > 1$.  
-Construct an infinite sequence $s_1, s_2, ...$ of elements of $S$ such that  
+Construct an infinite sequence $s_1, s_2, \cdots$ of elements of $S$ such that  
 1. $s_1$ is the smallest number in $S$, and 
-2. $s_n$ is the smallest number in $S \backslash \lbrace s_1, s_2, ..., s_{n-1} \rbrace$ , for every $n \in \text{ℕ}$.  
+2. $s_n$ is the smallest number in $S \backslash \lbrace s_1, s_2, \cdots, s_{n-1} \rbrace$ , for every $n \in \text{ℕ}$.  
 
 The above process is ordering the elements of $S$.  
-For any $n \in \text{ℕ}$ we denote $S_n = \lbrace s_1, s_2, ..., s_n \rbrace$.  
+For any $n \in \text{ℕ}$ we denote $S_n = \lbrace s_1, s_2, \cdots, s_n \rbrace$.  
 Then we have that $\text{gcd}(S_n) > 1$ for all $n \in \text{ℕ}$, and 
 
-$$ s_1 = \text{gcd}(S_1) \geq \text{gcd}(S_2) \geq \text{gcd}(S_3) \geq ... , $$
+$$ s_1 = \text{gcd}(S_1) \geq \text{gcd}(S_2) \geq \text{gcd}(S_3) \geq \cdots , $$
 
 which implies that for all sufficiently large $n$ we have $\text{gcd}(S_n) = d$, where $d \in \text{ℕ}$.  
 However, $d > 1$ and, by induction, we get that $d$ divides all elements of $S$, a contradiction.  
@@ -39,7 +39,7 @@ However, $d > 1$ and, by induction, we get that $d$ divides all elements of $S$,
 $\square$
 
 
-Suppose that there is some $S \in \text{𝕊}$ such that such a non-periodic sequence $a_1, a_2, ...$ of positive integer, 
+Suppose that there is some $S \in \text{𝕊}$ such that such a non-periodic sequence $a_1, a_2, \cdots$ of positive integer, 
 which may be dependent of $S$, in the problem statement exist.  
 In this case, let $S^\star \subseteq S$ denote the subset such that for each $s^\star \in S^\star$ and for all $n \in \text{ℕ}$ 
 we have $a_n = \left| a_{n+s^\star} - s^\star \right|$.  
@@ -99,8 +99,9 @@ We may always find a finite non-empty subset $S^\prime$ of $S$ such that $\text{
 2. Find an element $s^\star \in S^\star$ since $S^\star$ is non-empty.  
 3. Let $S^{\prime} = \lbrace s^\star \rbrace \cup S^{\prime\prime}$.  
 
-Such a $S^{\prime}$ may be written as $S^\prime = \lbrace s_1, s_2, ..., s_k \rbrace$ where $k \in \text{ℕ}$, $s_1 \in S^\star$ and $s_1, s_2, ..., s_k \in S$.  
-Denote $\text{𝒜}_i = \text{𝒜}(s_i)$ and $\text{ℬ}_i = \text{ℬ}(s_i)$ for each $i \in \lbrace 1, 2,..., k \rbrace$ 
+Such a $S^{\prime}$ may be written as $S^\prime = \lbrace s_1, s_2, \cdots, s_k \rbrace$ 
+where $k \in \text{ℕ}$, $s_1 \in S^\star$ and $s_1, s_2, \cdots, s_k \in S$.  
+Denote $\text{𝒜}_i = \text{𝒜}(s_i)$ and $\text{ℬ}_i = \text{ℬ}(s_i)$ for each $i \in \lbrace 1, 2, \cdots, k \rbrace$ 
 and, especially $\text{𝒜}^{\star}_1 = \text{𝒜}^{\star}(s_1)$ and $\text{ℬ}^{\star}_1 = \text{ℬ}^{\star}(s_1)$.  
 
 The result of the trivial case where $k = 1$ is shown as follows.  
@@ -108,7 +109,7 @@ The result of the trivial case where $k = 1$ is shown as follows.
 ### <span id="claim3"></span>Claim 3 (the trivial case where $k=1$)
 
 3.1 $k = 1$ if and only if $S^\prime = \lbrace 1 \rbrace$.  
-3.2 If $k=1$, then $a_{n+1} = a_n + 1$ for all $n \in \text{ℕ}$ (with $a_1 \in \text{ℕ}$).  
+3.2 If $k = 1$, then $a_{n+1} = a_n + 1$ for all $n \in \text{ℕ}$ (with $a_1 \in \text{ℕ}$).  
 
 *Proof.*  
 It is apparent that Claim 3.1 holds.  
@@ -127,41 +128,41 @@ $\square$
 Before jumping into the discussion of general cases where $k > 1$, we state some useful theorems here.  
 
 ### <span id="bezout"></span>Theorem 4 ([Bézout's identity](https://en.wikipedia.org/wiki/B%C3%A9zout%27s_identity))
-Let $N = \lbrace n_1, n_2, ..., n_k \rbrace$ be a set of $k$ positive integers with $\text{gcd}(N) = 1$.  
-Then there exist $x_1, x_2, ..., x_k \in \text{ℤ}$ 
+Let $N = \lbrace n_1, n_2, \cdots, n_k \rbrace$ be a set of $k$ positive integers with $\text{gcd}(N) = 1$.  
+Then there exist $x_1, x_2, \cdots, x_k \in \text{ℤ}$ 
 such that 
 
-$$x_1 n_1 + x_2 n_2 + ... + x_k n_k = 1.$$
+$$x_1 n_1 + x_2 n_2 + \cdots + x_k n_k = 1.$$
 
 ### <span id="num_semi"></span>Theorem 5 (a corollary from a fundamental theorem of [Numerical semigroups](https://en.wikipedia.org/wiki/Numerical_semigroup))
-Let $N = \lbrace n_1, n_2, ..., n_k \rbrace$ be a set of $k$ positive integers with $\text{gcd}(N) = 1$.  
-Then for all sufficiently large $m \in \text{ℕ}$ there exist $x_1, x_2, ..., x_k \in \text{ℕ}$ 
+Let $N = \lbrace n_1, n_2, \cdots, n_k \rbrace$ be a set of $k$ positive integers with $\text{gcd}(N) = 1$.  
+Then for all sufficiently large $m \in \text{ℕ}$ there exist $x_1, x_2, \cdots, x_k \in \text{ℕ}$ 
 such that 
 
-$$x_1 n_1 + x_2 n_2 + ... + x_k n_k = m.$$
+$$x_1 n_1 + x_2 n_2 + \cdots + x_k n_k = m.$$
 
 *Proof.*  
 This a simple corollary from a fundamental theorem of [Numerical semigroups](https://en.wikipedia.org/wiki/Numerical_semigroup).  
 
 Suppose $k = 1$. Then $\text{gcd}(N) = 1$ implies that $N = \lbrace 1 \rbrace$, 
 and for all $m \in \text{ℕ}$ we may find $x_1 = m$ such that $x_1 \cdot 1 = m$.  
-Suppose $k > 1$. It suffices to show that for each $r \in \lbrace 1, 2, ..., n_1 - 1 \rbrace$ 
-there exist $x_2, x_3, ..., x_k \in \text{ℕ}$ such that 
+Suppose $k > 1$. It suffices to show that for each $r \in \lbrace 1, 2, \cdots, n_1 - 1 \rbrace$ 
+there exist $x_2, x_3, \cdots, x_k \in \text{ℕ}$ such that 
 
 $$\sum^{k}_{i=2} x_i n_i \equiv r \pmod{x_1}.$$
 
 
-Let $r \in \lbrace 1, 2, ..., n_1 - 1 \rbrace$. 
-By [Bézout's identity](#bezout) we may find $z_1, z_2, ..., z_k \in \text{ℤ}$ such that $\sum^{k}_{i=1} z_i n_i = 1$, or  
+Let $r \in \lbrace 1, 2, \cdots, n_1 - 1 \rbrace$. 
+By [Bézout's identity](#bezout) we may find $z_1, z_2, \cdots, z_k \in \text{ℤ}$ such that $\sum^{k}_{i=1} z_i n_i = 1$, or  
 
 $$\sum^{k}_{i=2} (r z_i) n_i \equiv r \pmod{x_1}.$$
 
-Note that for all $t_{r,2}, t_{r,3}, ..., t_{r,k} \in \text{ℤ}$ we have
+Note that for all $t_{r,2}, t_{r,3}, \cdots, t_{r,k} \in \text{ℤ}$ we have
 
 $$\sum^{k}_{i=2} (r z_i + t_{r,i} x_1) n_i \equiv r \pmod{x_1}.$$
 
-For each $r \in \lbrace 1, 2, ..., n_1 - 1 \rbrace$ and 
-for each $i \in \lbrace 2, 3, ..., k-1 \rbrace$ 
+For each $r \in \lbrace 1, 2, \cdots, n_1 - 1 \rbrace$ and 
+for each $i \in \lbrace 2, 3, \cdots, k-1 \rbrace$ 
 we may pick a sufficiently large $t_{r,i}$ such that $x_i = r z_i + t_{r,i} x_1 > 0$ to complete the proof.  
 
 $\square$
@@ -170,18 +171,18 @@ $\square$
 ### <span id="claim6"></span>Claim 6 
 For all sufficiently large $n \in \text{ℕ}$ we have 
 
-$$n \in \text{𝒜}^\star_1 \cap \text{𝒜}_2 \cap ... \cap \text{𝒜}_k = \text{𝒜}^\star_1 \cap \left( \bigcap_{i=2}^{k} \text{𝒜}_i \right).$$
+$$n \in \text{𝒜}^\star\_1 \cap \text{𝒜}\_2 \cap \cdots \cap \text{𝒜}\_k = \text{𝒜}^\star\_1 \cap \left( \bigcap_{i=2}^{k} \text{𝒜}\_i \right).$$
 
 *Proof.*  
 We have that there is some $C \in \text{𝒜}^\star_1$ because, otherwise, we get $a_n$ with $a_{n+s_1} = s_1 - a_n$ for all $n \in \text{ℕ}$, 
 which is periodic.  
 
-For each $i \in \lbrace 1, 2, ..., k-1\rbrace$ we pick $c_i \in \text{ℕ}$ with $c_i s_i > s_{i+1}$.  
+For each $i \in \lbrace 1, 2, \cdots, k-1\rbrace$ we pick $c_i \in \text{ℕ}$ with $c_i s_i > s_{i+1}$.  
 Then by the following process we may show that 
 
 $$C + \sum_{i=1}^{k-1} (c_i + x_i) s_i + x_k s_k \in \text{𝒜}^\star_1 \cap \left( \bigcap_{i=2}^{k} \text{𝒜}_i \right)$$ 
 
-for all $x_1, x_2, ..., x_k \in \text{ℕ}$:  
+for all $x_1, x_2, \cdots, x_k \in \text{ℕ}$:  
 
 1. By [Claim 2](#claim2) and the fact that $C \in \text{𝒜}^\star_1$ we have $C + ( c_{1} + x_{1} ) s_{1} \in \text{𝒜}^\star_{1}$, 
 and $a_{C + (c_1+x_1) s_1} = a_C + (c_1+x_1) s_1 > c_1 s_1 > s_2$, which implies further that
@@ -190,7 +191,7 @@ $$ C + (c_1+x_1) s_1 \in \text{𝒜}_2.$$
 
 Hence, $C + (c_1+x_1) s_1 \in \text{𝒜}^\star_{1} \cap \text{𝒜}_2$.  
 
-2. Suppose that for some $j \in \lbrace 2, ..., k\rbrace$ we have 
+2. Suppose that for some $j \in \lbrace 2, \cdots, k\rbrace$ we have 
 
 $$C + \sum_{i=1}^{j-1} (c_i + x_i) s_i \in \text{𝒜}^\star_{1} \cap \left( \bigcap_{i=2}^{j-1} \text{𝒜}_i \right).$$
 
@@ -200,7 +201,7 @@ $$a_{C + \sum_{i=1}^{j-1} (c_i + x_i) s_i} = a_{C} + \sum_{i=1}^{j-1} (c_i + x_i
 
 implying that $C + \sum_{i=1}^{j-1} (c_i + x_i) s_i \in \text{𝒜}_j$ by [Claim 2.1](#claim2).
 
-3. As $j$ runs over $\lbrace 2, ..., k\rbrace$ we finally conclude that 
+3. As $j$ runs over $\lbrace 2, \cdots, k\rbrace$ we finally conclude that 
 
 $$C + \sum_{i=1}^{k-1} (c_i + x_i) s_i \in \text{𝒜}^\star_1 \cap \left( \bigcap_{i=2}^{k} \text{𝒜}_i \right),$$
 
@@ -212,7 +213,7 @@ $$C + \left(\sum_{i=1}^{k-1} c_i s_i\right) +  \left(\sum_{i=1}^{k} x_i s_i\righ
 By [Theorem 5](#num_semi), since $\text{gcd}\left(S^\prime\right) = 1$, 
 there is $L \in \text{ℕ}$ such that, 
 for all $m \in \text{ℕ}$ with $m \geq L$, 
-there exist $x_1, x_2, ..., x_k \in \text{ℕ}$ such that  $m = \sum_{i=1}^{k} x_i s_i$.  
+there exist $x_1, x_2, \cdots, x_k \in \text{ℕ}$ such that  $m = \sum_{i=1}^{k} x_i s_i$.  
 Let $L^\prime = L + C + \sum_{i=1}^{k-1} c_i s_i \in \text{ℕ}$.  
 Then for all $m^\prime \in \text{ℕ}$ with $m^\prime \geq L^\prime$ we have $m^\prime \in \text{𝒜}^\star_1 \cap \left( \bigcap_{i=2}^{k} \text{𝒜}_i \right).$
 
@@ -226,33 +227,35 @@ By [Claim 6](#claim6) we have that there is some $L \in \text{ℕ}$ such that
 for all $n \in \text{ℕ}$ with $n \geq L$ we have 
 $n \in \text{𝒜}^\star_1 \cap \left( \bigcap_{i=2}^{k} \text{𝒜}\_i \right)$.
 
-Suppose there are some $n \geq L$ and some $j \in \lbrace 2, 3, ..., k\rbrace$ 
+Suppose there are some $n \geq L$ and some $j \in \lbrace 2, 3, \cdots, k\rbrace$ 
 such that $a_{n + s_j} > a_n + s_j$. Then 
 
-$$ a_n + s_1 + s_j = a_{n + s_1 s_j} = a_{n + s_j s} > a_n + s_j s, $$
+$$ a_n + s_1 + s_j = a_{n + s_1 s_j} = a_{n + s_j s_1} > a_n + s_j s_1, $$
 
 a contradiction. Hence, we have that $a_{n + s} = a_n + s$ for all $n \geq L$ and all $j \in \lbrace 2, 3, \cdots, k\rbrace$.
 
 Again, by [Bézout's identity](#bezout), since $\text{gcd} \lbrace S^\prime \rbrace$, 
-there are some $z_1, z_2, ..., z_k \in \text{ℤ}$ such that $\sum_{i=1}^{k} z_i s_i = 1$. 
+there are some $z_1, z_2, \cdots, z_k \in \text{ℤ}$ such that $\sum_{i=1}^{k} z_i s_i = 1$. 
 
-Now we sort the sequence $z_1 s_1, z_2 s_2, ..., z_k s_k$ by defining a bijection $\bar{z}$
-from $\lbrace 1, 2, ..., k\rbrace$ to $\lbrace z_1 s_1, z_2 s_2, ..., z_k s_k\rbrace$ such that 
+Now we sort the sequence $z_1 s_1, z_2 s_2, \cdots, z_k s_k$ by defining a bijection $\bar{z}$
+from $\lbrace 1, 2, \cdots, k\rbrace$ to $\lbrace z_1 s_1, z_2 s_2, \cdots, z_k s_k\rbrace$ such that 
 
 $$ \bar{z} (1) \geq \bar{z} (2) \geq \cdots > 0 > \cdots \geq \bar{z} (k).  $$
 
-Then $\sum_{i=1}^{j} \bar{z} (i) > 0$ for each $j \in \lbrace 1, 2, ..., k\rbrace$.  
+Then $\sum_{i=1}^{j} \bar{z} (i) > 0$ for each $j \in \lbrace 1, 2, \cdots, k\rbrace$.  
 (The construction of $\bar{z}$ helps with the application of $a_{n + s} = a_n + s$ for sufficiently large $n$)
 
-Let $n \geq L$ we have $L \leq n + \sum_{i=1}^{j} \bar{z} (i)$ for each $j \in \lbrace 1, 2, ..., k\rbrace$. 
+Let $n \geq L$. Then we have $L \leq n + \sum_{i=1}^{j} \bar{z} (i)$ for each $j \in \lbrace 1, 2, \cdots, k\rbrace$.  
 ($n + \sum_{i=1}^{j} \bar{z} (i)$ are sufficiently large by our definition)
+
+Therefore,  
 
 $$
 \begin{aligned}
 a_{n+1} = a_{n + \sum_{i=1}^{k} z_i s_i} = a_{n + \sum_{i=1}^{k} \bar{z} (i)} &= a_{n + \sum_{i=1}^{k-1} \bar{z} (i)} + \bar{z} (k) \\
 &= a_{n + \sum_{i=1}^{k-2} \bar{z} (i)} + \bar{z} (k) + \bar{z} (k-1) \\
 &\vdots \\
-&= a_{n} + \bar{z} (k) + \bar{z} (k-1) + \cdot + \bar{z} (1) = a_n + \sum_{i=1}^{k} z_i s_i = a_n + \sum_{i=1}^{k} = a_n + 1
+&= a_{n} + \bar{z} (k) + \bar{z} (k-1) + \cdots + \bar{z} (1) = a_n + \sum_{i=1}^{k} z_i s_i = a_n + 1
 \end{aligned}
 $$
 
@@ -268,7 +271,7 @@ $$\text{𝒜}^\star_1 \cap \left( \bigcap_{i=2}^{k} \text{𝒜}_i \right) = \tex
 By [Claim 6](#claim6) we know that if $\text{ℬ}^\star_1 \cup \left( \bigcup_{i=2}^{k} \text{ℬ}\_i \right) = \text{ℕ} \backslash \left[ \text{𝒜}^\star\_1 \cap \left( \bigcap_{i=2}^{k} \text{𝒜}\_i \right) \right]$ is non-empty, 
 then $\text{ℬ}^\star_1 \cup \left( \bigcup_{i=2}^{k} \text{ℬ}\_{i} \right)$ contains a largest number.  
 Suppose that $m \in \text{ℕ}$ is the largest number in $\text{ℬ}^\star_1 \cup \left( \bigcup_{i=2}^{k} \text{ℬ}{\_i} \right)$. 
-Then we have that $m \in \text{ℬ}^\star_1$ or $m \in \text{ℬ}{\_j}$ for some $j \in \lbrace 2, 3, ..., k\rbrace$, 
+Then we have that $m \in \text{ℬ}^\star_1$ or $m \in \text{ℬ}{\_j}$ for some $j \in \lbrace 2, 3, \cdots, k\rbrace$, 
 and $m+1 \in \text{𝒜}^\star\_1 \cap \left( \bigcap_{i=2}^{k} \text{𝒜}_i \right)$.  
 
 For the case where $m \in \text{ℬ}^\star\_1$, we have that $a_{m+s_1} = s_1 - a_m$. 
@@ -276,7 +279,7 @@ By [Claim 7](#claim7), since $m+1 \in \text{𝒜}^\star\_1$, we have that $a_{m+
 implying that $a_{m} + a_{m+1} = 1$, a contradiction. 
 Hence, $m \notin \text{ℬ}^\star\_1$.  
 
-In a similar way we may prove that $m \notin \text{ℬ}^\star\_j$ for all $j \in \lbrace 2, 3, ..., k\rbrace$.
+In a similar way we may prove that $m \notin \text{ℬ}^\star\_j$ for all $j \in \lbrace 2, 3, \cdots, k\rbrace$.
 
 $\square$
 
