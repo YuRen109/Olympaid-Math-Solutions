@@ -189,20 +189,24 @@ implying that $C + \sum_{i=1}^{j-1} (c_i + x_i) s_i \in \text{𝒜}_j$ by [Claim
 
 3. As $j$ runs over $\lbrace 2, ..., k-1\rbrace$ we finally conclude that 
 
-$$C + \sum_{i=1}^{k-1} (c_i + x_i) s_i \in \text{𝒜}^\star_1 \cap \left( \bigcap_{i=2}^{k} \text{𝒜}_i \right),$$
+$$C + \sum_{i=1}^{k-1} c_i s_i + \sum_{i=1}^{k} x_i s_i = \sum_{i=1}^{k-1} (c_i + x_i) s_i \in \text{𝒜}^\star_1 \cap \left( \bigcap_{i=2}^{k} \text{𝒜}_i \right),$$
 
 and also,  
 
-$$C + \sum_{i=1}^{k-1} (c_i + x_i) s_i + x_k s_k \in \text{𝒜}^\star_1 \cap \left( \bigcap_{i=2}^{k} \text{𝒜}_i \right).$$
+$$C +  = C + \sum_{i=1}^{k-1} (c_i + x_i) s_i + x_k s_k \in \text{𝒜}^\star_1 \cap \left( \bigcap_{i=2}^{k} \text{𝒜}_i \right).$$
 
 By [Theorem 4](#num_semi), there is $L \in \text{ℕ}$ such that 
 for all $m \in \text{ℕ}$ with $m \geq L$ we have $m = \sum_{i=1}^{k} x_i s_i$.  
-Then let $L^\prime = L + C + \sum_{i=1}^{k-1} c_i s_i \in \text{ℕ}$ 
-and for all $m^\prime \in \text{ℕ}$ with $m^\prime \geq L^\prime$ we have $m^\prime \in \text{𝒜}^\star_1 \cap \left( \bigcap_{i=2}^{k} \text{𝒜}_i \right).$
+Let $L^\prime = L + C + \sum_{i=1}^{k-1} c_i s_i \in \text{ℕ}$. 
+Then for all $m^\prime \in \text{ℕ}$ with $m^\prime \geq L^\prime$ we have $m^\prime \in \text{𝒜}^\star_1 \cap \left( \bigcap_{i=2}^{k} \text{𝒜}_i \right).$
 
 $\square$
 
 ### <span id="claim7"></span>Claim 7
+$$\text{𝒜}^\star_1 \cap \left( \bigcap_{i=2}^{k} \text{𝒜}_i \right) = \text{ℕ}$$
+
+
+### <span id="claim8"></span>Claim 8
 For all sufficiently large $n \in \text{ℕ}$ we have $a_{n+1} = a_n + 1$.
 
 *Proof.*  
