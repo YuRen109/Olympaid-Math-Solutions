@@ -223,7 +223,8 @@ Then we have that $m \in \text{ℬ}^\star_1$ or $m \in \text{ℬ}_j$ for some $j
 $\square$
 
 ### <span id="claim8"></span>Claim 8
-For all sufficiently large $n \in \text{ℕ}$ we have $a_{n+1} = a_n + 1$.
+Let $n \in \text{ℕ}$.  
+If $\text{𝒜}^\star_1 \cap \left( \bigcap_{i=2}^{k} \text{𝒜}\_i \right)$, then $a_{n+1} = a_n + 1$.
 
 *Proof.*  
 By [Claim 3](#claim3) there exists some $N \in \text{ℕ}$ such that $a_{n + s} \geq a_n + s$ and $a_{n + s^\star} = a_n + s^\star$ for all $n \geq N$.  
