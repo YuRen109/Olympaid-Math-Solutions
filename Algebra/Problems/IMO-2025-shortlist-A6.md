@@ -255,7 +255,7 @@ such that $a_{n + s_j} > a_n + s_j$. Then
 $$ a_n + s_1 + s_j = a_{n + s_1 s_j} = a_{n + s_j s_1} > a_n + s_j s_1, $$
 
 a contradiction. 
-Hence, we have that $a_{n + s} = a_n + s$ for all $n \in \text{ℕ}$ with $n \geq L$ and all $j \in \lbrace 2, 3, \cdots, {\\#}S^\prime\rbrace$.
+Hence, we have that $a_{n + s_j} = a_n + s_j$ for all $n \in \text{ℕ}$ with $n \geq L$ and all $j \in \lbrace 2, 3, \cdots, {\\#}S^\prime\rbrace$.
 
 Again, by [Bézout's identity](#bezout), since $\text{gcd } S^\prime = 1$, 
 there are some $z_1, z_2, \cdots, z_{{\\#}S^\prime} \in \text{ℤ}$ such that $\sum_{i=1}^{{\\#}S^\prime} z_i s_i = 1$. 
