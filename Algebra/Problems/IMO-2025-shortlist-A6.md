@@ -62,18 +62,20 @@ We may always find a finite non-empty subset $S^\prime$ of $S$ such that $\text{
 2. find an element $s^\star \in S^\star$ since $S^\star$ is non-empty
 3. let $S^{\prime} = \lbrace s^\star \rbrace \cup S^{\prime\prime}$
 
-Such a $S^{\prime}$ may be written as $S^{\prime} = \lbrace s_1, s_2, ..., s_k \rbrace$ with $s_1 \in S^\star$ and $s_1, s_2, ..., s_k \in S$.  
-Denote $\text{𝒜}_i = \text{𝒜}(s_i)$ and, especially $\text{𝒜}^{\star}_1 = \text{𝒜}^{\star}(s_1)$.  
+Such a $S^{\prime}$ may be written as $S^{\prime} = \lbrace s_1, s_2, ..., s_k \rbrace$ with $s_1 \in S^\star$ and $s_1, s_2, ..., s_k \in S$, where $k \in \text{ℕ}$.  
+Denote $\text{𝒜}_i = \text{𝒜}(s_i)$ for each $i \in \lbrace 1, 2,..., k \rbrace$ and, especially $\text{𝒜}^{\star}_1 = \text{𝒜}^{\star}(s_1)$.  
+
+
+### <span id="claim2"></span>Claim 2 (trivial case of $S^{\prime}$)
+
+$$ k = 1 \iff S = \lbrace 1 \rbrace.$$
 
 
 
 
 
 
-
-
-
-### <span id="claim2"></span>Claim 2 (properties of $\text{𝒜}$ and $\text{𝒜}^\star$)
+### <span id="claim3"></span>Claim 2 (properties of $\text{𝒜}$ and $\text{𝒜}^\star$)
 Let $k \in \text{ℕ}$.  Then  
 2.1    if $k \in \text{𝒜}$, then $k + ns \in \text{𝒜}$ for all $n \in \text{ℕ}$.  
 2.2    if $k \in \text{𝒜}^\star$, then $k + ns \in \text{𝒜}^\star$ for all $n \in \text{ℕ}$.  
