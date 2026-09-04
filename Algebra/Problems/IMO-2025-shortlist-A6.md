@@ -65,7 +65,7 @@ for any $s \in S$, any $s^\star \in S^\star$ and any $n \in \text{ℕ}$.
 
 Furthermore, we have the following results.  
 
-### <span id="claim2"></span>Claim 2 (properties of $\text{𝒜}$ and $\text{𝒜}^\star$)
+### <span id="claim2"></span>Claim 2 (properties of $\text{𝒜}(s)$ and $\text{𝒜}^{\star}(s^\star)$)
 Let $s \in S$, $s^\star \in S^\star$ and $k \in \text{ℕ}$.  Then  
 2.1    
 2.2
@@ -95,12 +95,12 @@ The result of a trivial case where $k = 1$ is shown as follows.
 
 ### <span id="claim3"></span>Claim 3 (trivial case of $S^{\prime}$)
 
-2.1 $k = 1$ if and only if $S^\prime = \lbrace 1 \rbrace$.  
-2.2 If $k=1$, then $a_{n+1} = a_n + 1$ for all $n \in \text{ℕ}$ (with $a_1 \in \text{ℕ}$).  
+3.1 $k = 1$ if and only if $S^\prime = \lbrace 1 \rbrace$.  
+3.2 If $k=1$, then $a_{n+1} = a_n + 1$ for all $n \in \text{ℕ}$ (with $a_1 \in \text{ℕ}$).  
 
 *Proof.*  
-It is apparent that Claim 2.1 holds.  
-Now we will prove Claim 2.2.  
+It is apparent that Claim 3.1 holds.  
+Now we will prove Claim 3.2.  
 Since $1 \in S^\star$, for all $n \in \text{ℕ}$ we have $n \in \text{𝒜}^{\star}(1) \iff n \notin \text{ℬ}^{\star}(1) $, or  
 
 $$ a_{n+1} = a_n + 1 \iff a_{n+1} \neq 1 - a_n .$$
