@@ -249,7 +249,7 @@ By [Claim 6](#claim6) we have that there is some $L \in \text{ℕ}$ such that
 for all $n \in \text{ℕ}$ with $n \geq L$ we have 
 $n \in \text{𝒜}^\star_1 \cap \left( \bigcap_{i=2}^{{\\#}S^\prime} \text{𝒜}\_i \right)$.
 
-Suppose there are some $n \geq L$ and some $j \in \lbrace 2, 3, \cdots, k\rbrace$ 
+Suppose there are some $n \in \text{ℕ}$ with $n \geq L$ and some $j \in \lbrace 2, 3, \cdots, {{\\#}S^\prime}\rbrace$ 
 such that $a_{n + s_j} > a_n + s_j$. Then 
 
 $$ a_n + s_1 + s_j = a_{n + s_1 s_j} = a_{n + s_j s_1} > a_n + s_j s_1, $$
@@ -258,7 +258,7 @@ a contradiction.
 Hence, we have that $a_{n + s} = a_n + s$ for all $n \in \text{ℕ}$ with $n \geq L$ and all $j \in \lbrace 2, 3, \cdots, {\\#}S^\prime\rbrace$.
 
 Again, by [Bézout's identity](#bezout), since $\text{gcd } S^\prime = 1$, 
-there are some $z_1, z_2, \cdots, z_{\\#}S^\prime \in \text{ℤ}$ such that $\sum_{i=1}^{{\\#}S^\prime} z_i s_i = 1$. 
+there are some $z_1, z_2, \cdots, z_{{\\#}S^\prime} \in \text{ℤ}$ such that $\sum_{i=1}^{{\\#}S^\prime} z_i s_i = 1$. 
 
 Now we sort the sequence $z_1 s_1, z_2 s_2, \cdots, z_{{\\#}S^\prime} s_{{\\#}S^\prime}$ by defining a bijection $\bar{z}$
 from $\lbrace 1, 2, \cdots, {\\#}S^\prime\rbrace$ to $\lbrace z_1 s_1, z_2 s_2, \cdots, z_{{\\#}S^\prime} s_{{\\#}S^\prime}\rbrace$ such that 
@@ -268,7 +268,7 @@ $$ \bar{z} (1) \geq \bar{z} (2) \geq \cdots > 0 > \cdots \geq \bar{z} ({\\#}S^\p
 Then $\sum_{i=1}^{j} \bar{z} (i) > 0$ for each $j \in \lbrace 1, 2, \cdots, {\\#}S^\prime\rbrace$.  
 The construction of $\bar{z}$ helps with the application of $a_{n + s} = a_n + s$ for sufficiently large $n$.  
 
-Let $n \in \text{ℕ}$ with $n \in $ $n \geq L$.  
+Let $n \in \text{ℕ}$ with $n \geq L$.  
 Then we have $L \leq n + \sum_{i=1}^{j} \bar{z} (i)$ for each $j \in \lbrace 1, 2, \cdots, {\\#}S^\prime\rbrace$ 
 ($n + \sum_{i=1}^{j} \bar{z} (i)$ are sufficiently large by our definition in the context).  
 Therefore,  
