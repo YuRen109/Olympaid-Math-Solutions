@@ -65,8 +65,8 @@ for any $s \in S$, any $s^\star \in S^\star$ and any $n \in \text{ℕ}$.
 
 Furthermore, we have the following results.  
 
-### <span id="claim2"></span>Claim 2 (properties of $\text{𝒜}(s)$ and $\text{𝒜}^{\star}(s^\star)$)  
-Let $s \in S$, $s^\star \in S^\star$ and $k \in \text{ℕ}$.  Then  
+### <span id="claim2"></span>Claim 2 (properties of $\text{𝒜} (s)$ and $\text{𝒜}^{\star} (s^\star)$)  
+Let $s \in S$, $s^\star \in S^\star$ and $k \in \text{ℕ}$. Then  
 2.1    $k \in \text{𝒜}(s) \iff \left[ a_{k} > s \text{  or  } a_{k+s} > s \right]$.  
 2.2    $k \in \text{𝒜}^{\star}(s^\star) \iff \left[ a_{k} > s^\star \text{  or  } a_{k+s^\star} > s^\star \right]$.  
 2.3    if $k \in \text{𝒜}(s)$, then $k + ns \in \text{𝒜}$ for all $n \in \text{ℕ}$.  
@@ -134,7 +134,7 @@ This a simple corollary from a fundamental theorem of [Numerical semigroup](http
 Suppose $k = 1$. Then $\text{gcd}(N) = 1$ implies that $N = \lbrace 1 \rbrace$, 
 and for all $m \in \text{ℕ}$ we may find $x_1 = m$ such that $x_1 m = m$.  
 Suppose $k > 1$. It suffices to show that for each $r \in \lbrace 1, 2, ..., n_1 - 1 \rbrace$ 
-there exist $x_2 \in \text{ℕ}$, ..., $x_k \in \text{ℕ}$ such that $x_2 n_2 + ... + x_k n_k \equiv r \pmod{x_1}$.  
+there exist $x_2 \in \text{ℕ}$, ..., $x_k \in \text{ℕ}$ such that $\sum^{k}_{i=2} x_i n_i \equiv r \pmod{x_1}$.  
 Let $r \in \lbrace 1, 2, ..., n_1 - 1 \rbrace$. 
 By [Bézout's identity](#Bézout) we may find $z_1, z_2, ..., z_k \in \text{ℤ}$ such that $\sum^{k}_{i=1} z_i n_i = 1$, or  
 
