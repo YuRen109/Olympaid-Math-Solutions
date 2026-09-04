@@ -194,16 +194,16 @@ $\square$
 ### <span id="claim6"></span>Claim 6 
 For all sufficiently large $n \in \text{ℕ}$ we have 
 
-$$n \in \text{𝒜}^\star\_1 \cap \text{𝒜}\_2 \cap \cdots \cap \text{𝒜}\_k = \text{𝒜}^\star\_1 \cap \left( \bigcap_{i=2}^{k} \text{𝒜}\_i \right).$$
+$$n \in \text{𝒜}^\star\_1 \cap \text{𝒜}\_2 \cap \cdots \cap \text{𝒜}\_{\\#}S^\prime = \text{𝒜}^\star\_1 \cap \left( \bigcap_{i=2}^{{\\#}S^\prime} \text{𝒜}\_i \right).$$
 
 *Proof.*  
 We have that there is some $C \in \text{𝒜}^\star_1$ because, otherwise, we get $a_n$ with $a_{n+s_1} = s_1 - a_n$ for all $n \in \text{ℕ}$, 
 which is periodic.  
 
-For each $i \in \lbrace 1, 2, \cdots, k-1\rbrace$ we pick $c_i \in \text{ℕ}$ with $c_i s_i > s_{i+1}$.  
+For each $i \in \lbrace 1, 2, \cdots, {\\#}S^\prime-1\rbrace$ we pick $c_i \in \text{ℕ}$ with $c_i s_i > s_{i+1}$.  
 Then by the following process we may show that 
 
-$$C + \sum_{i=1}^{k-1} (c_i + x_i) s_i + x_k s_k \in \text{𝒜}^\star_1 \cap \left( \bigcap_{i=2}^{k} \text{𝒜}_i \right)$$ 
+$$C + \sum_{i=1}^{{\\#}S^\prime-1} (c_i + x_i) s_i + x_{\\#}S^\prime s_{\\#}S^\prime \in \text{𝒜}^\star_1 \cap \left( \bigcap_{i=2}^{{\\#}S^\prime} \text{𝒜}_i \right)$$ 
 
 for all $x_1, x_2, \cdots, x_k \in \text{ℕ}$:  
 
@@ -214,7 +214,7 @@ $$ C + (c_1+x_1) s_1 \in \text{𝒜}_2.$$
 
    Hence, $C + (c_1+x_1) s_1 \in \text{𝒜}^\star_{1} \cap \text{𝒜}_2$.  
 
-   2. Suppose that for some $j \in \lbrace 2, \cdots, k\rbrace$ we have 
+   2. Suppose that for some $j \in \lbrace 2, \cdots, {\\#}S^\prime\rbrace$ we have 
 
 $$C + \sum_{i=1}^{j-1} (c_i + x_i) s_i \in \text{𝒜}^\star_{1} \cap \left( \bigcap_{i=2}^{j-1} \text{𝒜}_i \right).$$
 
@@ -224,9 +224,9 @@ $$a_{C + \sum_{i=1}^{j-1} (c_i + x_i) s_i} = a_{C} + \sum_{i=1}^{j-1} (c_i + x_i
 
    implying that $C + \sum_{i=1}^{j-1} (c_i + x_i) s_i \in \text{𝒜}_j$ by [Claim 2.1](#claim2).
 
-   3. As $j$ runs over $\lbrace 2, \cdots, k\rbrace$ we finally conclude that 
+   3. As $j$ runs over $\lbrace 2, \cdots, {\\#}S^\prime\rbrace$ we finally conclude that 
 
-$$C + \sum_{i=1}^{k-1} (c_i + x_i) s_i \in \text{𝒜}^\star_1 \cap \left( \bigcap_{i=2}^{k} \text{𝒜}_i \right),$$
+$$C + \sum_{i=1}^{{\\#}S^\primek-1} (c_i + x_i) s_i \in \text{𝒜}^\star_1 \cap \left( \bigcap_{i=2}^{{\\#}S^\prime} \text{𝒜}_i \right),$$
 
    and also,  
 
@@ -247,7 +247,7 @@ For all sufficiently $n \in \text{ℕ}$ we have $a_{n+1} = a_n + 1$.
 *Proof.*  
 By [Claim 6](#claim6) we have that there is some $L \in \text{ℕ}$ such that 
 for all $n \in \text{ℕ}$ with $n \geq L$ we have 
-$n \in \text{𝒜}^\star_1 \cap \left( \bigcap_{i=2}^{k} \text{𝒜}\_i \right)$.
+$n \in \text{𝒜}^\star_1 \cap \left( \bigcap_{i=2}^{{\\#}S^\prime} \text{𝒜}\_i \right)$.
 
 Suppose there are some $n \geq L$ and some $j \in \lbrace 2, 3, \cdots, k\rbrace$ 
 such that $a_{n + s_j} > a_n + s_j$. Then 
@@ -255,21 +255,21 @@ such that $a_{n + s_j} > a_n + s_j$. Then
 $$ a_n + s_1 + s_j = a_{n + s_1 s_j} = a_{n + s_j s_1} > a_n + s_j s_1, $$
 
 a contradiction. 
-Hence, we have that $a_{n + s} = a_n + s$ for all $n \in \text{ℕ}$ with $n \geq L$ and all $j \in \lbrace 2, 3, \cdots, k\rbrace$.
+Hence, we have that $a_{n + s} = a_n + s$ for all $n \in \text{ℕ}$ with $n \geq L$ and all $j \in \lbrace 2, 3, \cdots, {\\#}S^\prime\rbrace$.
 
 Again, by [Bézout's identity](#bezout), since $\text{gcd } S^\prime = 1$, 
-there are some $z_1, z_2, \cdots, z_k \in \text{ℤ}$ such that $\sum_{i=1}^{k} z_i s_i = 1$. 
+there are some $z_1, z_2, \cdots, z_{\\#}S^\prime \in \text{ℤ}$ such that $\sum_{i=1}^{{\\#}S^\prime} z_i s_i = 1$. 
 
-Now we sort the sequence $z_1 s_1, z_2 s_2, \cdots, z_k s_k$ by defining a bijection $\bar{z}$
-from $\lbrace 1, 2, \cdots, k\rbrace$ to $\lbrace z_1 s_1, z_2 s_2, \cdots, z_k s_k\rbrace$ such that 
+Now we sort the sequence $z_1 s_1, z_2 s_2, \cdots, z_{\\#}S^\prime s_{\\#}S^\prime$ by defining a bijection $\bar{z}$
+from $\lbrace 1, 2, \cdots, {\\#}S^\prime\rbrace$ to $\lbrace z_1 s_1, z_2 s_2, \cdots, z_{\\#}S^\prime s_{\\#}S^\prime\rbrace$ such that 
 
-$$ \bar{z} (1) \geq \bar{z} (2) \geq \cdots > 0 > \cdots \geq \bar{z} (k).  $$
+$$ \bar{z} (1) \geq \bar{z} (2) \geq \cdots > 0 > \cdots \geq \bar{z} ({\\#}S^\prime).  $$
 
-Then $\sum_{i=1}^{j} \bar{z} (i) > 0$ for each $j \in \lbrace 1, 2, \cdots, k\rbrace$.  
+Then $\sum_{i=1}^{j} \bar{z} (i) > 0$ for each $j \in \lbrace 1, 2, \cdots, {\\#}S^\prime\rbrace$.  
 The construction of $\bar{z}$ helps with the application of $a_{n + s} = a_n + s$ for sufficiently large $n$.  
 
 Let $n \in \text{ℕ}$ with $n \in $ $n \geq L$.  
-Then we have $L \leq n + \sum_{i=1}^{j} \bar{z} (i)$ for each $j \in \lbrace 1, 2, \cdots, k\rbrace$ 
+Then we have $L \leq n + \sum_{i=1}^{j} \bar{z} (i)$ for each $j \in \lbrace 1, 2, \cdots, {\\#}S^\prime\rbrace$ 
 ($n + \sum_{i=1}^{j} \bar{z} (i)$ are sufficiently large by our definition in the context).  
 Therefore,  
 
@@ -286,13 +286,13 @@ $\square$
 
 ### <span id="claim8"></span>Claim 8
 
-$$\text{𝒜}^\star_1 \cap \left( \bigcap_{i=2}^{k} \text{𝒜}_i \right) = \text{ℕ}.$$
+$$\text{𝒜}^\star_1 \cap \left( \bigcap_{i=2}^{{\\#}S^\prime} \text{𝒜}_i \right) = \text{ℕ}.$$
 
 *Proof.*  
-By [Claim 6](#claim6) we know that if $\text{ℬ}^\star_1 \cup \left( \bigcup_{i=2}^{k} \text{ℬ}\_i \right) = \text{ℕ} \backslash \left[ \text{𝒜}^\star\_1 \cap \left( \bigcap_{i=2}^{k} \text{𝒜}\_i \right) \right]$ is non-empty, 
-then $\text{ℬ}^\star_1 \cup \left( \bigcup_{i=2}^{k} \text{ℬ}\_{i} \right)$ contains a largest number.  
-Suppose that $m \in \text{ℕ}$ is the largest number in $\text{ℬ}^\star_1 \cup \left( \bigcup_{i=2}^{k} \text{ℬ}{\_i} \right)$. 
-Then we have that $m \in \text{ℬ}^\star_1$ or $m \in \text{ℬ}{\_j}$ for some $j \in \lbrace 2, 3, \cdots, k\rbrace$.  
+By [Claim 6](#claim6) we know that if $\text{ℬ}^\star_1 \cup \left( \bigcup_{i=2}^{{\\#}S^\prime} \text{ℬ}\_i \right) = \text{ℕ} \backslash \left[ \text{𝒜}^\star\_1 \cap \left( \bigcap_{i=2}^{k} \text{𝒜}\_i \right) \right]$ is non-empty, 
+then $\text{ℬ}^\star_1 \cup \left( \bigcup_{i=2}^{{\\#}S^\prime} \text{ℬ}\_{i} \right)$ contains a largest number.  
+Suppose that $m \in \text{ℕ}$ is the largest number in $\text{ℬ}^\star_1 \cup \left( \bigcup_{i=2}^{{\\#}S^\prime} \text{ℬ}{\_i} \right)$. 
+Then we have that $m \in \text{ℬ}^\star_1$ or $m \in \text{ℬ}{\_j}$ for some $j \in \lbrace 2, 3, \cdots, {\\#}S^\prime\rbrace$.  
 
 By [Claim 7](#claim7) we have that $m+1 \in \text{𝒜}^\star\_1 \cap \left( \bigcap_{i=2}^{k} \text{𝒜}\_i \right)$, 
 and $a_{l+1} = a_{l} + 1$ for each $l \in \text{ℕ}$ with $l \geq m + 1$.  
@@ -302,7 +302,7 @@ By [Claim 7](#claim7), since $m+1 \in \text{𝒜}^\star\_1$, we have that $a_{m+
 implying that $a_{m} + a_{m+1} = 1$, a contradiction. 
 Hence, $m \notin \text{ℬ}^\star\_1$.  
 
-In a similar way we may prove that $m \notin \text{ℬ}^\star\_j$ for all $j \in \lbrace 2, 3, \cdots, k\rbrace$.
+In a similar way we may prove that $m \notin \text{ℬ}^\star\_j$ for all $j \in \lbrace 2, 3, \cdots, {\\#}S^\prime\rbrace$.
 
 $\square$
 
@@ -316,7 +316,7 @@ $\square$
 
 By [Claim 3](#claim3) and [Claim 9](#claim9) we conclude that 
 the only possible solution is $a_{n+1} = a_n + 1$ for all $n \in \text{ℕ}$ (with $a_1 \in \text{ℕ}$), or
-$a_n = n + N$ for some $N \in \text{ℕ}$.  
+$a_n = n + c$ for some $c \in \text{ℕ}$.  
 
 # What I learned
 1. [Bézout's identity](https://en.wikipedia.org/wiki/B%C3%A9zout%27s_identity)
