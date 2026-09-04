@@ -56,6 +56,11 @@ $$
 \end{aligned}
 $$
 
+Then, as stated in the problem, we have that  
+
+$$ \lbrace n \in \text{𝒜}(s) \iff n \notin \text{ℬ}(s) \rbrace \text{  and  } \lbrace n \in \text{𝒜}^{\star}(s^\star) \iff n \notin \text{ℬ}^{\star}(s^\star) \rbrace $$
+
+for any $s \in S$, any $s^\star \in S^\star$ and any $n \in \text{ℕ}$.  
 
 We may always find a finite non-empty subset $S^\prime$ of $S$ such that $\text{gcd}\left(S^\prime\right) = 1$ and $S^\prime \cap S^\star \neq \emptyset$ by the following process: 
 1. find a finite non-empty subset $S^{\prime\prime}$ of $S$ such that $\text{gcd}\left(S^{\prime\prime}\right) = 1$ by [Claim 1](#claim1)
