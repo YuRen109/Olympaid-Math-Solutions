@@ -39,7 +39,8 @@ However, $d > 1$ and, by induction, we get that $d$ divides all elements of $S$,
 $\square$
 
 
-Suppose that there is some $S \in \text{𝕊}$ such that such a sequence $a_1, a_2, ...$, which may be dependent of $S$, in the problem statement exist.  
+Suppose that there is some $S \in \text{𝕊}$ such that such a non-periodic sequence $a_1, a_2, ...$ of positive integer, 
+which may be dependent of $S$, in the problem statement exist.  
 In this case, let $S^\star \subseteq S$ denote the subset such that for each $s^\star \in S^\star$ and for all $n \in \text{ℕ}$ 
 we have $a_n = \left| a_{n+s^\star} - s^\star \right|$.  
 The condition 2 in the problem statement implies that $S^\star$ is non-empty, and therefore, $S$ is non-empty.  
@@ -79,6 +80,14 @@ Denote $\text{𝒜}_i = \text{𝒜}(s_i)$ for each $i \in \lbrace 1, 2,..., k \r
 *Proof.*  
 It is apparent that Claim 2.1 holds.  
 Now we will prove Claim 2.2.  
+Since $1 \in S^\star$, for all $n \in \text{ℕ}$ we have $n \in \text{𝒜}^{\star}(1) \iff n \notin \text{ℬ}^{\star}(1) $, or  
+
+$$ a_{n+1} = a_n + 1 \iff a_{n+1} \neq 1 - a_n .$$
+
+Suppose $a_{k+1} = 1 - a_k$ for some $k \in \text{ℕ}$. Then $a_{k+1} + a_k = 1$, which is a contradiction 
+since $a_k \geq 1$ and $a_{k+1} \geq 1$.  
+Hence, $a_{n+1} = a_n + 1$ for all $n \in \text{ℕ}$.  
+Since $a_n \geq \text{ℕ}$ for all $n \in \text{ℕ}$, it suffices to let $a_1 \in \text{ℕ}$.
 
 $\square$
 
