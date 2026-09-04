@@ -68,9 +68,10 @@ We may always find a finite non-empty subset $S^\prime$ of $S$ such that $\text{
 2. find an element $s^\star \in S^\star$ since $S^\star$ is non-empty
 3. let $S^{\prime} = \lbrace s^\star \rbrace \cup S^{\prime\prime}$
 
-Such a $S^{\prime}$ may be written as $S^{\prime} = \lbrace s_1, s_2, ..., s_k \rbrace$ with $s_1 \in S^\star$ and $s_1, s_2, ..., s_k \in S$, where $k \in \text{ℕ}$.  
+Such a $S^{\prime}$ may be written as $S^{\prime} = \lbrace s_1, s_2, ..., s_k \rbrace$ where $k \in \text{ℕ}$, $s_1 \in S^\star$ and $s_1, s_2, ..., s_k \in S$.  
 Denote $\text{𝒜}_i = \text{𝒜}(s_i)$ for each $i \in \lbrace 1, 2,..., k \rbrace$ and, especially $\text{𝒜}^{\star}_1 = \text{𝒜}^{\star}(s_1)$.  
 
+The result of a trivial case where $k = 1$ is shown as follows.  
 
 ### <span id="claim2"></span>Claim 2 (trivial case of $S^{\prime}$)
 
@@ -87,10 +88,16 @@ $$ a_{n+1} = a_n + 1 \iff a_{n+1} \neq 1 - a_n .$$
 Suppose $a_{k+1} = 1 - a_k$ for some $k \in \text{ℕ}$. Then $a_{k+1} + a_k = 1$, which is a contradiction 
 since $a_k \geq 1$ and $a_{k+1} \geq 1$.  
 Hence, $a_{n+1} = a_n + 1$ for all $n \in \text{ℕ}$.  
-Since $a_n \geq \text{ℕ}$ for all $n \in \text{ℕ}$, it suffices to let $a_1 \in \text{ℕ}$.
+Since $a_n \in \text{ℕ}$ for all $n \in \text{ℕ}$, it suffices to let $a_1 \in \text{ℕ}$.
 
 $\square$
 
+Before jumping into the discussion of general cases, we state some useful theorems here.  
+
+### Theorem ([Bézout's identity](https://en.wikipedia.org/wiki/B%C3%A9zout%27s_identity))
+
+
+### Theorem ()
 
 
 ### <span id="claim3"></span>Claim 2 (properties of $\text{𝒜}$ and $\text{𝒜}^\star$)
