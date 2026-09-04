@@ -9,6 +9,12 @@ We say that an infinite sequence $a_1, a_2, \cdots$ is *periodic* if there exist
 
 # Key idea
 
+1. Look into properties of $S$.  
+   That "no positive integer greater than 1 divides all elements of $S$" let me consider some trick related to $\text{gcd}$. 
+   For example, [Bézout's identity](https://en.wikipedia.org/wiki/B%C3%A9zout%27s_identity).
+2. Find finitely many key elements in $S$ (even though it is infinite) and use them to see properties of $a_1, a_2, \cdots$.
+3. 
+
 # Solution
 
 Let $\text{𝕊}$ denote the collection of all subsets $S$ of $\text{ℕ}$ such that no positive integer greater than 1 divides all elements of $S$.  
@@ -44,7 +50,6 @@ which may be dependent of $S$, in the problem statement exist.
 In this case, let $S^\star \subseteq S$ denote the collection of each $s^\star \in S$ 
 such that $a_n = \left| a_{n+s^\star} - s^\star \right|$ for all $n \in \text{ℕ}$.  
 The condition 2 in the problem statement implies that $S^\star$ is non-empty, and therefore, $S$ is non-empty.  
-
 
 For any $s \in S$ and for any $s^\star \in S^\star$ we denote  
 
@@ -149,21 +154,22 @@ and for all $m \in \text{ℕ}$ we may find $x_1 = m$ such that $x_1 \cdot 1 = m$
 Suppose $k > 1$. It suffices to show that for each $r \in \lbrace 1, 2, \cdots, n_1 - 1 \rbrace$ 
 there exist $x_2, x_3, \cdots, x_k \in \text{ℕ}$ such that 
 
-$$\sum^{k}_{i=2} x_i n_i \equiv r \pmod{x_1}.$$
+$$\sum^{k}_{i=2} x_i n_i \equiv r \pmod{n_1}.$$
 
 
 Let $r \in \lbrace 1, 2, \cdots, n_1 - 1 \rbrace$. 
 By [Bézout's identity](#bezout) we may find $z_1, z_2, \cdots, z_k \in \text{ℤ}$ such that $\sum^{k}_{i=1} z_i n_i = 1$, or  
 
-$$\sum^{k}_{i=2} (r z_i) n_i \equiv r \pmod{x_1}.$$
+$$\sum^{k}_{i=2} (r z_i) n_i \equiv r \pmod{n_1}.$$
 
 Note that for all $t_{r,2}, t_{r,3}, \cdots, t_{r,k} \in \text{ℤ}$ we have
 
-$$\sum^{k}_{i=2} (r z_i + t_{r,i} x_1) n_i \equiv r \pmod{x_1}.$$
+$$\sum^{k}_{i=2} (r z_i + t_{r,i} x_1) n_i \equiv r \pmod{n_1}.$$
 
 For each $r \in \lbrace 1, 2, \cdots, n_1 - 1 \rbrace$ and 
 for each $i \in \lbrace 2, 3, \cdots, k-1 \rbrace$ 
-we may pick a sufficiently large $t_{r,i}$ such that $x_i = r z_i + t_{r,i} x_1 > 0$ to complete the proof.  
+we may pick a sufficiently large $t_{r,i}$ such that $x_i = r z_i + t_{r,i} x_1 > 0$.  
+Then the proof is complete.  
 
 $\square$
 
@@ -289,9 +295,12 @@ $\square$
 For all $n \in \text{ℕ}$ we have $a_{n+1} = a_n + 1$ for all $n \in \text{ℕ}$ (with $a_1 \in \text{ℕ}$).
 
 *Proof.*  
-By [Claim 7](#claim7) and [Claim 8](#claim8) we complete the proof.  
+By [Claim 7](#claim7) and [Claim 8](#claim8) the proof is complete.  
 
 $\square$  
 
+By [Claim 3](#claim3) and [Claim 9](#claim9) we conclude that 
+the only possible solution is $a_{n+1} = a_n + 1$ for all $n \in \text{ℕ}$ (with $a_1 \in \text{ℕ}$), or
+$a_n = n + N$ for some $N \in \text{ℕ}$.  
 
 ### What I learned
