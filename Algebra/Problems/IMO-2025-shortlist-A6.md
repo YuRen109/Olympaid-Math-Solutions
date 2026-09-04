@@ -58,7 +58,7 @@ $$
 
 Then, as stated in the problem, we have that  
 
-$$ \lbrace n \in \text{𝒜}(s) \iff n \notin \text{ℬ}(s) \rbrace \text{  and  } \lbrace n \in \text{𝒜}^{\star}(s^\star) \iff n \notin \text{ℬ}^{\star}(s^\star) \rbrace $$
+$$ \left[ n \in \text{𝒜}(s) \iff n \notin \text{ℬ}(s) \right] \text{  and  } \left[ n \in \text{𝒜}^{\star}(s^\star) \iff n \notin \text{ℬ}^{\star}(s^\star) \right] $$
 
 for any $s \in S$, any $s^\star \in S^\star$ and any $n \in \text{ℕ}$.  
 
