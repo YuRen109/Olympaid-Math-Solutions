@@ -23,9 +23,9 @@ $\text{gcd}(S)$ would be a positive integer that divides all elements of $S$ and
 In this case we may find $S^\prime = S$.  
 
 For the case where $S$ is infinite, suppose that every finite subset $S^\prime$ of $S$ satisfies that $\text{gcd}\left(S^\prime\right) > 1$.  
-Construct an infinite sequence $s_1, s_2, ...$ of elements of $S$ with $s_i \neq s_j$ for every pair of integers $i$ and $j$ with $i \neq j$. 
-For any $n \in \text{ℕ}$ we denote $S_n = \lbrace s_1, s_2, ..., s_n \rbrace$. 
-Then we have that $\text{gcd}(S_n) > 1$ for all $n \in \text{ℕ}$ and
+Construct an infinite sequence $s_1, s_2, ...$ of elements of $S$ with $s_i \neq s_j$ for every pair of integers $i$ and $j$ with $i \neq j$.  
+For any $n \in \text{ℕ}$ we denote $S_n = \lbrace s_1, s_2, ..., s_n \rbrace$.  
+Then we have that $\text{gcd}(S_n) > 1$ for all $n \in \text{ℕ}$, and 
 
 $$ s_1 = \text{gcd}(S_1) \geq \text{gcd}(S_2) \geq \text{gcd}(S_3) \geq ... , $$
 
@@ -48,10 +48,10 @@ For any $s \in S$ and for any $s^\star \in S^\star$ we denote
 
 $$
 \begin{aligned}
-\text{𝒜}_s &= \lbrace n \in \text{ℕ} \mid a_{n+s} \geq s + a_n \rbrace, \\
-\text{ℬ}_s &= \lbrace n \in \text{ℕ} \mid a_{n+s} \leq s - a_n \rbrace = \text{ℕ} \backslash \text{𝒜}_s, \\
-\text{𝒜}^\star_{s^\star} &= \lbrace n \in \text{ℕ} \mid a_{n+s^\star} = s^\star + a_n \rbrace , \\
-\text{ℬ}^\star_{s^\star} &= \lbrace n \in \text{ℕ} \mid a_{n+s^\star} = s^\star - a_n \rbrace = \text{ℕ} \backslash \text{𝒜}^\star_{s^\star}.
+\text{𝒜}\left( s \right) &= \lbrace n \in \text{ℕ} \mid a_{n+s} \geq s + a_n \rbrace, \\
+\text{ℬ}\left( s \right) &= \lbrace n \in \text{ℕ} \mid a_{n+s} \leq s - a_n \rbrace = \text{ℕ} \backslash \text{𝒜}\left( s \right), \\
+\text{𝒜}^{\star}\left( s^\star \right) &= \lbrace n \in \text{ℕ} \mid a_{n+s^\star} = s^\star + a_n \rbrace , \\
+\text{ℬ}^{\star}\left( s^\star \right) &= \lbrace n \in \text{ℕ} \mid a_{n+s^\star} = s^\star - a_n \rbrace = \text{ℕ} \backslash \text{𝒜}^{\star}\left( s^\star \right).
 \end{aligned}
 $$
 
