@@ -198,9 +198,10 @@ $$C + \left(\sum_{i=1}^{k-1} c_i s_i\right) +  \left(\sum_{i=1}^{k} x_i s_i\righ
 
 
 By [Theorem 4](#num_semi), since $\text{gcd}\left(S^\prime\right) = 1$, 
-there is $L \in \text{ℕ}$ such that for all $m \in \text{ℕ}$ with $m \geq L$ 
+there is $L \in \text{ℕ}$ such that, 
+for all $m \in \text{ℕ}$ with $m \geq L$, 
 there exist $x_1, x_2, ..., x_k \in \text{ℕ}$ such that  $m = \sum_{i=1}^{k} x_i s_i$.  
-Let $L^\prime = L + C + \sum_{i=1}^{k-1} c_i s_i \in \text{ℕ}$. 
+Let $L^\prime = L + C + \sum_{i=1}^{k-1} c_i s_i \in \text{ℕ}$.  
 Then for all $m^\prime \in \text{ℕ}$ with $m^\prime \geq L^\prime$ we have $m^\prime \in \text{𝒜}^\star_1 \cap \left( \bigcap_{i=2}^{k} \text{𝒜}_i \right).$
 
 $\square$
