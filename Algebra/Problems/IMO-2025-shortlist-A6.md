@@ -65,12 +65,12 @@ for any $s \in S$, any $s^\star \in S^\star$ and any $n \in \text{ℕ}$.
 
 Furthermore, we have the following results.  
 
-### <span id="claim2"></span>Claim 2 (properties of $\text{𝒜}(s)$ and $\text{𝒜}^{\star}(s^\star)$)
+### <span id="claim2"></span>Claim 2 (properties of $\text{𝒜}(s)$ and $\text{𝒜}^{\star}(s^\star)$)  
 Let $s \in S$, $s^\star \in S^\star$ and $k \in \text{ℕ}$.  Then  
-2.1    
-2.2
-2.3    if $k \in \text{𝒜}$, then $k + ns \in \text{𝒜}$ for all $n \in \text{ℕ}$.  
-2.4    if $k \in \text{𝒜}^\star$, then $k + ns \in \text{𝒜}^\star$ for all $n \in \text{ℕ}$.  
+2.1    $k \in \text{𝒜}(s) \iff \left[ a_{k} > s \text{  or  } a_{k+s} > s \right]$.  
+2.2    $k \in \text{𝒜}^{\star}(s^\star) \iff \left[ a_{k} > s^\star \text{  or  } a_{k+s^\star} > s^\star \right]$.  
+2.3    if $k \in \text{𝒜}(s)$, then $k + ns \in \text{𝒜}$ for all $n \in \text{ℕ}$.  
+2.4    if $k \in \text{𝒜}^{\star}(s^\star)$, then $k + ns \in \text{𝒜}^\star$ for all $n \in \text{ℕ}$.  
 
 *Proof.*  
 $k \in \text{𝒜}$ implies that $a_{k+s} \geq s + a_{k} > s$.  
@@ -78,8 +78,8 @@ Suppose $k+s \in \text{ℬ}$. Then $a_{k+2s} \leq s - a_{k+s}$, which implies th
 
 $$ a_{k+s} \leq s - a_{k+2s} < s, $$
 
-a contradiction. Hence, $k+s \in \text{𝒜}$. By induction we complete the proof of Claim 2.1.  
-In a similar way we can prove Claim 2.2.  
+a contradiction. Hence, $k+s \in \text{𝒜}$. By induction we complete the proof of Claim 2.3.  
+In a similar way we can prove Claim 2.4.  
 $\square$
 
 
