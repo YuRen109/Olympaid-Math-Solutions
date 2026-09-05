@@ -22,6 +22,7 @@ We say that $f$ is *unbounded* if for each nonnegative integer $N$, there exists
 
 # Key Idea
 
+<details>
 # Solution
 
 Let 
@@ -155,5 +156,6 @@ $\square$
 
 By [Claim 4](#claim4) we may find $l \in \text{ℕ}$
 
+<\details>
 
 # What I Learned
