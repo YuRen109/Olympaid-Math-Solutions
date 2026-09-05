@@ -121,10 +121,11 @@ However,
 $$
 \begin{aligned}
 f(a_{j+1}) &= f(a_{j+1} - a_{j} + a_{j-1}) + f(a_j - a_{j-1}) \\
-&= f(a_{j+1} - a_{j} + a_{j-1}) + f(a_j) - f(a_{j-1})
-
+&= f(a_{j+1} - a_{j} + a_{j-1}) + f(a_j) - f(a_{j-1}) \\
+&< f(a_{j-1}) + f(a_j) - f(a_{j-1}) = f(a_j),
 \end{aligned}
 $$
+a contradiction.
 
 $\square$  
 
