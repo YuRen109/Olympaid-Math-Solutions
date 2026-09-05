@@ -50,10 +50,10 @@ $\square$
 
 Inspired by [Claim 1](#claim1), construct a sequence $a_0, a_1, \cdots$ as follows.  
 
-1. Define $a_0 = 1$ and $A_1 = \lbrace n \in  \text{ℕ} \mid f(a_0) > 0 \rbrace$.
+1. Define $a_0 = 1$ and $A_1 = \lbrace n \in  \text{ℕ} \mid n > f(a_0) \rbrace$.
 2. For each $i \in \text{ℕ}$ we define $a_i$ to be the smallest number of $A_i$ (if $A_i$ has been defined), 
-   and then define  $A_{i+1} = \lbrace n \in  \text{ℕ} \mid f(a_i) > 0 \rbrace$.  
-   Note that such an $a_i$ exists because of the unboundedness of $f$.
+   and then define  $A_{i+1} = \lbrace n \in  \text{ℕ} \mid n > f(a_i) \rbrace$.  
+   Note that such an $a_i$ exists because of the unboundedness of $f$ for each $i \in \text{ℕ}$. 
 
 We have the following propery:
 
