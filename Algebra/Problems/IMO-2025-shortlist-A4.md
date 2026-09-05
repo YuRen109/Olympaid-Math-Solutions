@@ -156,7 +156,7 @@ such that $a_{n+1} - a_n > a_n - a_{n-1}$.
 
 Construct a sequence $n_0,n_1,\cdots$ as follows.  
 1. Define $n_0=1$.
-2. For each $i \in \text{ℕ}$ find $n_i \in \text{ℕ}$ such that $a_{n_{i} + 1} - a_{n_i} > a_{n_i} - a_{n_{i} - 1}$.  
+2. For each $i \in \text{ℕ}$ find $n_i \in \text{ℕ}$ such that $n_{i} > n_{i-1}$ and $a_{n_{i} + 1} - a_{n_i} > a_{n_i} - a_{n_{i} - 1}$.  
 
 Then by [Claim 3](#claim3) we have 
 
