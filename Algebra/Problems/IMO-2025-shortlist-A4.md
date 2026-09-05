@@ -23,7 +23,7 @@ We say that $f$ is *unbounded* if for each nonnegative integer $N$, there exists
 # Key Idea
 1. It suffices to pick some **representative nonnegative integers** to show
    the property of $f$, that is being proven, says that $f$ maps an arithmetic progression to another one,
-   and further preserves its order.
+   and further preserves its order, if our selection process is relevant to $\max$.  
 2. By the unboundedness of $f$, if we determine its function values from small integers to large ones,
    we always get one whose function value is greater those of the determined small integers.
    Then we pick it and call it **a representative nonnegative integer**.
