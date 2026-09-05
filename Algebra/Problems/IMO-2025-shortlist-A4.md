@@ -180,8 +180,33 @@ and, furthermore, $a_{i+1} -a_i = a_i -a_{i+1}$ by [Claim 3.1](#claim3).
 $\square$  
 
 
-By [Claim 4](#claim4) we may find $l \in \text{ℕ}$
+By [Claim 4](#claim4) we may find $l \in \text{ℕ}$ such that 
 
+$$a_{l+1} - a_{l} = a_{l+2} - a_{l+1} = \cdots,$$
 
+or $a_{l+x} = a_l + x (a_{l+1} - a_{l})$ for all $x \in \text{ℤ}\_{\geq 0}$.
+
+And we also have 
+
+$$ f(a_{l+1}) - f(a_{l}) = f(a_{l+2}) - f(a_{l+1}) = \cdots,$$
+
+or $f(a_{l+x}) = f(a_l) + x \left[ f(a_{l+1}) - f(a_{l}) \right]$.
+
+Let
+
+$$
+\begin{aligned}
+A &= a_{l+1} - a_l \in \text{ℕ}, \\
+B &= a_l \in \text{ℕ}, \\
+C &= f(a_{l+1}) - f(a_l) \in \text{ℕ}, \\
+D &= f(a_l) \in \text{ℕ}.
+\end{aligned}
+$$
+
+Then 
+
+$$f(Ax + B) &= f(a_l + x(a_{l+1} - a_l)) = f(a_{l+x}) = f(a_l) + x \left[ f(a_{l+1}) - f(a_{l}) \right] = C + Dx$$
+
+for all $x \in \text{ℤ}\_{\geq 0}$.
 
 # What I Learned
