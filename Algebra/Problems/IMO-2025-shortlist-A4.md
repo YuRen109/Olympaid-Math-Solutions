@@ -67,7 +67,7 @@ for each $i \in \text{ℤ}\_{\geq 0}$ and each nonnegative integer $n \leq a_i$.
 
 Using this property, we may derive the following claim.
 
-### <span id="claim2"></span>Claim 2 (the value of $f(k)$ for each $a_i < k < a_{i+1}$)
+### <span id="claim2"></span>Claim 2 (the value of $f(k)$ for each integer $k$ in $(a_i,a_{i+1})$)
 For each $i \in \text{ℤ}\_{\geq 0}$ and each $k \in \text{ℕ}$,  
 if 
 
