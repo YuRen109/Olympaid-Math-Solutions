@@ -20,6 +20,8 @@ We say that $f$ is *unbounded* if for each nonnegative integer $N$, there exists
 
 [IMO 2025 Problems](https://www.imo-official.org/problems/2025/)
 
+# Key Idea
+
 # Solution
 
 Let 
@@ -107,8 +109,22 @@ For each $i \in \text{ℕ}$ we have
 3.2 $f(a_{i+1}) - f(a_i) \leq f(a_i) - f(a_{i+1})$
 
 *Proof.*  
+First, we will prove Claim 3.1.  
+Suppose that $a_{j+1} -a_j < a_j -a_{j+1}$ for some $j \in \text{ℕ}$.  
+Then 
 
-Suppose that $a$
+$$a_{j-1} < a_{j+1} - a_{j} + a_{j-1} < a_{j}.$$
+
+By [Claim 2](#claim2) we have $f(a_{j+1} - a_{j} + a_{j-1}) < f(a_{j-1})$.  
+However, 
+
+$$
+\begin{aligned}
+f(a_{j+1}) &= f(a_{j+1} - a_{j} + a_{j-1}) + f(a_j - a_{j-1}) \\
+&= f(a_{j+1} - a_{j} + a_{j-1}) + f(a_j) - f(a_{j-1})
+
+\end{aligned}
+$$
 
 $\square$  
 
