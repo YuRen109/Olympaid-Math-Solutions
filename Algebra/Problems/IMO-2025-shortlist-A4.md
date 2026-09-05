@@ -48,7 +48,7 @@ However, $0 < f(k) = f(1) + f(k-1) = 0 + 0 = 0$, a contradiction.
 
 $\square$  
 
-Inspired by [Claim 1](#claim1), construct a sequence $a_0, a_1, \cdots$ as follows.  
+<span id="def_ai"></span>Inspired by [Claim 1](#claim1), construct a sequence $a_0, a_1, \cdots$ as follows.  
 
 1. Define $a_0 = 1$ and $A_1 = \lbrace n \in  \text{ℕ} \mid n > f(a_0) \rbrace$.
 2. For each $i \in \text{ℕ}$ we define $a_i$ to be the smallest number of $A_i$ (if $A_i$ has been defined), 
@@ -71,7 +71,8 @@ if $a_i < k_i < a_{i+1}$, then
 $$0 < f(k_i) < f(a_i).$$
 
 *Proof.*  
-
+Let $k_i \in \text{ℕ}$ with $a_i < k_i < a_{i+1}.  
+Then by [the definition of a_i](#def_ai) we get $0 \leq f(k_i) \leq f(a_i)$.
 
 $\square$  
 
@@ -82,8 +83,20 @@ We will look into the distribution of $a_0, a_1, \cdots$ with [Claim 2](#claim2)
 ### <span id="claim3"></span>Claim 3
 For each $i \in \text{ℕ}$ we have
 
-3.1 $a_{i+1} -a_i \geq a_i -a_{i+1}$ and  
+3.1 $a_{i+1} -a_i \geq a_i -a_{i+1}$, and  
 3.2 $f(a_{i+1}) - f(a_i) \leq f(a_i) - f(a_{i+1})$
+
+*Proof.*  
+
+Suppose that $a$
+
+$\square$  
+
+
+
+### <span id="claim4"></span>Claim 4
+There exists $l \in \text{ℕ}$ such that 
+for each $i \in \text{ℕ}$ with $i > l$ we have $a_{i+1} -a_i = a_i -a_{i+1}$.
 
 *Proof.*  
 
@@ -91,7 +104,7 @@ For each $i \in \text{ℕ}$ we have
 $\square$  
 
 
-
+By [Claim 4](#claim4) we may find $l \in \text{ℕ}$
 
 
 # What I Learned
