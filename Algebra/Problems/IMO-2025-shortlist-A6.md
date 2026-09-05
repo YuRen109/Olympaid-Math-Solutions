@@ -281,7 +281,7 @@ The construction of $\bar{z}$ helps with the application of $a_{n + s_j} = a_n +
 
 Let $n \in \text{ℕ}$ with $n \geq L$.  
 Then we have $L \leq n + \sum_{i=1}^{j} \bar{z} (i)$ for each $j \in \lbrace 1, 2, \cdots, {\\#}S^\prime\rbrace$ 
-($n + \sum_{i=1}^{j} \bar{z} (i)$ are sufficiently large by our definition in the context).  
+(that is, $n + \sum_{i=1}^{j} \bar{z} (i)$ are sufficiently large by our definition in the context).  
 Therefore,  
 
 $$
