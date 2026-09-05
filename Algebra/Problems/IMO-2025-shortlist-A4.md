@@ -23,10 +23,10 @@ We say that $f$ is *unbounded* if for each nonnegative integer $N$, there exists
 # Key Idea
 
 
+# Solution
+
 <details>
-
-   <summary># Solution</summary>
-
+<summary>Click to open</summary>
 
 Let 
 
