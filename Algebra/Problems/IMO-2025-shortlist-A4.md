@@ -128,7 +128,7 @@ f(a_{j+1}) &= f(a_{j+1} - a_{j} + a_{j-1}) + f(a_j - a_{j-1}) \\
 \end{aligned}
 $$
 
-a contradiction [the definition](#def_ai) of $a_n$. 
+a contradiction to [the definition](#def_ai) of $a_n$. 
 
 Hence, Claim 3.1 holds.  
 
