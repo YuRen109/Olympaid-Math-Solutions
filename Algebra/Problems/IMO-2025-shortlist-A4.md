@@ -79,7 +79,7 @@ $$a_i < k < a_{i+1},$$
 
 then
 
-$$0 < f(k) < f(a_i).$$
+$$0 \< f(k) \< f(a_i).$$
 
 *Proof.*  
 Let $k \in \text{ℕ}$ with $a_i < k < a_{i+1}$.  
@@ -96,7 +96,7 @@ $a_i < k^\prime < k < a_{i+1}$ but $f(k^\prime) > f(k) = f(a_i)$.
 Therefore, $f(k) = f(a_{i}) + f(k - a_{i})$, or $f(k - a_{i}) = 0$.  
 Since $0 < k - a_{i} < a_{i+1}$,  
 
-$$ f(a_{i}) < f(a_{i+1}) = f(a_{i+1} - k + a_i) + f(k - a_{i}) = f(a_{i+1} - k + a_i) $$
+$$ f(a_{i}) \< f(a_{i+1}) = f(a_{i+1} - k + a_i) + f(k - a_{i}) = f(a_{i+1} - k + a_i) $$
 
 However, $a_{i+1} - k + a_i < a_{i+1}$, a contradiction to [the definition](#def_ai) of $a_n$.
 
@@ -127,7 +127,7 @@ $$
 \begin{aligned}
 f(a_{j+1}) &= f(a_{j+1} - a_{j} + a_{j-1}) + f(a_j - a_{j-1}) \\
 &= f(a_{j+1} - a_{j} + a_{j-1}) + f(a_j) - f(a_{j-1}) \\
-&< f(a_{j-1}) + f(a_j) - f(a_{j-1}) = f(a_j),
+&\< f(a_{j-1}) + f(a_j) - f(a_{j-1}) = f(a_j),
 \end{aligned}
 $$
 
