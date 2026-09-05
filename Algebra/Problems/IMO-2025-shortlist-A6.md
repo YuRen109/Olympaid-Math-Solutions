@@ -97,7 +97,7 @@ Let $s \in S$, $s^\star \in S^\star$ and $k \in \text{ℕ}$. Then
 2.4    If $k \in \text{𝒜}^{\star}(s^\star)$, then $k + ns \in \text{𝒜}^\star$ for all $n \in \text{ℕ}$.  
 
 *Proof.*  
-First, we will prove Claim 2.1. 
+First, we will prove Claim 2.1.  
 Claim 2.1 holds since 
 
 $$k \in \text{𝒜}(s) \iff a_{k+s} \geq s + a_{k} > s \implies \left[ a_{k} > s \text{  or  } a_{k+s} > s \right], $$
@@ -335,4 +335,4 @@ $a_n = n + c$ for some $c \in \text{ℕ}$.
 1. [Bézout's identity](https://en.wikipedia.org/wiki/B%C3%A9zout%27s_identity)
 2. [Numerical semigroups](https://en.wikipedia.org/wiki/Numerical_semigroup)
 3. Picking finitely many key elements from an infinite set.
-4. Arguing propositions hold for large $n$ at first, and then arguing them hold for all $n$.
+4. Arguing propositions hold for large $n$ at first, and then arguing them all hold for all $n$.
