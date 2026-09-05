@@ -135,7 +135,7 @@ Hence, Claim 3.1 holds.
 Claim 3.2 is a corollary of Claim 3.1:  
 
 By Claim 3.1 we have $a_{i+1} > a_{i+1} - a_i + a_{i-1} \geq a_i$ for each $i \in \text{ℕ}$.  
-By [Claim 2](#claim2) we have 
+By [Claim 2](#claim2) we have  
 
 $$f(a_{i+1}) - f(a_i) + f(a_{i-1}) = f(a_{i+1} - a_i + a_{i-1}) \leq f(a_i),$$
 
@@ -166,16 +166,16 @@ and by [Claim 3.2](#claim3) we have $f(a_{n_i}) - f(a_{n_i -1}) > f(a_{n_{i+1}})
 
 However, this implies that there is some $i^\star \in \text{ℕ}$ such that 
 
-$f(a_{n_{1}}) - f(a_{n_{0}}) > f(a_{n_{2}}) - f(a_{n_{1}}) > \cdots > 0 > f(a_{n_{i^\star + 1}}) - f(a_{n_{i^\star}}) > \cdots$,  
+$$f(a_{n_{1}}) - f(a_{n_{0}}) > f(a_{n_{2}}) - f(a_{n_{1}}) > \cdots > 0 > f(a_{n_{i^\star + 1}}) - f(a_{n_{i^\star}}) > \cdots,$$  
 
 a contradiction. 
 
 Hence, there exists $l \in \text{ℕ}$ such that 
-for each $i \in \text{ℕ}$ with $i > l$ we have 
+for each $i \in \text{ℕ}$ with $i > l$ we have  
 
-$$a_{i+1} -a_i \leq a_i -a_{i+1},$$
+$$a_{i+1} -a_i \leq a_i -a_{i+1},$$ 
 
-and, furthermore, $a_{i+1} -a_i = a_i -a_{i+1}$ by [Claim 3](#claim3).
+and, furthermore, $a_{i+1} -a_i = a_i -a_{i+1}$ by [Claim 3.1](#claim3).
 
 $\square$  
 
