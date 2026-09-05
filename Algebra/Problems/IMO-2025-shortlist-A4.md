@@ -55,7 +55,8 @@ Inspired by [Claim 1](#claim1), construct a sequence $a_0, a_1, \cdots$ as follo
    and then define  $A_{i+1} = \lbrace n \in  \text{ℕ} \mid n > f(a_i) \rbrace$.  
    Note that such an $a_i$ exists because of the unboundedness of $f$ for each $i \in \text{ℕ}$. 
 
-We have the following propery:
+Then $a_i \in \text{ℳ}$ for each $i \in \text{ℕ}$.  
+Therefore, we have the following propery:
 
 $$f(a_i) = f(n) + f(a_i - n)$$
 
