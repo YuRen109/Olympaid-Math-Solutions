@@ -126,7 +126,18 @@ f(a_{j+1}) &= f(a_{j+1} - a_{j} + a_{j-1}) + f(a_j - a_{j-1}) \\
 \end{aligned}
 $$
 
-a contradiction.
+a contradiction [the definition](#def_ai) of $a_n$. 
+
+Hence, Claim 3.1 holds.  
+
+Claim 3.2 is a corollary of Claim 3.1:  
+
+By Claim 3.1 we have $a_{i+1} > a_{i+1} - a_i + a_{i-1} \geq a_i$ for each $i \in \text{ℕ}$.  
+By [Claim 2](#claim2) we have 
+
+$$f(a_{i+1}) - f(a_i) + f(a_{i-1}) = f(a_{i+1} - a_i + a_{i-1}) \leq f(a_i),$$
+
+or $f(a_{i+1}) - f(a_i) \leq f(a_{i}) - f(a_{i-1})$
 
 $\square$  
 
