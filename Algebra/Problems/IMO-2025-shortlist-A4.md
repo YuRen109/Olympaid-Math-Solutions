@@ -167,9 +167,13 @@ Construct a sequence $n_0,n_1,\cdots$ as follows.
 
 Then by [Claim 3.1](#claim3) we have 
 
-$$a_{n_i} - a_{n_i - 1} < a_{n_i + 1} - a_{n_i} \leq a_{n_{i + 1}} - a_{n_{i+1} - 1}.$$
+$$a_{n_i} - a_{n_i - 1} < a_{n_i + 1} - a_{n_i} \leq a_{n_{i + 1}} - a_{n_{i+1} - 1}$$
 
-and by [Claim 3.2](#claim3) we have $f(a_{n_i}) - f(a_{n_i -1}) > f(a_{n_{i+1}}) - f(a_{n_i})$. 
+and by [Claim 3.2](#claim3) we have 
+
+$$f(a_{n_i}) - f(a_{n_i -1}) > f(a_{n_{i+1}}) - f(a_{n_i})$$
+
+for all $i \in \text{ℕ}$.
 
 However, this implies that there is some $i^\star \in \text{ℕ}$ such that 
 
