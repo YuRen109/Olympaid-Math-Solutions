@@ -54,9 +54,8 @@ $\square$
 
 <span id="def_ai"></span>Inspired by [Claim 1](#claim1), construct a sequence $a_0, a_1, \cdots$ as follows.  
 
-1. Define $a_0 = 1$ and $A_1 = \lbrace n \in  \text{ℕ} \mid n > f(a_0) \rbrace$.
-2. For each $i \in \text{ℕ}$ we define $a_i$ to be the smallest number of $A_i$ (if $A_i$ has been defined), 
-   and then define  $A_{i+1} = \lbrace n \in  \text{ℕ} \mid n > f(a_i) \rbrace$.  
+1. Define $a_0 = 1$.
+2. For each $i \in \text{ℕ}$ we define $a_i$ to be the smallest number of \lbrace n \in  \text{ℕ} \mid n > f(a_{i-1}) \rbrace.  
    Note that such an $a_i$ exists because of the unboundedness of $f$ for each $i \in \text{ℕ}$. 
 
 Then $a_i \in \text{ℳ}$ and $a_i < a_{i+1}$ for each $i \in \text{ℤ}\_{\geq 0}$.  
