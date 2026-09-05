@@ -151,6 +151,19 @@ for each $i \in \text{ℕ}$ with $i > l$ we have $a_{i+1} -a_i = a_i -a_{i+1}$.
 
 *Proof.*  
 
+Suppose that for evert $l \in \text{ℕ}$ there is some $n \in \text{ℕ}$ with $n > l$ 
+such that $a_{n+1} - a_n > a_n - a_{n-1}$.  
+
+Construct a sequence $n_0,n_1,\cdots$ as follows.  
+1. Define $n_0=1$.
+2. For each $i \in \text{ℕ}$ find $n_i \in \text{ℕ}$ such that $a_{n_{i} + 1} - a_{n_i} > a_{n_i} - a_{n_{i} - 1}$.  
+
+Then by [Claim 3](#claim3) we have 
+
+$$a_{n_i} - a_{n_i - 1} < a_{n_i + 1} - a_{n_i} \leq a_{n_{i + 1}} - a_{n_{i+1} - 1}.$$
+
+However, this implies that there is some $i^\star \in \text{ℕ}$ such that $f(a_{n_{i^\star + 1}}) < f(a_{n_{i^\star}})$, 
+a contradiction.
 
 $\square$  
 
