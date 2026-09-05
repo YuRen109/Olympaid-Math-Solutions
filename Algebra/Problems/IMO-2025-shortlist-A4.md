@@ -33,30 +33,26 @@ $f(0) = 0$ and $f(1) > 0$.
 It is apparent that $0 \in \text{ℳ}$.  
 Plugging $m=n=0$ we get $f(0+0) = f(0) + f(0)$, or $f(0) = 0$.  
 
-By the unboundedness of $f$, let $k \in \text{ℕ}$ be the smallest number such that $f(k) > 0$.  
+The set $\lbrace n \in  \text{ℕ} \mid f(n) > 0 \rbrace$ is non-empty because of the unboundedness of $f$.  
+
+Let $k \in \text{ℕ}$ be the smallest number of $\lbrace n \in  \text{ℕ} \mid f(n) > 0 \rbrace$.  
 Then $k \in \text{ℳ}$.  
 
 If $k=1$, then we complete the proof.  
 
 Suppose that $k \geq 2$. Then 
 
-$$f(1) = f(2) = \cdots f(k-1) = 0.$$
+$$f(1) = f(2) = \cdots = f(k-1) = 0.$$
 
 However, $0 < f(k) = f(1) + f(k-1) = 0 + 0 = 0$, a contradiction.  
 
 $\square$  
 
-### <span id="claim1"></span>Claim 1 ($f(0) = 0$ and $f(1) > 0$)
-$f(0) = 0$ and $f(1) > 0$.
+Inspired by [Claim 1](#claim1), construct a sequence $a_0, a_1, \cdots$ as follows.  
 
-*Proof*  
-It is apparent that $0 \in \text{ℳ}$.  
-Plugging $m=n=0$ we get $f(0+0) = f(0) + f(0)$, or $f(0) = 0$.  
-
-By the unboundedness of $f$, there is some $k$
-
-
-$\square$  
+1. Define $a_0 = 1$ and $A_1 = \lbrace n \in  \text{ℕ} \mid f(a_0) > 0 \rbrace$.
+2. For each $i \in \text{ℕ}$ we define $a_i$ to be the smallest number of $A_i$,
+   and then define  $A_{i+1} = \lbrace n \in  \text{ℕ} \mid f(a_i) > 0 \rbrace$.  
 
 
 # What I Learned
