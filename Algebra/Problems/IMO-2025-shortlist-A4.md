@@ -33,7 +33,7 @@ $f(0) = 0$ and $f(1) > 0$.
 It is apparent that $0 \in \text{ℳ}$.  
 Plugging $m=n=0$ we get $f(0+0) = f(0) + f(0)$, or $f(0) = 0$.  
 
-The set $\lbrace n \in  \text{ℕ} \mid f(n) > 0 \rbrace$ is non-empty because of the unboundedness of $f$.  
+Consider the set $\lbrace n \in  \text{ℕ} \mid f(n) > 0 \rbrace$, which is non-empty because of the unboundedness of $f$.  
 
 Let $k \in \text{ℕ}$ be the smallest number of $\lbrace n \in  \text{ℕ} \mid f(n) > 0 \rbrace$.  
 Then $k \in \text{ℳ}$.  
