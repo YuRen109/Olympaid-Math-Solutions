@@ -29,7 +29,7 @@ $$\text{ℳ} = \lbrace k \in \text{ℤ}\_{\geq 0} \mid f(k) = \max \lbrace f(0),
 ### <span id="claim1"></span>Claim 1 ($f(0) = 0$ and $f(1) > 0$)
 $f(0) = 0$ and $f(1) > 0$.
 
-*Proof*  
+*Proof.*  
 It is apparent that $0 \in \text{ℳ}$.  
 Plugging $m=n=0$ we get $f(0+0) = f(0) + f(0)$, or $f(0) = 0$.  
 
@@ -69,7 +69,7 @@ For each $k_i \in \text{ℕ}$ with $a_i < k_i < a_{i+1}$ we have
 
 $$0 < f(k_i) < f(a_i).$$
 
-*Proof*  
+*Proof.*  
 
 
 $\square$  
