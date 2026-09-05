@@ -1,4 +1,4 @@
-# Problem
+# <span id="problem"></span>Problem
 
 Let $S$ be a set of positive integers, possibly infinite, such that no positive integer greater than 1 divides all elements of $S$.  
 Determine all non-periodic infinite sequences $a_1, a_2, \cdots$ of positive integers such that, for all positive integers $n$,  
@@ -12,7 +12,7 @@ We say that an infinite sequence $a_1, a_2, \cdots$ is *periodic* if there exist
 
 [IMO 2025 Problems](https://www.imo-official.org/problems/2025/)
 
-# Key idea
+# Key Idea
 
 1. Look into properties of $S$.  
    Consider some tricks related to $\text{gcd}$ (for example, [Bézout's identity](https://en.wikipedia.org/wiki/B%C3%A9zout%27s_identity))
@@ -21,7 +21,7 @@ We say that an infinite sequence $a_1, a_2, \cdots$ is *periodic* if there exist
    because finitely many key elements are sufficient to represent properties of $S$ where $a_n$ would be confined, 
    if the properties are relevant to $\text{gcd}$.  
    Besides, avoid defining $\text{gcd}$ for infinite sets of integers.  
-4. Observe **the condition 2** and the requirement of **non-periodic infinite sequences** in the problem statement.  
+4. Observe **the condition 2** and the requirement of **non-periodic infinite sequences** in [the problem statement](#problem).  
    Imagine that $a_n$ would finally escape from periodicity as $n$ goes to infinity.  
    Should be incline to that **$a_n$ is unbounded**.
 5. Get that $a_n$ increases to the end once it starts to increase (and it eventually does).  
@@ -65,10 +65,10 @@ However, $d > 1$ and, by induction, we get that $d$ divides all elements of $S$,
 $\square$
 
 Suppose that there is some $S \in \text{𝕊}$ such that such a non-periodic sequence $a_1, a_2, \cdots$ of positive integer, 
-which may be dependent of $S$, in the problem statement exist.  
+which may be dependent of $S$, in [the problem statement](#problem) exist.  
 In this case, let $S^\star \subseteq S$ denote the collection of each $s^\star \in S$ 
 such that $a_n = \left| a_{n+s^\star} - s^\star \right|$ for all $n \in \text{ℕ}$.  
-The condition 2 in the problem statement implies that $S^\star$ is non-empty, and therefore, $S$ is non-empty.  
+The condition 2 in [the problem statement](#problem) implies that $S^\star$ is non-empty, and therefore, $S$ is non-empty.  
 
 For any $s \in S$ and for any $s^\star \in S^\star$ we denote  
 
@@ -81,7 +81,7 @@ $$
 \end{aligned}
 $$
 
-Then, as stated in the problem, we have that  
+Then, as stated in [the problem](#problem), we have that  
 
 $$ \left[ n \in \text{𝒜}(s) \iff n \notin \text{ℬ}(s) \right] \text{  and  } \left[ n \in \text{𝒜}^{\star}(s^\star) \iff n \notin \text{ℬ}^{\star}(s^\star) \right] $$
 
@@ -146,6 +146,9 @@ Suppose $a_{k+1} = 1 - a_k$ for some $k \in \text{ℕ}$. Then $a_{k+1} + a_k = 1
 since $a_k \geq 1$ and $a_{k+1} \geq 1$.  
 Hence, $a_{n+1} = a_n + 1$ for all $n \in \text{ℕ}$.  
 Since $a_n \in \text{ℕ}$ for all $n \in \text{ℕ}$, it is necessary to let $a_1 \in \text{ℕ}$.  
+
+It is apparent that a sequence with $a_{n+1} = a_n + 1$ for all $n \in \text{ℕ}$ 
+satisfies the conditions 1 and 2 in [the problem statement](#problem).
 
 $\square$
 
@@ -308,9 +311,8 @@ Then we have that $m \in \text{ℬ}^\star_1$ or $m \in \text{ℬ}{\_j}$ for some
 By [Claim 7](#claim7) we have that $m+1 \in \text{𝒜}^\star\_1 \cap \left( \bigcap_{i=2}^{{{\\#}S^\prime}} \text{𝒜}\_i \right)$, 
 and $a_{l+1} = a_{l} + 1$ for each $l \in \text{ℕ}$ with $l \geq m + 1$.  
 
-For the case where $m \in \text{ℬ}^\star\_1$, we have that $a_{m+s_1} = s_1 - a_m$. 
-By [Claim 7](#claim7), since $m+1 \in \text{𝒜}^\star\_1$, we have that $a_{m+s_1} = a_{m+1} + s_1 - 1$, 
-implying that $a_{m} + a_{m+1} = 1$, a contradiction. 
+For the case where $m \in \text{ℬ}^\star\_1$, we have that $a_{m+s_1} = s_1 - a_m$.  
+However we also get $a_{m+s_1} = a_{m+1} + s_1 - 1$, implying that $a_{m} + a_{m+1} = 1$, a contradiction. 
 Hence, $m \notin \text{ℬ}^\star\_1$.  
 
 In a similar way we may prove that $m \notin \text{ℬ}^\star\_j$ for all $j \in \lbrace 2, 3, \cdots, {\\#}S^\prime\rbrace$.
@@ -329,7 +331,7 @@ By [Claim 3](#claim3) and [Claim 9](#claim9) we conclude that
 the only possible solution is $a_{n+1} = a_n + 1$ for all $n \in \text{ℕ}$ (with $a_1 \in \text{ℕ}$), or
 $a_n = n + c$ for some $c \in \text{ℕ}$.  
 
-# What I learned
+# What I Learned
 1. [Bézout's identity](https://en.wikipedia.org/wiki/B%C3%A9zout%27s_identity)
 2. [Numerical semigroups](https://en.wikipedia.org/wiki/Numerical_semigroup)
 3. Picking finitely many key elements from an infinite set.
