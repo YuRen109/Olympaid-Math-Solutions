@@ -24,10 +24,11 @@ We say that $f$ is *unbounded* if for each nonnegative integer $N$, there exists
 
 
 # Solution
-<!--
-<details>
-<summary>Click to open</summary>
--->
+
+<details open>
+
+   <summary>Click to open</summary>
+
 Let 
 
 $$\text{ℳ} = \lbrace k \in \text{ℤ}\_{\geq 0} \mid f(k) = \max \lbrace f(0), f(1), \cdots, f(k)\rbrace \rbrace.$$
@@ -159,7 +160,7 @@ $\square$
 
 By [Claim 4](#claim4) we may find $l \in \text{ℕ}$
 
-<!--
+
 </details>
--->
+
 # What I Learned
