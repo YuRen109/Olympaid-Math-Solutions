@@ -66,7 +66,11 @@ Using this property, we may derive the following claim.
 
 ### <span id="claim2"></span>Claim 2
 For each $i \in \text{ℤ}\_{\geq 0}$ and each $k \in \text{ℕ}$,  
-if $a_i < k < a_{i+1}$, then
+if 
+
+$$a_i < k < a_{i+1},$$
+
+then
 
 $$0 < f(k) < f(a_i).$$
 
