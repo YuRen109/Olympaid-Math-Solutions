@@ -35,7 +35,7 @@ $f(0) = 0$ and $f(1) > 0$.
 
 *Proof.*  
 It is apparent that $0 \in \text{ℳ}$.  
-Plugging $m=n=0$ we get $f(0+0) = f(0) + f(0)$, or $f(0) = 0$.  
+Plugging $m=n=0$ into $f(m+n) = f(m) + f(n)$ we get $f(0+0) = f(0) + f(0)$, or $f(0) = 0$.  
 
 Consider the set $\lbrace n \in  \text{ℕ} \mid f(n) > 0 \rbrace$, which is non-empty because of the unboundedness of $f$.  
 
