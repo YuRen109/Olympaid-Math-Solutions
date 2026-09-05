@@ -59,7 +59,7 @@ $\square$
    and then define  $A_{i+1} = \lbrace n \in  \text{ℕ} \mid n > f(a_i) \rbrace$.  
    Note that such an $a_i$ exists because of the unboundedness of $f$ for each $i \in \text{ℕ}$. 
 
-Then $a_i \in \text{ℳ}$ for each $i \in \text{ℤ}\_{\geq 0}$.  
+Then $a_i \in \text{ℳ}$ and $a_i < a_{i+1}$ for each $i \in \text{ℤ}\_{\geq 0}$.  
 Therefore, we have the following propery:
 
 $$f(a_i) = f(n) + f(a_i - n)$$
@@ -68,7 +68,7 @@ for each $i \in \text{ℤ}\_{\geq 0}$ and each nonnegative integer $n \leq a_i$.
 
 Using this property, we may derive the following claim.
 
-### <span id="claim2"></span>Claim 2
+### <span id="claim2"></span>Claim 2 (the value of $f(k)$ for each $a_i < k < a_{i+1}$)
 For each $i \in \text{ℤ}\_{\geq 0}$ and each $k \in \text{ℕ}$,  
 if 
 
