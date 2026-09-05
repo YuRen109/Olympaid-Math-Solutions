@@ -23,8 +23,8 @@ We say that $f$ is *unbounded* if for each nonnegative integer $N$, there exists
 # Key Idea
 
 
-# Solution
-<sol>
+<details>
+<summary># Solution</summary>
 
 
 Let 
@@ -158,6 +158,6 @@ $\square$
 
 By [Claim 4](#claim4) we may find $l \in \text{ℕ}$
 
-</sol>
+</details>
 
 # What I Learned
