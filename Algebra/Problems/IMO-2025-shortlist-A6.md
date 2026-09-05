@@ -228,7 +228,16 @@ $$C + \sum_{i=1}^{j-1} (c_i + x_i) s_i \in \text{𝒜}^\star_{1} \cap \left( \bi
 
 $$a_{C + \sum_{i=1}^{j-1} (c_i + x_i) s_i} = a_{C} + \sum_{i=1}^{j-1} (c_i + x_i) s_i > c_{j-1} s_{j-1} > s_{j},$$
 
-   implying that $C + \sum_{i=1}^{j-1} (c_i + x_i) s_i \in \text{𝒜}_j$ by [Claim 2.1](#claim2).
+   implying that $C + \sum_{i=1}^{j-1} (c_i + x_i) s_i \in \text{𝒜}_j$ by [Claim 2.1](#claim2).  
+   By [Claim 2.3](#claim2) we have 
+   
+#$C + \sum\_{i=1}^{j} (c_i + x_i) s_i = C + \left(\sum\_{i=1}^{j-1} (c_i + x_i) s_i\right) + (c_j + x_j) s_j \in \text{𝒜}_j$$  
+
+and by [Claim 2.1]
+
+$$a_{C + \sum_{i=1}^{j} (c_i + x_i) s_i} = a_{C} + \sum_{i=1}^{j} (c_i + x_i) s_i > \max{s_1, s_2, ..., s_j} $$
+
+implies that $C + \sum_{i=1}^{j} (c_i + x_i) s_i \in \text{𝒜}^\star_{1} \cap \left( \bigcap_{i=2}^{j} \text{𝒜}_i \right)$.  
 
    3. As $j$ runs over $\lbrace 2, \cdots, {\\#}S^\prime\rbrace$ we finally conclude that 
 
