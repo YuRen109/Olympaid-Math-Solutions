@@ -65,7 +65,8 @@ for each $i \in \text{ℤ}\_{\geq 0}$ and each nonnegative integer $n \leq a_i$.
 Using this property, we may derive the following claim.
 
 ### <span id="claim2"></span>Claim 2
-For each $k_i \in \text{ℕ}$ with $a_i < k_i < a_{i+1}$ we have 
+For each $i \in \text{ℤ}\_{\geq 0}$ and each $k_i \in \text{ℕ}$, 
+if $a_i < k_i < a_{i+1}$, then
 
 $$0 < f(k_i) < f(a_i).$$
 
@@ -73,5 +74,24 @@ $$0 < f(k_i) < f(a_i).$$
 
 
 $\square$  
+
+
+We will look into the distribution of $a_0, a_1, \cdots$ with [Claim 2](#claim2).  
+
+
+### <span id="claim3"></span>Claim 3
+For each $i \in \text{ℕ}$ we have
+
+3.1 $a_{i+1} -a_i \geq a_i -a_{i+1}$ and  
+3.2 $f(a_{i+1}) - f(a_i) \leq f(a_i) - f(a_{i+1})$
+
+*Proof.*  
+
+
+$\square$  
+
+
+
+
 
 # What I Learned
