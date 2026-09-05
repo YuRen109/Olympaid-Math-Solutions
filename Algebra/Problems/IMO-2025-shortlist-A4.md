@@ -24,7 +24,8 @@ We say that $f$ is *unbounded* if for each nonnegative integer $N$, there exists
 
 
 <details>
-<summary># Solution</summary>
+
+   <summary># Solution</summary>
 
 
 Let 
