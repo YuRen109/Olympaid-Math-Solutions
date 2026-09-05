@@ -20,10 +20,43 @@ We say that f is *unbounded* if for each nonnegative integer $N$, there exists s
 
 [IMO 2025 Problems](https://www.imo-official.org/problems/2025/)
 
-
-# Source
-
 # Solution
+
+Let 
+
+$$\text{ℳ} = \lbrace k \in \text{ℤ}\_{\geq 0} \mid f(k) = \max \lbrace f(0), f(1), \cdots, f(k)\rbrace \rbrace.$$
+
+### <span id="claim1"></span>Claim 1 ($f(0) = 0$ and $f(1) > 0$)
+$f(0) = 0$ and $f(1) > 0$.
+
+*Proof*  
+It is apparent that $0 \in \text{ℳ}$.  
+Plugging $m=n=0$ we get $f(0+0) = f(0) + f(0)$, or $f(0) = 0$.  
+
+By the unboundedness of $f$, let $k \in \text{ℕ}$ be the smallest number such that $f(k) > 0$.  
+Then $k \in \text{ℳ}$.  
+
+If $k=1$, then we complete the proof.  
+
+Suppose that $k \geq 2$. Then 
+
+$$f(1) = f(2) = \cdots f(k-1) = 0.$$
+
+However, $0 < f(k) = f(1) + f(k-1) = 0 + 0 = 0$, a contradiction.  
+
+$\square$  
+
+### <span id="claim1"></span>Claim 1 ($f(0) = 0$ and $f(1) > 0$)
+$f(0) = 0$ and $f(1) > 0$.
+
+*Proof*  
+It is apparent that $0 \in \text{ℳ}$.  
+Plugging $m=n=0$ we get $f(0+0) = f(0) + f(0)$, or $f(0) = 0$.  
+
+By the unboundedness of $f$, there is some $k$
+
+
+$\square$  
 
 
 # What I Learned
