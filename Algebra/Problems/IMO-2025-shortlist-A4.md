@@ -196,16 +196,16 @@ Let
 
 $$
 \begin{aligned}
-A &= a_{l+1} - a_l \in \text{ℕ}, \\
-B &= a_l \in \text{ℕ}, \\
-C &= f(a_{l+1}) - f(a_l) \in \text{ℕ}, \\
-D &= f(a_l) \in \text{ℕ}.
+A &= a_{l+1} - a_l &\in \text{ℕ}, \\
+B &= a_l &\in \text{ℕ}, \\
+C &= f(a_{l+1}) - f(a_l) &\in \text{ℕ}, \\
+D &= f(a_l) &\in \text{ℕ}.
 \end{aligned}
 $$
 
 Then 
 
-$$f(Ax + B) &= f(a_l + x(a_{l+1} - a_l)) = f(a_{l+x}) = f(a_l) + x \left[ f(a_{l+1}) - f(a_{l}) \right] = C + Dx$$
+$$f(Ax + B) = f(a_l + x(a_{l+1} - a_l)) = f(a_{l+x}) = f(a_l) + x \left[ f(a_{l+1}) - f(a_{l}) \right] = C + Dx$$
 
 for all $x \in \text{ℤ}\_{\geq 0}$.
 
