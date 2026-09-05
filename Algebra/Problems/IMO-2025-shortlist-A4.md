@@ -60,7 +60,7 @@ Therefore, we have the following propery:
 
 $$f(a_i) = f(n) + f(a_i - n)$$
 
-for each $i \in \text{ℕ}$ and each nonnegative integer $n \leq a_i$.  
+for each $i \in \text{ℤ}\_{\geq 0}$ and each nonnegative integer $n \leq a_i$.  
 
 Using this property, we may derive the following claim.
 
