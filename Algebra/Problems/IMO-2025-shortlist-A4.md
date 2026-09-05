@@ -21,7 +21,15 @@ We say that $f$ is *unbounded* if for each nonnegative integer $N$, there exists
 [IMO 2025 Problems](https://www.imo-official.org/problems/2025/)
 
 # Key Idea
-
+1. It suffices to pick some **representative nonnegative integers** to show
+   the property of $f$, that is being proven, says that $f$ maps an arithmetic progression to another one,
+   and further preserves its order.
+2. By the unboundedness of $f$, if we determine its function values from small integers to large ones,
+   we always get one whose function value is greater those of the determined small integers.
+   Then we pick it and call it **a representative nonnegative integer**.
+3. After picking all representative integers, we start to study **the gaps between adjacent representatives**.
+4. Finally, we may find **the gap lengths keep constant** for sufficiently large adjacent representatives.
+   Therefore, we complete the proof.
 
 # Solution
 
@@ -103,7 +111,7 @@ $\square$
 We will look into the distribution of $a_0, a_1, \cdots$ with [Claim 2](#claim2).  
 
 
-### <span id="claim3"></span>Claim 3
+### <span id="claim3"></span>Claim 3 (the gap lengths of $a_n$ cannot shrink)
 For each $i \in \text{ℕ}$ we have
 
 3.1 $a_{i+1} -a_i \geq a_i -a_{i-1}$, and  
@@ -144,7 +152,7 @@ $\square$
 
 
 
-### <span id="claim4"></span>Claim 4
+### <span id="claim4"></span>Claim 4 (the gap lengths of $a_n$ are finally fixed)
 There exists $l \in \text{ℕ}$ such that 
 for each $i \in \text{ℕ}$ with $i > l$ we have $a_{i+1} -a_i = a_i -a_{i+1}$.
 
