@@ -119,7 +119,7 @@ For each $i \in \text{ℕ}$ we have
 
 *Proof.*  
 First, we will prove Claim 3.1.  
-Suppose that $a_{j+1} -a_j < a_j -a_{j+1}$ for some $j \in \text{ℕ}$.  
+Suppose that $a_{j+1} -a_j < a_j -a_{j-1}$ for some $j \in \text{ℕ}$.  
 Then 
 
 $$a_{j-1} < a_{j+1} - a_{j} + a_{j-1} < a_{j}.$$
