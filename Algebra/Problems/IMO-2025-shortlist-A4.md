@@ -72,7 +72,14 @@ $$0 < f(k_i) < f(a_i).$$
 
 *Proof.*  
 Let $k_i \in \text{ℕ}$ with $a_i < k_i < a_{i+1}.  
-Then by [the definition of a_i](#def_ai) we get $0 \leq f(k_i) \leq f(a_i)$.
+Then by [the definition of $a_i$](#def_ai) we get $0 \leq f(k_i) \leq f(a_i)$.  
+
+If $f(k_i) = 0$, then $f(a_{i+1}) = f(a_{i+1} - k_i) + 0$.  
+However, $a_{i+1} - k_i < a_{i+1}$, a contradiction.
+
+If $f(k_i) = f(a_i)$, then $f(a_{i} - k_i) = 0$.  
+However, $a_{i+1} - k_i < a_{i+1}$, a contradiction.
+
 
 $\square$  
 
