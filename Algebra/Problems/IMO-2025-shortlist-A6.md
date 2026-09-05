@@ -175,17 +175,19 @@ $$\sum^{k}_{i=2} x_i n_i \equiv r \pmod{n_1}.$$
 By [Bézout's identity](#bezout), since $\text{gcd }N = 1$, 
 we may find $z_1, z_2, \cdots, z_k \in \text{ℤ}$ such that $\sum^{k}_{i=1} z_i n_i = 1$, or  
 
-Let $r \in \lbrace 1, 2, \cdots, n_1 - 1 \rbrace$. 
+Let $r \in \lbrace 1, 2, \cdots, n_1 - 1 \rbrace$.  
+
+Then 
 
 $$\sum^{k}_{i=2} (r z_i) n_i \equiv r \pmod{n_1}.$$
 
 Note that for all $t_{r,2}, t_{r,3}, \cdots, t_{r,k} \in \text{ℤ}$ we have
 
-$$\sum^{k}_{i=2} (r z_i + t_{r,i} x_1) n_i \equiv r \pmod{n_1}.$$
+$$\sum^{k}_{i=2} (r z_i + t_{r,i} n_1) n_i \equiv r \pmod{n_1}.$$
 
 For each $r \in \lbrace 1, 2, \cdots, n_1 - 1 \rbrace$ and 
 for each $i \in \lbrace 2, 3, \cdots, k-1 \rbrace$ 
-we may pick a sufficiently large $t_{r,i}$ such that $x_i = r z_i + t_{r,i} x_1 > 0$.  
+we may pick a sufficiently large $t_{r,i}$ such that $x_i = r z_i + t_{r,i} n_1 > 0$.  
 Then the proof is complete.  
 
 $\square$
