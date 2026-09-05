@@ -105,8 +105,8 @@ We will look into the distribution of $a_0, a_1, \cdots$ with [Claim 2](#claim2)
 ### <span id="claim3"></span>Claim 3
 For each $i \in \text{ℕ}$ we have
 
-3.1 $a_{i+1} -a_i \geq a_i -a_{i+1}$, and  
-3.2 $f(a_{i+1}) - f(a_i) \leq f(a_i) - f(a_{i+1})$
+3.1 $a_{i+1} -a_i \geq a_i -a_{i-1}$, and  
+3.2 $f(a_{i+1}) - f(a_i) \leq f(a_i) - f(a_{i-1})$
 
 *Proof.*  
 First, we will prove Claim 3.1.  
@@ -137,7 +137,7 @@ By [Claim 2](#claim2) we have
 
 $$f(a_{i+1}) - f(a_i) + f(a_{i-1}) = f(a_{i+1} - a_i + a_{i-1}) \leq f(a_i),$$
 
-or $f(a_{i+1}) - f(a_i) \leq f(a_{i}) - f(a_{i-1})$
+or $f(a_{i+1}) - f(a_i) \leq f(a_{i}) - f(a_{i-1})$.
 
 $\square$  
 
