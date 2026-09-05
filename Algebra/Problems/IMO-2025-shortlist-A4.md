@@ -158,6 +158,6 @@ $\square$
 
 By [Claim 4](#claim4) we may find $l \in \text{ℕ}$
 
-<\sol>
+</sol>
 
 # What I Learned
