@@ -151,7 +151,7 @@ for each $i \in \text{ℕ}$ with $i > l$ we have $a_{i+1} -a_i = a_i -a_{i+1}$.
 
 *Proof.*  
 
-Suppose that for evert $l \in \text{ℕ}$ there is some $n \in \text{ℕ}$ with $n > l$ 
+Suppose that for every $l \in \text{ℕ}$ there is some $n \in \text{ℕ}$ with $n > l$ 
 such that $a_{n+1} - a_n > a_n - a_{n-1}$.  
 
 Construct a sequence $n_0,n_1,\cdots$ as follows.  
@@ -162,12 +162,20 @@ Then by [Claim 3.1](#claim3) we have
 
 $$a_{n_i} - a_{n_i - 1} < a_{n_i + 1} - a_{n_i} \leq a_{n_{i + 1}} - a_{n_{i+1} - 1}.$$
 
-and by [Claim 3.1](#claim3) we have $f(a_{n_i}) - f(a_{n_i -1}) > f(a_{n_{i+1}}) - f(a_{n_i})$. 
+and by [Claim 3.2](#claim3) we have $f(a_{n_i}) - f(a_{n_i -1}) > f(a_{n_{i+1}}) - f(a_{n_i})$. 
 
 However, this implies that there is some $i^\star \in \text{ℕ}$ such that 
 
-$f(a_{n_{1}}) - f(a_{n_{0}}) > f(a_{n_{2}}) - f(a_{n_{1}}) > \cdots > 0 > f(a_{n_{i^\star + 1}}) - f(a_{n_{i^\star}}) > \cdots$, 
-a contradiction.
+$f(a_{n_{1}}) - f(a_{n_{0}}) > f(a_{n_{2}}) - f(a_{n_{1}}) > \cdots > 0 > f(a_{n_{i^\star + 1}}) - f(a_{n_{i^\star}}) > \cdots$,  
+
+a contradiction. 
+
+Hence, there exists $l \in \text{ℕ}$ such that 
+for each $i \in \text{ℕ}$ with $i > l$ we have 
+
+$$a_{i+1} -a_i \leq a_i -a_{i+1},$$
+
+and, furthermore, $a_{i+1} -a_i = a_i -a_{i+1}$ by [Claim 3](#claim3).
 
 $\square$  
 
