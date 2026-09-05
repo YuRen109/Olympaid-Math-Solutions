@@ -67,7 +67,7 @@ for each $i \in \text{ℤ}\_{\geq 0}$ and each nonnegative integer $n \leq a_i$.
 
 Using this property, we may derive the following claim.
 
-### <span id="claim2"></span>Claim 2 (the value of $f(k)$ for each integer $k$ in $\left(a\_i,a\_{i+1} \right)$)
+### <span id="claim2"></span>Claim 2 (the value of $f(k)$ for each integer $k$ inside the gaps of $a_n$)
 For each $i \in \text{ℤ}\_{\geq 0}$ and each $k \in \text{ℕ}$,  
 if 
 
