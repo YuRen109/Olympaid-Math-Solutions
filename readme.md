@@ -3,4 +3,4 @@ I share solutions done on my own to some math olympaid problems or interesting p
 
 ## Categories
 
--[Algebra](./Algebra/)
+[Algebra](./Algebra/)
