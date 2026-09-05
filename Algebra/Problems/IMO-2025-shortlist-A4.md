@@ -74,14 +74,20 @@ $$0 < f(k) < f(a_i).$$
 Let $k \in \text{ℕ}$ with $a_i < k < a_{i+1}$.  
 Then by [the definition](#def_ai) of $a_n$ we get $0 \leq f(k) \leq f(a_i)$.  
 
-If $f(k) = 0$, then $f(a_{i+1}) = f(a_{i+1} - k) + 0$.  
-However, $a_{i+1} - k < a_{i+1}$, a contradiction.
+Suppose that $f(k) = 0$.  
+Then $f(a_{i+1}) = f(a_{i+1} - k) + 0 > f(a_i)$.  
+However, $a_{i+1} - k < a_{i+1}$, a contradiction to [the definition](#def_ai) of $a_n$.  
 
-If $f(k) = f(a_i)$, then $f \in \text{ℳ}$ since, 
+Suppose that $f(k) = f(a_i)$.  
+Then $f \in \text{ℳ}$ since, 
 otherwise, we would get some $k^\prime \in \text{ℕ}$ such that 
 $a_i < k^\prime < k < a_{i+1}$ but $f(k^\prime) > f(a_i)$.  
 Therefore, $f(k) = f(a_{i}) + f(k - a_{i})$, or $f(k - a_{i}) = 0$.  
-However, $a_{i+1} - k_i < a_{i+1}$, a contradiction.
+Since $0 < k - a_{i} < a_{i+1}$,  
+
+$$ f(a_{i}) < f(a_{i+1}) = f(a_{i+1} - k + a_i) + f(k - a_{i}) = f(a_{i+1} - k + a_i) $$
+
+However, $a_{i+1} - k + a_i < a_{i+1}$, a contradiction to [the definition](#def_ai) of $a_n$.
 
 
 $\square$  
