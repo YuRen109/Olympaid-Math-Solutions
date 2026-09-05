@@ -162,6 +162,8 @@ Then by [Claim 3](#claim3) we have
 
 $$a_{n_i} - a_{n_i - 1} < a_{n_i + 1} - a_{n_i} \leq a_{n_{i + 1}} - a_{n_{i+1} - 1}.$$
 
+Also, we have $f(a_{n_i}) - f(a_{n_i -1}) > f(a_{n_{i+1}}) - f(a_{n_i})$.
+
 However, this implies that there is some $i^\star \in \text{ℕ}$ such that $f(a_{n_{i^\star + 1}}) < f(a_{n_{i^\star}})$, 
 a contradiction.
 
