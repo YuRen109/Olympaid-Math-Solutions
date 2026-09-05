@@ -85,7 +85,7 @@ However, $a_{i+1} - k < a_{i+1}$, a contradiction to [the definition](#def_ai) o
 Suppose that $f(k) = f(a_i)$.  
 Then $f \in \text{ℳ}$ since, 
 otherwise, we would get some $k^\prime \in \text{ℕ}$ such that 
-$a_i < k^\prime < k < a_{i+1}$ but $f(k^\prime) > f(a_i)$.  
+$a_i < k^\prime < k < a_{i+1}$ but $f(k^\prime) > f(k) = f(a_i)$.  
 Therefore, $f(k) = f(a_{i}) + f(k - a_{i})$, or $f(k - a_{i}) = 0$.  
 Since $0 < k - a_{i} < a_{i+1}$,  
 
