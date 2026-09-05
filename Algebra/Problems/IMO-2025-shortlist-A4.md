@@ -67,7 +67,7 @@ for each $i \in \text{ℤ}\_{\geq 0}$ and each nonnegative integer $n \leq a_i$.
 
 Using this property, we may derive the following claim.
 
-### <span id="claim2"></span>Claim 2 (the value of $f(k)$ for each integer $k$ in $(a\_i,a\_{i+1})$)
+### <span id="claim2"></span>Claim 2 (the value of $f(k)$ for each integer $k$ in $\left(a\_i,a\_{i+1} \right)$)
 For each $i \in \text{ℤ}\_{\geq 0}$ and each $k \in \text{ℕ}$,  
 if 
 
@@ -86,7 +86,7 @@ Then $f(a_{i+1}) = f(a_{i+1} - k) + 0 > f(a_i)$.
 However, $a_{i+1} - k < a_{i+1}$, a contradiction to [the definition](#def_ai) of $a_n$.  
 
 Suppose that $f(k) = f(a_i)$.  
-Then $f \in \text{ℳ}$ since, 
+Then $k \in \text{ℳ}$ since, 
 otherwise, we would get some $k^\prime \in \text{ℕ}$ such that 
 $a_i < k^\prime < k < a_{i+1}$ but $f(k^\prime) > f(k) = f(a_i)$.  
 Therefore, $f(k) = f(a_{i}) + f(k - a_{i})$, or $f(k - a_{i}) = 0$.  
