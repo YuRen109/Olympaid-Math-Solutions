@@ -6,7 +6,11 @@ Determine all non-periodic infinite sequences $a_1, a_2, \cdots$ of positive int
 2. $a_n = \left| a_{n+l} - l \right|$ for at least one $l \in S$.  
 
 
-We say that an infinite sequence $a_1, a_2, \cdots$ is *periodic* if there exists a positive integer $t$ such that $a_n = a_{n+t}$ for all positive integers $n$.
+We say that an infinite sequence $a_1, a_2, \cdots$ is *periodic* if there exists a positive integer $t$ such that $a_n = a_{n+t}$ for all positive integers $n$.  
+
+# Source
+
+[IMO 2025 Problems](https://www.imo-official.org/problems/2025/)
 
 # Key idea
 
