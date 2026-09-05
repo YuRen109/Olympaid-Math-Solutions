@@ -14,7 +14,7 @@ for all nonnegative integers $n$,
 
 $$f(An + B) = Cn + D.$$  
 
-We say that f is *unbounded* if for each nonnegative integer $N$, there exists some nonnegative integer $n$ such that $f(n) \geq N$.
+We say that $f$ is *unbounded* if for each nonnegative integer $N$, there exists some nonnegative integer $n$ such that $f(n) \geq N$.
 
 # Source
 
