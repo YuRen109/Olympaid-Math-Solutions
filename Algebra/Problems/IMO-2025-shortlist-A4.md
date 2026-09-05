@@ -25,9 +25,6 @@ We say that $f$ is *unbounded* if for each nonnegative integer $N$, there exists
 
 # Solution
 
-<details open>
-
-   <summary>Click to open</summary>
 
 Let 
 
@@ -96,7 +93,7 @@ $a_i < k^\prime < k < a_{i+1}$ but $f(k^\prime) > f(k) = f(a_i)$.
 Therefore, $f(k) = f(a_{i}) + f(k - a_{i})$, or $f(k - a_{i}) = 0$.  
 Since $0 < k - a_{i} < a_{i+1}$,  
 
-$$ f(a_{i}) \< f(a_{i+1}) = f(a_{i+1} - k + a_i) + f(k - a_{i}) = f(a_{i+1} - k + a_i) $$
+$$ f(a_{i}) < f(a_{i+1}) = f(a_{i+1} - k + a_i) + f(k - a_{i}) = f(a_{i+1} - k + a_i) $$
 
 However, $a_{i+1} - k + a_i < a_{i+1}$, a contradiction to [the definition](#def_ai) of $a_n$.
 
@@ -127,7 +124,7 @@ $$
 \begin{aligned}
 f(a_{j+1}) &= f(a_{j+1} - a_{j} + a_{j-1}) + f(a_j - a_{j-1}) \\
 &= f(a_{j+1} - a_{j} + a_{j-1}) + f(a_j) - f(a_{j-1}) \\
-&\< f(a_{j-1}) + f(a_j) - f(a_{j-1}) = f(a_j),
+&< f(a_{j-1}) + f(a_j) - f(a_{j-1}) = f(a_j),
 \end{aligned}
 $$
 
@@ -161,6 +158,5 @@ $\square$
 By [Claim 4](#claim4) we may find $l \in \text{ℕ}$
 
 
-</details>
 
 # What I Learned
