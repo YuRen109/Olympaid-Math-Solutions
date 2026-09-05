@@ -163,7 +163,7 @@ $$x_1 n_1 + x_2 n_2 + \cdots + x_k n_k = m.$$
 
 *Proof.*  
 This a simple corollary from a fundamental theorem of [Numerical semigroups](https://en.wikipedia.org/wiki/Numerical_semigroup).  
-Here we provide a proof that does not need to introduce the concept of Numerical semigroups.  
+Here we provide a proof without the need of introducing the concept of Numerical semigroups.  
 
 Suppose $k = 1$. Then $\text{gcd }N = 1$ implies that $N = \lbrace 1 \rbrace$, 
 and for all $m \in \text{ℕ}$ we may find $x_1 = m$ such that $x_1 \cdot 1 = m$.  
